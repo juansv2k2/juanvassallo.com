@@ -1,0 +1,71 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Jura", sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    min-height: 10vh;
+    font-size: calc(14px + 2vmin);
+    color: #00d0ff;
+    font-family: "Jura", sans-serif;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    min-height: 10vh;
+    font-size: calc(10px + 2vmin);
+    color: #00d0ff;
+    display: flex;
+    justify-content: center;
+    font-family: "Jura", sans-serif;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: #00d0ff;
+    margin-bottom: 30px;
+}
+
+.neonText {
+    color: #00d0ff;
+    text-shadow: 0 0 1px white;
+}
+
+/* texts */
+
+.subtitle {
+    margin-top: 0;
+    font-size: 24px;
+    color: white;
+    padding-left: 40px;
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: 40px;
+    color: #00d0ff;
+    padding-left: 40px;
+}
