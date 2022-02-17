@@ -4,7 +4,7 @@ import "../App.css";
 
 function Header() {
     return (
-        <div>
+        <div className="bodyDiv">
             <div>
                 <h1 className="title">Juan Sebastián Vassallo</h1>
                 <h2 className="subtitle">composer - music researcher</h2>

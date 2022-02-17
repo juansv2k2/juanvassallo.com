@@ -16,7 +16,7 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div>
+                <div className="neonText">
                     <Header />
                 </div>
 
@@ -47,7 +47,7 @@ function App() {
                         <Projects />
                     </Route>
                 </Switch>
-                <div>
+                <div className="footer bodyDiv">
                     <Footer />
                 </div>
             </div>
