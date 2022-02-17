@@ -3,25 +3,62 @@
     flex-direction: column;
     justify-content: space-between;
     font-family: "Jura", sans-serif;
+    color: #00d0ff;
 }
 
-header {
+.header {
     background-color: rgba(0, 0, 0, 0.4);
-
+    width: 100%;
     min-height: 10vh;
     font-size: calc(14px + 2vmin);
+    display: flex;
     color: #00d0ff;
     font-family: "Jura", sans-serif;
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.4);
+.bodyDiv {
+    display: block;
+    width: 55%;
+    margin: auto;
+    text-align: justify;
+    justify-content: center;
+}
 
+.prueba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.one {
+    width: 60%;
+}
+.two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 35%;
+}
+
+.imgBody {
+    max-width: 95%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 100px;
+    border: 1px solid yellow;
+    box-shadow: 5px 5px 10px black;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
     min-height: 10vh;
     font-size: calc(10px + 2vmin);
     color: #00d0ff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     font-family: "Jura", sans-serif;
 }
 
@@ -47,11 +84,18 @@ a {
     text-decoration: none;
     color: #00d0ff;
     margin-bottom: 30px;
+    font-size: 24px;
+    text-shadow: 0 0 2px black;
+}
+
+p {
+    color: white;
+    text-shadow: 0px 0 1px white;
 }
 
 .neonText {
     color: #00d0ff;
-    text-shadow: 0 0 1px white;
+    text-shadow: 0 0 2px black;
 }
 
 /* texts */
@@ -68,4 +112,25 @@ a {
     font-size: 40px;
     color: #00d0ff;
     padding-left: 40px;
+}
+
+.cv {
+    font-size: 85%;
+}
+.cv li {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.co h3 {
+    padding-left: 0;
+}
+.co {
+    padding-inline-start: 0;
+}
+.co li {
+    margin-bottom: 5px;
+    color: white;
+    list-style-type: none;
+    text-shadow: 0px 0 1px white;
 }
