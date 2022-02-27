@@ -1,11 +1,7 @@
 import React from "react";
 
 function Records() {
-    return (
-        <div>
-            <h1>este es la Records</h1>
-        </div>
-    );
+    return <h3>Esta es la RECORDS</h3>;
 }
 
 export default Records;

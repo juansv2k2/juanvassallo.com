@@ -1,9 +1,29 @@
-function Home() {
-    return (
-        <div>
-            <h1>este es la HOME</h1>
-        </div>
-    );
+import ImageGallery from "react-image-gallery";
+import react, { Component } from "react";
+
+const images = [
+    {
+        original: "img/31955481_10155222962441046_251916440548933632_o.jpg",
+        thumbnail: "img/31955481_10155222962441046_251916440548933632_o.jpg",
+    },
+    {
+        original: "img/31224930_952206774948132_5286944826858668032_n.jpg",
+        thumbnail: "img/31224930_952206774948132_5286944826858668032_n.jpg",
+    },
+    {
+        original: "img/juan_edited_edited.jpg",
+        thumbnail: "img/juan_edited_edited.jpg",
+    },
+    {
+        original: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
+        thumbnail: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
+    },
+];
+
+class Home extends Component {
+    render() {
+        return <ImageGallery items={images} />;
+    }
 }
 
 export default Home;

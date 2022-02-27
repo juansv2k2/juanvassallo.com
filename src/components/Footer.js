@@ -1,7 +1,13 @@
 import React from "react";
 
 function Footer() {
-    return <h3 className="subtitle">este es el Footer</h3>;
+    return (
+        <div>
+            <div>
+                <p className="p">© 2021 Juan Sebastian Vassallo</p>
+            </div>
+        </div>
+    );
 }
 
 export default Footer;
