@@ -18,11 +18,19 @@ const images = [
         original: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
         thumbnail: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
     },
+    {
+        original: "img/DSC_0308.jpg",
+        thumbnail: "img/DSC_0308.jpg",
+    },
 ];
 
 class Home extends Component {
     render() {
-        return <ImageGallery items={images} />;
+        return (
+            <div className="bodyDiv">
+                <ImageGallery items={images} />
+            </div>
+        )
     }
 }
 

@@ -8,7 +8,7 @@ function Compositions() {
             <div className="prueba">
                 <div className="one">
                     <h1>Compositions</h1>
-                    <h3 className="co h3">Catalog of works</h3>
+                    <h3 className="subtitle">Catalog of works</h3>
                     <ul className="co">
                         <li>2022 – “Elevator Pitch” (solo trumpet)</li>
                         <li>

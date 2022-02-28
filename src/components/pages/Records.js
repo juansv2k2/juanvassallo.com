@@ -1,7 +1,13 @@
 import React from "react";
 
+
 function Records() {
-    return <h3>Esta es la RECORDS</h3>;
+    return (
+        <div>
+            <h3>Esta es la RECORDS</h3>
+      
+        </div>
+    )
 }
 
-export default Records;
+export default Records
