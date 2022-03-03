@@ -69,24 +69,17 @@ function Compositions() {
                     </ul>
                 </div>
                 <div className="videos">
-                    <div>
-                        <YoutubeEmbed embedId="nj7lkkAAGIs" />
-                    </div>
-                    <div>
-                        <YoutubeEmbed embedId="KwPAwxJZcK0" />
-                    </div>
-                    <div>
-                        <YoutubeEmbed embedId="tWAQtFqOht0" />
-                    </div>
-                    <div>
-                        <YoutubeEmbed embedId="yBBQS4i0N1k" />
-                    </div>
-                    <div>
-                        <YoutubeEmbed embedId="XVgRveZZRLc" />
-                    </div>
-                    <div>
-                        <YoutubeEmbed embedId="0Gs0bcSGbH4" />
-                    </div>
+                    <YoutubeEmbed embedId="nj7lkkAAGIs" />
+
+                    <YoutubeEmbed embedId="KwPAwxJZcK0" />
+
+                    <YoutubeEmbed embedId="tWAQtFqOht0" />
+
+                    <YoutubeEmbed embedId="yBBQS4i0N1k" />
+
+                    <YoutubeEmbed embedId="XVgRveZZRLc" />
+
+                    <YoutubeEmbed embedId="0Gs0bcSGbH4" />
                 </div>
             </div>
         </div>

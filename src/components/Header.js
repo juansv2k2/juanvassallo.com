@@ -20,9 +20,9 @@ function Header() {
                 <Link to="/compositions" exact="true">
                     Compositions
                 </Link>
-                {/* <Link to="/records" exact="true">
+                <Link to="/records" exact="true">
                     Records
-                </Link> */}
+                </Link>
                 <Link to="projects" exact="true">
                     Projects
                 </Link>

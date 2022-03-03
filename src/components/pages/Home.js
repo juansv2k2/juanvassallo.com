@@ -1,5 +1,5 @@
 import ImageGallery from "react-image-gallery";
-import react, { Component } from "react";
+import { Component } from "react";
 
 const images = [
     {
@@ -30,7 +30,7 @@ class Home extends Component {
             <div className="bodyDiv">
                 <ImageGallery items={images} />
             </div>
-        )
+        );
     }
 }
 
