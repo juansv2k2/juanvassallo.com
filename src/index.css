@@ -5,13 +5,14 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-        url("/public/img/fondo_prueba.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+        url("/public/img/fondo_5.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    background-blend-mode: darken;
+    background-blend-mode: soft-light;
     background-attachment: fixed;
+    backdrop-filter: grayscale(1);
 }
 
 code {

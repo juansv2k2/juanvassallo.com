@@ -16,13 +16,16 @@ function Header() {
                 <Link to="/bio" exact="true">
                     Bio
                 </Link>
+                <Link to="/cv" exact="true">
+                    CV
+                </Link>
 
                 <Link to="/compositions" exact="true">
                     Compositions
                 </Link>
-                <Link to="/records" exact="true">
+                {/* <Link to="/records" exact="true">
                     Records
-                </Link>
+                </Link> */}
                 <Link to="projects" exact="true">
                     Projects
                 </Link>

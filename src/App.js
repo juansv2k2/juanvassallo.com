@@ -9,6 +9,7 @@ import Contact from "./components/pages/Contact";
 import Compositions from "./components/pages/Compositions";
 import Records from "./components/pages/Records";
 import Projects from "./components/pages/Projects";
+import CV from "./components/pages/CV";
 
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
@@ -33,6 +34,9 @@ function App() {
                     </Route>
                     <Route path="/bio">
                         <Bio />
+                    </Route>
+                    <Route path="/cv">
+                        <CV />
                     </Route>
                     <Route path="/contact">
                         <Contact />

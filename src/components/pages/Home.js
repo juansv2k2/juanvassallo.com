@@ -28,7 +28,9 @@ class Home extends Component {
     render() {
         return (
             <div className="bodyDiv">
-                <ImageGallery items={images} />
+                <div className="padding">
+                    {/* <ImageGallery items={images} /> */}
+                </div>
             </div>
         );
     }
