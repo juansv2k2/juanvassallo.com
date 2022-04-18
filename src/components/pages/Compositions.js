@@ -8,8 +8,8 @@ function Compositions() {
             <div className="prueba">
                 <div className="one">
                     <h1>Compositions</h1>
-                    <h3 className="subtitle">Catalog of works</h3>
-                    <ul className="co">
+                    <h3 className="fh3">Catalog of works</h3>
+                    <ul className="co neonText">
                         <li>2022 – “Elevator Pitch” (solo trumpet)</li>
                         <li>
                             2022 - “Isovell Che Segila Chentelare” (choir

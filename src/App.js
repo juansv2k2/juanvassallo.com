@@ -1,4 +1,4 @@
-import "../src/App.css";
+import "../src/css/App.css";
 import React from "react";
 
 import Header from "./components/Header";
@@ -17,7 +17,7 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div className="neonText">
+                <div className="footer neonText">
                     <Header />
                 </div>
 

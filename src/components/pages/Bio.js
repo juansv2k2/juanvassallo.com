@@ -1,9 +1,13 @@
+import React, { useState, useEffect } from "react";
+
+
+
 function Bio() {
     return (
         <div className="bodyDiv">
             <div className="prueba">
-                <div className="one">
-                    <div>
+                <div className="one ">
+                    <div className="neonText">
                         <h1>Bio</h1>
                         <p>
                             Juan Sebastián Vassallo (b. 1984, Villa Mercedes,
