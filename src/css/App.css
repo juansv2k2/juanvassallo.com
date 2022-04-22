@@ -22,10 +22,10 @@ body {
 
     background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.6)
         ),
-        url("/public/img/fondo_5.jpg");
+        url("/public/img/fondo_3.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -53,7 +53,7 @@ body {
 
 .bodyDiv {
     display: block;
-    width: 75%;
+    width: 70%;
     margin: auto;
     text-align: justify;
     justify-content: center;
@@ -61,21 +61,35 @@ body {
 
 .prueba {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    opacity: 1;
+    transition: 2s opacity;
+    margin-bottom: 10vh;
 }
+
+.project {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    text-align: center;
+    height: 100vh;
+}
+
 .one {
-    width: 60%;
+    width: 70%;
 }
 .two {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 35%;
+    align-items: center;
+    width: 30%;
 }
 
 .imgBody {
-    max-width: 95%;
+    max-width: 80%;
     height: auto;
     object-fit: cover;
     margin-top: 100px;
@@ -84,6 +98,7 @@ body {
 }
 
 .footer {
+    opacity: 0;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     min-height: 10vh;
@@ -93,7 +108,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    transition: opacity 3s ease-in;
     font-family: "Jura", sans-serif;
 }
 
@@ -131,7 +146,7 @@ a {
 p {
     color: white;
     text-shadow: 0px 0 3px black;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Jura", sans-serif;
 }
 
@@ -172,6 +187,7 @@ h1 {
 .cv li {
     margin-bottom: 5px;
     color: white;
+    font-size: 16px;
 }
 
 .co h3 {
@@ -182,7 +198,7 @@ h1 {
 }
 .co li {
     margin-bottom: 2px;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     list-style-type: none;
     text-shadow: 0px 0 1px white;
@@ -205,6 +221,8 @@ h1 {
 }
 
 .videos {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
     /* align-items: flex-end; */
@@ -216,33 +234,38 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    opacity: 1;
+    transition: opacity 3s ease-in;
 }
 
 .projText {
-    width: 65%;
+    width: 70%;
     padding-right: 10px;
 }
 
 .projImg {
     display: flex;
     align-items: center;
-
-    max-width: 25%;
-    padding-left: 10px;
+    justify-content: center;
+    width: 20%;
 }
 
 .imgBody2 {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     object-fit: cover;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-right: 0;
     border: 0.5px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px black;
 }
 
 .contact {
+    padding-top: 10vh;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .contactDiv {

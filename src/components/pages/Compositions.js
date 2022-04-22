@@ -5,7 +5,7 @@ import YoutubeEmbed from "../YoutubeEmbed";
 function Compositions() {
     return (
         <div className="bodyDiv">
-            <div className="prueba">
+            <div className="project">
                 <div className="one">
                     <h1>Compositions</h1>
                     <h3 className="fh3">Catalog of works</h3>

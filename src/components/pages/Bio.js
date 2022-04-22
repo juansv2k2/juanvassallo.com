@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-
-
 function Bio() {
     return (
         <div className="bodyDiv">
-            <div className="prueba">
-                <div className="one ">
+            <div className="project">
+                <div className="one">
                     <div className="neonText">
                         <h1>Bio</h1>
                         <p>

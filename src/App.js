@@ -51,7 +51,7 @@ function App() {
                         <Projects />
                     </Route>
                 </Switch>
-                <div className="footer bodyDiv">
+                <div className="footer neonText">
                     <Footer />
                 </div>
             </div>

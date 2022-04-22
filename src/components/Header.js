@@ -3,9 +3,15 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../src/css/App.css";
 
-function Header() {
-    const [count, setCount] = useState(0);
+window.addEventListener("load", (event) => {
+    document.body.style.backgroundBlendMode = "overlay";
+    const header = document.getElementsByClassName("footer");
+    const project = document.getElementsByClassName("project");
+    header[0].style.opacity = 1;
+    header[1].style.opacity = 1;
+});
 
+function Header() {
     return (
         <div className="bodyDiv">
             <div>
