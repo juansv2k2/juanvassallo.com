@@ -29,7 +29,7 @@ class Home extends Component {
         return (
             <div className="bodyDiv">
                 <div className="padding">
-                    {/* <ImageGallery items={images} /> */}
+                    <ImageGallery items={images} />
                 </div>
             </div>
         );

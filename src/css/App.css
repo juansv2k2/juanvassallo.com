@@ -117,8 +117,10 @@ body {
 }
 
 .padding {
-    padding-top: 100%;
-    padding-bottom: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    opacity: 0;
+    transition: opacity 3s ease-in;
 }
 
 @keyframes App-logo-spin {

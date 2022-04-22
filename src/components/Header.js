@@ -6,9 +6,11 @@ import "../../src/css/App.css";
 window.addEventListener("load", (event) => {
     document.body.style.backgroundBlendMode = "overlay";
     const header = document.getElementsByClassName("footer");
-    const project = document.getElementsByClassName("project");
+    const gallery = document.getElementsByClassName("padding");
+    console.log(gallery);
     header[0].style.opacity = 1;
     header[1].style.opacity = 1;
+    gallery[0].style.opacity = 1;
 });
 
 function Header() {
