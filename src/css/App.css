@@ -14,18 +14,11 @@ ncode {
 body {
     background-color: black;
     margin: 0;
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif; */
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.6)
-        ),
-        url("/public/img/fondo_3.jpg");
+    background: url("/public/img/fondo_2.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -36,39 +29,64 @@ body {
 .App {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-family: "Jura", sans-serif;
     color: #00d0ff;
 }
 
 .header {
-    width: 100%;
-    height: 100%;
-    min-height: 10vh;
-    font-size: calc(14px + 2vmin);
-    display: flex;
-    color: #00d0ff;
-    font-family: "WebFont";
-}
-
-.bodyDiv {
-    display: block;
-    width: 70%;
-    margin: auto;
-    text-align: justify;
-    justify-content: center;
-}
-
-.prueba {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     opacity: 1;
-    transition: 2s opacity;
-    margin-bottom: 10vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    min-height: 20vh;
+    font-size: calc(10px + 2vmin);
+    color: #00d0ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 3s ease-in;
+    font-family: "Jura", sans-serif;
 }
 
-.project {
+.footer {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    min-height: 15vh;
+    font-size: calc(10px + 2vmin);
+    color: #00d0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 3s ease-in;
+    font-family: "Jura", sans-serif;
+}
+
+.headNavBar {
+    width: 70%;
+}
+
+.titleName {
+    width: 70%;
+    text-align: left;
+}
+
+.icons {
+    width: 15%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.mainWrapper {
+    width: 70%;
+    display: flex;
+    align-self: center;
+    min-height: 80vh;
+}
+
+.secondaryWrapper {
     display: flex;
     flex-direction: row;
 }
@@ -78,14 +96,25 @@ body {
     height: 100vh;
 }
 
-.one {
+.leftSide {
     width: 70%;
 }
-.two {
+.rightSide {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
+}
+
+.whenSubComponent {
+    flex-direction: column;
+}
+
+.indivProject {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .imgBody {
@@ -97,21 +126,6 @@ body {
     box-shadow: 5px 5px 10px black;
 }
 
-.footer {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    min-height: 10vh;
-    font-size: calc(10px + 2vmin);
-    color: #00d0ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: opacity 3s ease-in;
-    font-family: "Jura", sans-serif;
-}
-
 .App-link {
     color: #61dafb;
 }
@@ -120,7 +134,7 @@ body {
     padding-top: 5%;
     padding-bottom: 10%;
     opacity: 1;
-    transition: opacity 3s ease-in;
+    transition: opacity 2s ease-in;
 }
 
 @keyframes App-logo-spin {
@@ -148,7 +162,7 @@ a {
 p {
     color: white;
     text-shadow: 0px 0 3px black;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Jura", sans-serif;
 }
 
@@ -159,28 +173,39 @@ p {
     font-family: "Jura", sans-serif;
 }
 
+.neonText2 {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
 .neonText {
     color: #00d0ff;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 5px;
 }
 
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 40px;
 }
 
 /* texts */
 
 .subtitle {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 30px;
     color: white;
 }
 
 .title {
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 50px;
     color: #00d0ff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .cv {
@@ -189,7 +214,13 @@ h1 {
 .cv li {
     margin-bottom: 5px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+li {
+    font-size: 40px;
+    text-decoration: none;
 }
 
 .co h3 {
@@ -200,13 +231,17 @@ h1 {
 }
 .co li {
     margin-bottom: 2px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     list-style-type: none;
     text-shadow: 0px 0 1px white;
     padding-left: 0;
     text-decoration: none;
     font-family: "Jura", sans-serif;
+}
+
+.bigP p {
+    font-size: 20px;
 }
 
 .video-responsive {
@@ -227,8 +262,7 @@ h1 {
     margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
-    width: 38%;
+    width: 100%;
     justify-content: space-evenly;
 }
 
@@ -249,7 +283,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    max-width: 80%;
+    object-fit: cover;
+
+    border: 0.5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black;
 }
 
 .imgBody2 {
@@ -264,10 +302,13 @@ h1 {
 
 .contact {
     padding-top: 10vh;
-    font-size: 18px;
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .contactDiv {
@@ -280,9 +321,9 @@ h1 {
 
 .subtitle2 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 /* Player */

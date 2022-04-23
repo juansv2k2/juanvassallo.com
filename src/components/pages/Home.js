@@ -1,4 +1,5 @@
 import ImageGallery from "react-image-gallery";
+import mainWrapper from "../mainWrapper";
 import { Component } from "react";
 
 const images = [
@@ -24,16 +25,8 @@ const images = [
     },
 ];
 
-class Home extends Component {
-    render() {
-        return (
-            <div className="bodyDiv">
-                <div className="padding">
-                    {/* <ImageGallery items={images} /> */}
-                </div>
-            </div>
-        );
-    }
+function Home() {
+    return <div className="mainWrapper"></div>;
 }
 
 export default Home;

@@ -3,7 +3,7 @@ import MainPlayer from "../player/MainPlayer";
 
 function Records() {
     return (
-        <div className="bodyDiv">
+        <div className="mainWrapper">
             <h1>Records</h1>
             <div className="deckRecords">
                 <MainPlayer title="Probando 123" img="images/song-1.jpg" />

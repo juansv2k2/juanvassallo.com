@@ -1,11 +1,11 @@
 function CV() {
     return (
-        <div className="bodyDiv">
-            <div className="prueba">
-                <div className="one">
+        <div className="mainWrapper">
+            <div className="secondaryWrapper">
+                <div className="leftSide neonText2">
                     <div>
                         <h1>CV</h1>
-                        <p className="cv">
+                        <div className="co">
                             <h3>Relevant Skills</h3>
                             <ul>
                                 <li>
@@ -339,10 +339,10 @@ function CV() {
                                 </li>
                                 <li>Norwegian Bokmål (A1-A2 level, passed)</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
-                <div className="two">
+                <div className="rightSide">
                     <img className="imgBody" src="img/Juan.jpg" />
                     <img className="imgBody" src="img/juan_edited_edited.jpg" />
                     <img

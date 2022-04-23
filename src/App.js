@@ -10,6 +10,7 @@ import Compositions from "./components/pages/Compositions";
 import Records from "./components/pages/Records";
 import Projects from "./components/pages/Projects";
 import CV from "./components/pages/CV";
+import mainWrapper from "./components/mainWrapper";
 
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
@@ -21,13 +22,6 @@ function App() {
                     <Header />
                 </div>
 
-                {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
                 <Switch>
                     <Route exact path="/">
                         <Home />

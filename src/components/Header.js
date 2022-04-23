@@ -1,4 +1,3 @@
-import { faBorderStyle } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../src/css/App.css";
@@ -15,20 +14,18 @@ import "../../src/css/App.css";
 
 function Header() {
     return (
-        <div className="bodyDiv">
-            <div>
+        <div className="header">
+            <div className="titleName">
                 <h1 className="title">Juan Sebastián Vassallo</h1>
                 <h2 className="subtitle">composer - music researcher</h2>
             </div>
-            <div className="Buttons neonText">
+            <div className="headNavBar Buttons neonText">
                 <Link
                     to="/"
                     exact="true"
-                    // onClick={() => {
-                    //     document.body.style.backgroundBlendMode = "overlay";
-                    // }}
+                    // onClick={() => { }}
                 >
-                    Home
+                    <h3>Home</h3>
                 </Link>
                 <Link
                     to="/bio"
@@ -37,7 +34,7 @@ function Header() {
                     //     document.body.style.backgroundBlendMode = "darken";
                     // }}
                 >
-                    Bio
+                    <h3>Bio</h3>
                 </Link>
                 <Link
                     to="/cv"
@@ -46,7 +43,7 @@ function Header() {
                     //     document.body.style.backgroundBlendMode = "darken";
                     // }}
                 >
-                    CV
+                    <h3>CV</h3>
                 </Link>
 
                 <Link
@@ -56,7 +53,7 @@ function Header() {
                     //     document.body.style.backgroundBlendMode = "darken";
                     // }}
                 >
-                    Compositions
+                    <h3>Compositions</h3>
                 </Link>
                 {/* <Link to="/records" exact="true">
                     Records
@@ -68,7 +65,7 @@ function Header() {
                     //     document.body.style.backgroundBlendMode = "darken";
                     // }}
                 >
-                    Projects
+                    <h3>Projects</h3>
                 </Link>
 
                 <Link
@@ -78,7 +75,7 @@ function Header() {
                     //     document.body.style.backgroundBlendMode = "darken";
                     // }}
                 >
-                    Contact
+                    <h3>Contact</h3>
                 </Link>
             </div>
         </div>

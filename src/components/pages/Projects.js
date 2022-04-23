@@ -3,9 +3,9 @@ import Project from "../Project";
 
 function Projects() {
     return (
-        <div className="bodyDiv">
-            <div className="prueba">
-                <h1>Ongoing Projects</h1>
+        <div className="mainWrapper">
+            <div className="secondaryWrapper whenSubComponent">
+                <h1 className="neonText2">Ongoing Projects</h1>
                 <div>
                     <Project
                         title="Computational artistic agency and extended mind"
