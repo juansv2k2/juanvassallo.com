@@ -1,29 +1,13 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-@font-face {
-    font-family: "WebFont";
-    src: url("fonts/bokeh-webfont.woff") format("woff"),
-        url("fonts/bokeh-webfont.woff2") format("woff2");
-}
-
 ncode {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
 
 body {
-    background-color: black;
-    margin: 0;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    background: url("/public/img/fondo_2.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    transition: background-image 2s;
 }
 
 .App {
@@ -31,6 +15,12 @@ body {
     flex-direction: column;
     font-family: "Jura", sans-serif;
     color: #00d0ff;
+    background: url("/public/img/fondo_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .header {
@@ -44,7 +34,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    transition: opacity 3s ease-in;
+
     font-family: "Jura", sans-serif;
 }
 
@@ -59,7 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: opacity 3s ease-in;
+
     font-family: "Jura", sans-serif;
 }
 
@@ -128,13 +118,6 @@ body {
 
 .App-link {
     color: #61dafb;
-}
-
-.padding {
-    padding-top: 5%;
-    padding-bottom: 10%;
-    opacity: 1;
-    transition: opacity 2s ease-in;
 }
 
 @keyframes App-logo-spin {
@@ -271,7 +254,6 @@ li {
     flex-wrap: nowrap;
     flex-direction: row;
     opacity: 1;
-    transition: opacity 3s ease-in;
 }
 
 .projText {
