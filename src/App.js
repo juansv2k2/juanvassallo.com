@@ -18,7 +18,7 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div className="footer neonText">
+                <div className="footer ">
                     <Header />
                 </div>
 

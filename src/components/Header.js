@@ -19,7 +19,7 @@ function Header() {
                 <h1 className="title">Juan Sebastián Vassallo</h1>
                 <h2 className="subtitle">composer - music researcher</h2>
             </div>
-            <div className="headNavBar Buttons neonText">
+            <div className="headNavBar Buttons ">
                 <Link
                     to="/"
                     exact="true"
