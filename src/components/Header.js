@@ -3,15 +3,15 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../src/css/App.css";
 
-window.addEventListener("load", (event) => {
-    document.body.style.backgroundBlendMode = "overlay";
-    const header = document.getElementsByClassName("footer");
-    const gallery = document.getElementsByClassName("padding");
-    console.log(gallery);
-    header[0].style.opacity = 1;
-    header[1].style.opacity = 1;
-    gallery[0].style.opacity = 1;
-});
+// window.addEventListener("load", (event) => {
+//     document.body.style.backgroundBlendMode = "overlay";
+//     const header = document.getElementsByClassName("footer");
+//     const gallery = document.getElementsByClassName("padding");
+//     console.log(gallery);
+//     header[0].style.opacity = 1;
+//     header[1].style.opacity = 1;
+//     gallery[0].style.opacity = 1;
+// });
 
 function Header() {
     return (
@@ -24,27 +24,27 @@ function Header() {
                 <Link
                     to="/"
                     exact="true"
-                    onClick={() => {
-                        document.body.style.backgroundBlendMode = "overlay";
-                    }}
+                    // onClick={() => {
+                    //     document.body.style.backgroundBlendMode = "overlay";
+                    // }}
                 >
                     Home
                 </Link>
                 <Link
                     to="/bio"
                     exact="true"
-                    onClick={() => {
-                        document.body.style.backgroundBlendMode = "darken";
-                    }}
+                    // onClick={() => {
+                    //     document.body.style.backgroundBlendMode = "darken";
+                    // }}
                 >
                     Bio
                 </Link>
                 <Link
                     to="/cv"
                     exact="true"
-                    onClick={() => {
-                        document.body.style.backgroundBlendMode = "darken";
-                    }}
+                    // onClick={() => {
+                    //     document.body.style.backgroundBlendMode = "darken";
+                    // }}
                 >
                     CV
                 </Link>
@@ -52,9 +52,9 @@ function Header() {
                 <Link
                     to="/compositions"
                     exact="true"
-                    onClick={() => {
-                        document.body.style.backgroundBlendMode = "darken";
-                    }}
+                    // onClick={() => {
+                    //     document.body.style.backgroundBlendMode = "darken";
+                    // }}
                 >
                     Compositions
                 </Link>
@@ -64,9 +64,9 @@ function Header() {
                 <Link
                     to="projects"
                     exact="true"
-                    onClick={() => {
-                        document.body.style.backgroundBlendMode = "darken";
-                    }}
+                    // onClick={() => {
+                    //     document.body.style.backgroundBlendMode = "darken";
+                    // }}
                 >
                     Projects
                 </Link>
@@ -74,9 +74,9 @@ function Header() {
                 <Link
                     to="/contact"
                     exact="true"
-                    onClick={() => {
-                        document.body.style.backgroundBlendMode = "darken";
-                    }}
+                    // onClick={() => {
+                    //     document.body.style.backgroundBlendMode = "darken";
+                    // }}
                 >
                     Contact
                 </Link>
