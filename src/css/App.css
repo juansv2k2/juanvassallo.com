@@ -270,6 +270,7 @@ ul {
     font-size: 16px;
 }
 
+/* videos */
 .video-responsive {
     overflow: hidden;
     padding-bottom: 60.25%;
@@ -372,6 +373,9 @@ ul {
         text-align: center;
         text-align: justify;
     }
+    .galleryWrapper {
+        display: block;
+    }
     .rightSide {
         width: 100%;
     }
@@ -385,7 +389,7 @@ ul {
     .bigP p,
     ul,
     .cv li {
-        font-size: 100%;
+        font-size: 105%;
     }
     .co,
     .co li {
