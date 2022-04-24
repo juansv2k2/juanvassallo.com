@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/">
             <div className="App">
                 <div className="footer ">
                     <Header />
