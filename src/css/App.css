@@ -374,7 +374,11 @@ ul {
         text-align: justify;
     }
     .galleryWrapper {
-        display: block;
+        align-self: center;
+        text-align: center;
+        display: inline;
+        max-width: 95%;
+        flex-flow: inherit;
     }
     .rightSide {
         width: 100%;

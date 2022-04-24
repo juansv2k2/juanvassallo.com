@@ -28,9 +28,7 @@ const images = [
 function Home() {
     return (
         <div className="galleryWrapper">
-            <div>
-                <ImageGallery items={images} />
-            </div>
+            <ImageGallery items={images} />
         </div>
     );
 }
