@@ -4,8 +4,8 @@ function Bio() {
     return (
         <div className="mainWrapper">
             <div className="secondaryWrapper">
-                <div className="leftSide neonText2 bigP">
-                    <h1>Bio</h1>
+                <div className="leftSide bigP">
+                    <h1 className="neonText">Bio</h1>
                     <p>
                         Juan Sebastián Vassallo (b. 1984, Villa Mercedes,
                         Argentina) is a composer, pianist and media artist

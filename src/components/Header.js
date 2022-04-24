@@ -1,16 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "../../src/css/App.css";
-
-// window.addEventListener("load", (event) => {
-//     document.body.style.backgroundBlendMode = "overlay";
-//     const header = document.getElementsByClassName("footer");
-//     const gallery = document.getElementsByClassName("padding");
-//     console.log(gallery);
-//     header[0].style.opacity = 1;
-//     header[1].style.opacity = 1;
-//     gallery[0].style.opacity = 1;
-// });
 
 function Header() {
     return (
@@ -20,63 +10,32 @@ function Header() {
                 <h2 className="subtitle margin">Composer</h2>
             </div>
             <div className="headNavBar Buttons ">
-                <Link
-                    to="/"
-                    exact="true"
-                    // onClick={() => { }}
-                >
+                
+                {/* <NavLink to="/" exact="true">
                     <h3>Home</h3>
-                </Link>
-                <Link
-                    to="/bio"
-                    exact="true"
-                    // onClick={() => {
-                    //     document.body.style.backgroundBlendMode = "darken";
-                    // }}
-                >
+                </NavLink>
+                <NavLink to="/bio" exact="true" activeClassName="active">
                     <h3>Bio</h3>
-                </Link>
-                <Link
-                    to="/cv"
-                    exact="true"
-                    // onClick={() => {
-                    //     document.body.style.backgroundBlendMode = "darken";
-                    // }}
-                >
+                </NavLink>
+                <NavLink to="/cv" exact="true" activeClassName="active">
                     <h3>CV</h3>
-                </Link>
+                </NavLink>
 
-                <Link
+                <NavLink
                     to="/compositions"
                     exact="true"
-                    // onClick={() => {
-                    //     document.body.style.backgroundBlendMode = "darken";
-                    // }}
+                    activeClassName="active"
                 >
                     <h3>Compositions</h3>
-                </Link>
-                {/* <Link to="/records" exact="true">
-                    Records
-                </Link> */}
-                <Link
-                    to="projects"
-                    exact="true"
-                    // onClick={() => {
-                    //     document.body.style.backgroundBlendMode = "darken";
-                    // }}
-                >
-                    <h3>Projects</h3>
-                </Link>
+                </NavLink>
 
-                <Link
-                    to="/contact"
-                    exact="true"
-                    // onClick={() => {
-                    //     document.body.style.backgroundBlendMode = "darken";
-                    // }}
-                >
+                <NavLink to="projects" exact="true" activeClassName="active">
+                    <h3>Projects</h3>
+                </NavLink>
+
+                <NavLink to="/contact" exact="true" activeClassName="active">
                     <h3>Contact</h3>
-                </Link>
+                </NavLink> */}
             </div>
         </div>
     );

@@ -52,6 +52,16 @@ body {
     color: #00d0ff;
 }
 
+a {
+    color: #61dafb;
+    transition: color 0.5s ease-in-out;
+}
+a.active {
+    color: rgb(255, 255, 255);
+}
+p.active {
+    text-decoration: double;
+}
 .footer {
     position: relative;
     background-color: rgba(0, 0, 0, 0.2);
@@ -90,7 +100,7 @@ h3 {
 
 .mainWrapper {
     position: relative;
-
+    align-items: center;
     width: 70%;
     display: flex;
     align-self: center;
@@ -161,6 +171,8 @@ h3 {
 .Buttons {
     display: flex;
     justify-content: space-between;
+
+    transition: color 2s ease-in-out;
 }
 
 .Buttons h3 {

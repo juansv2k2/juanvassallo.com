@@ -5,7 +5,7 @@ function Projects() {
     return (
         <div className="mainWrapper">
             <div className="secondaryWrapper whenSubComponent">
-                <h1 className="neonText2">Ongoing Projects</h1>
+                <h1 className="neonText">Ongoing Projects</h1>
                 <div>
                     <Project
                         title="Computational artistic agency and extended mind"

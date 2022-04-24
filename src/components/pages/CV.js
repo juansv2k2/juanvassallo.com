@@ -4,7 +4,7 @@ function CV() {
             <div className="secondaryWrapper">
                 <div className="leftSide neonText2">
                     <div>
-                        <h1>CV</h1>
+                        <h1 className="neonText">CV</h1>
                         <div className="cv">
                             <h3>Relevant Skills</h3>
                             <ul>

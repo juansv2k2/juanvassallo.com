@@ -5,7 +5,7 @@ function Compositions() {
     return (
         <div className="mainWrapper">
             <div className="leftSide">
-                <h1 className="neonText2">Compositions</h1>
+                <h1 className="neonText">Compositions</h1>
                 <h3 className="neonText2">Recent works</h3>
                 <p>
                     ARGO/AGO (2021) immersive sound and visuals - collaborative
