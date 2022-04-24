@@ -4,10 +4,10 @@ function Project(props) {
     return (
         <div className="indivProject">
             <div className="leftSide bigP">
-                <h3 className="fh3">{props.title}</h3>
+                <h3 className="subtitle2">{props.title}</h3>
                 <p>{props.text}</p>
             </div>
-            <div className="rightSide">
+            <div className="rightSide justifyCenter">
                 <img className="projImg" src={props.img}></img>
             </div>
         </div>

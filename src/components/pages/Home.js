@@ -27,8 +27,10 @@ const images = [
 
 function Home() {
     return (
-        <div className="mainWrapper">
-            <div className="secondaryWrapper"></div>
+        <div className="galleryWrapper">
+            <div>
+                <ImageGallery items={images} />
+            </div>
         </div>
     );
 }

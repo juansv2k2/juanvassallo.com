@@ -5,7 +5,7 @@ function CV() {
                 <div className="leftSide neonText2">
                     <div>
                         <h1>CV</h1>
-                        <div className="co">
+                        <div className="cv">
                             <h3>Relevant Skills</h3>
                             <ul>
                                 <li>

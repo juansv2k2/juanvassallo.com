@@ -6,6 +6,50 @@ function Compositions() {
         <div className="mainWrapper">
             <div className="leftSide">
                 <h1 className="neonText2">Compositions</h1>
+                <h3 className="neonText2">Recent works</h3>
+                <p>
+                    ARGO/AGO (2021) immersive sound and visuals - collaborative
+                    work Premiered Sept 16, 2021 - Lithuanian Academy for Music
+                    and Theater Vilnius - Lithuania
+                </p>
+                <p>
+                    Deconstructions (2018) for voice, visuals and electronics
+                    Performed April 18, 2018 - Philip T. Young Hall University
+                    of Victoria. Victoria BC - Canada. Voice: Jessica Wagner
+                </p>
+                <p>
+                    Mirrors (2018) for processed voice (2018) Based on a poem of
+                    Luis Ressia. Performed April 12, 2018 - Phillip T. Young
+                    Hall - University of Victoria. Victoria BC - Canada.
+                </p>
+
+                <p>
+                    To make a blindfold - Measure - The size of your head
+                    (2012-2013) Original choreography: Carmen Caceres. Performed
+                    at former Triskelion Arts Center for WAX Works - October
+                    2013 - Center for Performance Research. Brooklyn, NY - April
+                    2014
+                </p>
+                <p>
+                    Cinco Soles Electroacoustic (2014) Choreography &
+                    Performance: Carmen Caceres. Performed at Eden's Expressway
+                    - New York, NY - October 2014
+                </p>
+                <p>
+                    Trivium - Jazz Cuyano for double-bass, percussion and piano
+                    (2013) Performed June 10, 2013 - Auditorium Escuela de
+                    Artes, Universidad Nacional de Córdoba. Córdoba - Argentina
+                </p>
+                <p>
+                    Yzur for voice and piano (2012) Performed June 10, 2013 -
+                    Auditorium Escuela de Artes, Universidad Nacional de
+                    Córdoba. Córdoba - Argentina
+                </p>
+                <p>
+                    RGB for string quartet (2012-2013) Performed June 10, 2013 -
+                    Auditorium Escuela de Artes - Universidad Nacional de
+                    Córdoba. Córdoba - Argentina
+                </p>
 
                 <h3 className="neonText2">Catalog of works</h3>
                 <ul className="co">

@@ -7,10 +7,12 @@ function Contact() {
                 <h1 className="neonText2">Contact</h1>
                 <div className="contact">
                     <div className="neonText2">
-                        <h3 className="subtitle3">Juan Sebastian Vassallo</h3>
-                        <p className="subtitle">Lars Hilles Gate 3 </p>
-                        <p className="subtitle">5015 Bergen (Norway)</p>
-                        <p className="subtitle">juan.vassallo@uib.no</p>
+                        <h3 className="subtitle margin">
+                            Juan Sebastian Vassallo
+                        </h3>
+                        <h3 className="subtitle2">Lars Hilles Gate 3 </h3>
+                        <h3 className="subtitle2">5015 Bergen (Norway)</h3>
+                        <h3 className="subtitle2">juan.vassallo@uib.no</h3>
                     </div>
                 </div>
             </div>

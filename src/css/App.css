@@ -27,9 +27,10 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background: url("/public/img/vinyl_record-wallpaper-2560x1600.jpg");
+    /* background: url("/public/img/vinyl_record-wallpaper-2560x1600.jpg"); */
+    background: url("/public/img/fondo_1.jpg");
 
-    filter: blur(3px);
+    filter: blur(4px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +43,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     min-height: 20vh;
-    font-size: calc(10px + 2vmin);
+    /* font-size: calc(10px + 2vmin); */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -56,7 +57,7 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     min-height: 15vh;
-    font-size: calc(10px + 2vmin);
+    /* font-size: calc(10px + 2vmin); */
     color: #00d0ff;
     display: flex;
     justify-content: center;
@@ -120,6 +121,10 @@ h3 {
     width: 30%;
 }
 
+.justifyCenter {
+    justify-content: center;
+}
+
 .whenSubComponent {
     flex-direction: column;
 }
@@ -158,25 +163,30 @@ h3 {
     justify-content: space-between;
 }
 
+.Buttons h3 {
+    font-size: 18px;
+}
+
 a {
     text-decoration: none;
     color: #00d0ff;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
     text-shadow: 0 0 3px black;
 }
 
 p {
     color: white;
     text-shadow: 0px 0 3px black;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Jura", sans-serif;
 }
 
 .fh3 {
     color: white;
-    text-shadow: 0px 0 3px white;
-    font-size: 18px;
+    text-shadow: 0px 0 3px;
+    font-size: 16px;
     font-family: "Jura", sans-serif;
 }
 
@@ -200,13 +210,24 @@ h1 {
 
 .subtitle {
     margin-top: 0;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
+}
+
+.subtitle2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .title {
     margin-bottom: 0;
-    font-size: 50px;
+    font-size: 40px;
     color: #00d0ff;
 }
 
@@ -221,13 +242,11 @@ ul {
 .cv li {
     margin-bottom: 5px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-}
-
-li {
-    font-size: 40px;
-    text-decoration: none;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px;
 }
 
 .co h3 {
@@ -238,7 +257,7 @@ li {
 }
 .co li {
     margin-bottom: 2px;
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     list-style-type: none;
     text-shadow: 0px 0 1px white;
@@ -248,12 +267,13 @@ li {
 }
 
 .bigP p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .video-responsive {
     overflow: hidden;
-    padding-bottom: 56.25%;
+    padding-bottom: 60.25%;
+
     position: relative;
     height: 0;
 }
@@ -273,6 +293,10 @@ li {
     justify-content: space-evenly;
 }
 
+.flexEnd {
+    align-items: flex-end;
+}
+
 .project {
     display: flex;
     flex-wrap: nowrap;
@@ -289,9 +313,9 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
     object-fit: cover;
-
+    max-height: 80%;
+    max-width: 90%;
     border: 0.5px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px black;
 }
@@ -325,11 +349,11 @@ li {
     align-items: center;
 }
 
-.subtitle2 {
-    margin-top: 20px;
-    font-size: 28px;
-    color: white;
-    padding-bottom: 2%;
+.galleryWrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 /* Player */

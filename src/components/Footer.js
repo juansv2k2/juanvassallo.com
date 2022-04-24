@@ -7,17 +7,30 @@ function Footer() {
     return (
         <div className="footer">
             <div className="icons">
-                <a href={"https://www.facebook.com/juansebastian.vassallo"}>
+                <a
+                    href={"https://www.facebook.com/juansebastian.vassallo"}
+                    target="_blank"
+                >
                     <FaFacebookF />{" "}
                 </a>
 
-                <a href={"https://www.instagram.com/juanvassallo.arg/"}>
+                <a
+                    href={"https://www.instagram.com/juanvassallo.arg/"}
+                    target="_blank"
+                >
                     <FaInstagram />
                 </a>
-                <a href={"https://juanvassallo.bandcamp.com/"}>
+                <a href={"https://juanvassallo.bandcamp.com/"} target="_blank">
                     <FaBandcamp />
                 </a>
-                <RiSpotifyLine />
+                <a
+                    href={
+                        "https://open.spotify.com/artist/5gVC35dknIoSGHUk4yRmR7"
+                    }
+                    target="_blank"
+                >
+                    <RiSpotifyLine />
+                </a>
             </div>
             <p>© 2021 Juan Sebastian Vassallo</p>
         </div>

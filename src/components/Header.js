@@ -16,8 +16,8 @@ function Header() {
     return (
         <div className="header">
             <div className="titleName">
-                <h1 className="title">Juan Sebastián Vassallo</h1>
-                <h2 className="subtitle">composer - music researcher</h2>
+                <h1 className="title margin">Juan Sebastián Vassallo</h1>
+                <h2 className="subtitle margin">Composer</h2>
             </div>
             <div className="headNavBar Buttons ">
                 <Link
