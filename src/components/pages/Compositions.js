@@ -3,7 +3,7 @@ import YoutubeEmbed from "../YoutubeEmbed";
 
 function Compositions() {
     return (
-        <div className="mainWrapper">
+        <div className="secondaryWrapper">
             <div className="leftSide">
                 <h1 className="neonText">Compositions</h1>
                 <h3 className="neonText2">Recent works</h3>

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "../src/css/App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 import { CSSTransition } from "react-transition-group";
 import { Container, Navbar, Nav } from "react-bootstrap";
@@ -13,7 +13,7 @@ import Contact from "./components/pages/Contact";
 import Compositions from "./components/pages/Compositions";
 import Records from "./components/pages/Records";
 import Projects from "./components/pages/Projects";
-import Cv from "./components/pages/Cv";
+import Cv from "./components/pages/CV";
 import {
     BrowserRouter as Router,
     NavLink,
@@ -41,7 +41,7 @@ function App() {
                         </h1>
                         <h2 className="subtitle margin">Composer</h2>
                     </div>
-                    <div className="headNavBar Buttons ">
+                    <div className="headNavBar buttons">
                         {routes.map((route) => (
                             <NavLink
                                 key={route.path}
@@ -56,17 +56,17 @@ function App() {
                     </div>
                 </div>
 
-                <div className="mainWrapper">
+                <div>
                     {routes.map(({ path, Component }) => (
                         <Route key={path} exact path={path}>
                             {({ match }) => (
                                 <CSSTransition
                                     in={match != null}
-                                    timeout={1000}
-                                    classNames="page"
+                                    timeout={100}
+                                    classNames="mainWrapper opac"
                                     unmountOnExit
                                 >
-                                    <div className="page">
+                                    <div className="mainWrapper opac">
                                         <Component />
                                     </div>
                                 </CSSTransition>

@@ -10,7 +10,7 @@ import Contact from "./components/pages/Contact";
 import Compositions from "./components/pages/Compositions";
 import Records from "./components/pages/Records";
 import Projects from "./components/pages/Projects";
-import Cv from "./components/pages/Cv";
+import Cv from "./components/pages/CV";
 import {
     BrowserRouter as Router,
     NavLink,

@@ -1,6 +1,5 @@
+import React from "react";
 import ImageGallery from "react-image-gallery";
-import mainWrapper from "../mainWrapper";
-import { Component } from "react";
 
 const images = [
     {
@@ -27,8 +26,10 @@ const images = [
 
 function Home() {
     return (
-        <div className="galleryWrapper">
-            <ImageGallery items={images} />
+        <div className="secondaryWrapper whenSubComponent">
+            <div className="galleryWrapper">
+                <ImageGallery items={images} />
+            </div>
         </div>
     );
 }

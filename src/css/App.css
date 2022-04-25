@@ -100,11 +100,27 @@ h3 {
 
 .mainWrapper {
     position: relative;
-    align-items: center;
-    width: 70%;
+    opacity: 1;
+    justify-content: center;
     display: flex;
     align-self: center;
     min-height: 80vh;
+    transition: opacity 2s;
+}
+
+.opac-enter {
+    opacity: 0;
+}
+.opac-enter-active {
+    opacity: 1;
+    transition: opacity 100ms;
+}
+.opac-exit {
+    opacity: 1;
+}
+.opac-exit-active {
+    opacity: 0;
+    transition: opacity 100ms;
 }
 
 .mainWrapper p {
@@ -114,6 +130,7 @@ h3 {
 .secondaryWrapper {
     display: flex;
     flex-direction: row;
+    width: 70%;
 }
 
 .contact {
@@ -168,14 +185,13 @@ h3 {
     }
 }
 
-.Buttons {
+.buttons {
     display: flex;
     justify-content: space-between;
-
     transition: color 2s ease-in-out;
 }
 
-.Buttons h3 {
+.buttons h3 {
     font-size: 18px;
 }
 
