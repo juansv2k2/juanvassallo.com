@@ -105,22 +105,32 @@ h3 {
     display: flex;
     align-self: center;
     min-height: 80vh;
-    transition: opacity 2s;
 }
 
-.opac-enter {
+.page {
+    position: relative;
+}
+
+.page-enter {
     opacity: 0;
+    transform: scale(1.1);
 }
-.opac-enter-active {
+
+.page-enter-active {
     opacity: 1;
-    transition: opacity 100ms;
+    transform: scale(1);
+    transition: opacity 200ms, transform 200ms;
 }
-.opac-exit {
+
+.page-exit {
     opacity: 1;
+    transform: scale(1);
 }
-.opac-exit-active {
+
+.page-exit-active {
     opacity: 0;
-    transition: opacity 100ms;
+    transform: scale(0.9);
+    transition: opacity 200ms, transform 200ms;
 }
 
 .mainWrapper p {
@@ -167,7 +177,7 @@ h3 {
     max-width: 80%;
     height: auto;
     object-fit: cover;
-    margin-top: 100px;
+    margin-top: 85px;
     border: 0.5px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px black;
 }

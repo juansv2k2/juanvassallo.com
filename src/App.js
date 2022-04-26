@@ -1,7 +1,7 @@
 import "../src/css/App.css";
 import React from "react";
 import { CSSTransition } from "react-transition-group";
-import { Container, Navbar, Nav } from "react-bootstrap";
+
 // import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/pages/Home";

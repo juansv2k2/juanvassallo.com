@@ -6,12 +6,14 @@ import "../src/css/App.css";
 import { CSSTransition } from "react-transition-group";
 import { Container, Navbar, Nav } from "react-bootstrap";
 // import Header from "./components/Header";
+
 import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
 import Bio from "./components/pages/Bio";
 import Contact from "./components/pages/Contact";
 import Compositions from "./components/pages/Compositions";
 import Records from "./components/pages/Records";
+
 import Projects from "./components/pages/Projects";
 import Cv from "./components/pages/CV";
 import {
@@ -62,11 +64,11 @@ function App() {
                             {({ match }) => (
                                 <CSSTransition
                                     in={match != null}
-                                    timeout={100}
-                                    classNames="mainWrapper opac"
+                                    timeout={200}
+                                    classNames="mainWrapper page"
                                     unmountOnExit
                                 >
-                                    <div className="mainWrapper opac">
+                                    <div className="mainWrapper page">
                                         <Component />
                                     </div>
                                 </CSSTransition>
