@@ -7,7 +7,7 @@ function CV() {
             <div className="leftSide">
                 <h1 className="neonText">CV</h1>
                 <div className="cv">
-                    <h3>Relevant Skills</h3>
+                    <h3 className="subtitle2">Relevant Skills</h3>
                     <ul>
                         <li>
                             Computer-assisted composition, composer of
@@ -23,13 +23,18 @@ function CV() {
                         </li>
                         <li>
                             Web full-stack development. Programming languages:
-                            Node JS, JavaScript, HTML, CSS, MySQL. - Pianist and
-                            arranger of Tango, jazz and Latin American
-                            traditional music. - Administration, management and
-                            communication. (Coursework and work experience).
+                            Node JS, JavaScript, HTML, CSS, MySQL.
+                        </li>
+                        <li>
+                            Pianist and arranger of Tango, jazz and Latin
+                            American traditional music.
+                        </li>
+                        <li>
+                            Administration, management and communication.
+                            (Coursework and work experience).
                         </li>
                     </ul>
-                    <h3>Education</h3>
+                    <h3 className="subtitle2">Education</h3>
                     <ul>
                         <li>
                             Currently – PhD Candidate in Artistic Research at
@@ -57,7 +62,7 @@ function CV() {
                             Córdoba (Argentina).
                         </li>
                     </ul>
-                    <h3>Work experience</h3>
+                    <h3 className="subtitle2">Work experience</h3>
                     <ul>
                         <li>
                             2020 (Nov – today) – Research fellow –
@@ -109,7 +114,7 @@ function CV() {
                             Argentina.
                         </li>
                     </ul>
-                    <h3>Scholarships / Grants</h3>
+                    <h3 className="subtitle2">Scholarships / Grants</h3>
                     <ul>
                         <li>
                             2021 - Innovation grant – Norwegian Academy of Music
@@ -136,7 +141,9 @@ function CV() {
                             Center for Creative Arts, (Virginia, USA)
                         </li>
                     </ul>
-                    <h3>Presentations in conferences and seminars</h3>
+                    <h3 className="subtitle2">
+                        Presentations in conferences and seminars
+                    </h3>
                     <ul>
                         <li>
                             2022 – Sounding Philosophy. Title of the
@@ -195,7 +202,7 @@ function CV() {
                             Ginastera”.
                         </li>
                     </ul>
-                    <h3>Edited recordings</h3>
+                    <h3 className="subtitle2">Edited recordings</h3>
                     <ul>
                         <li>
                             2020 – “Cyan” by Azul 514. Roll: Electronics,
@@ -241,7 +248,7 @@ function CV() {
                             (juanvassallo.com)
                         </li>
                     </ul>
-                    <h3>Personal awards</h3>
+                    <h3 className="subtitle2">Personal awards</h3>
                     <ul>
                         <li>
                             2019 – Special Mention at the 1st. Exhibition of Art
@@ -277,7 +284,7 @@ function CV() {
                             Boulogne Sur Mer (France).
                         </li>
                     </ul>
-                    <h3>Group awards</h3>
+                    <h3 className="subtitle2">Group awards</h3>
                     <ul>
                         <li>
                             2016 – Fox Music Awards 2016 in the category: “Best
@@ -303,7 +310,7 @@ function CV() {
                             Council of Villa Mercedes (San Luis) Argentina.
                         </li>
                     </ul>
-                    <h3>Languages</h3>
+                    <h3 className="subtitle2">Languages</h3>
                     <ul>
                         <li>Spanish (mother tongue)</li>
                         <li>English (Proficient - TOEFL exam. Mark: 95/120)</li>

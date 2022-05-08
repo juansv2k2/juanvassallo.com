@@ -36,7 +36,9 @@ function App() {
                         <h1 className="title margin">
                             Juan Sebastián Vassallo
                         </h1>
-                        <h2 className="subtitle margin">Composer</h2>
+                        <h2 className="subtitle margin">
+                            Composer - Music Researcher
+                        </h2>
                     </div>
                     <div className="headNavBar Buttons ">
                         {routes.map((route) => (

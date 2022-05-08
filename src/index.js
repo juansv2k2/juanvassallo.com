@@ -16,17 +16,12 @@ import Records from "./components/pages/Records";
 
 import Projects from "./components/pages/Projects";
 import Cv from "./components/pages/CV";
-import {
-    BrowserRouter as Router,
-    NavLink,
-    Route,
-    Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, NavLink, Route } from "react-router-dom";
 
 const routes = [
     { path: "/", name: "Home", Component: Home },
     { path: "/bio", name: "Bio", Component: Bio },
-    { path: "/cv", name: "Cv", Component: Cv },
+    { path: "/cv", name: "CV", Component: Cv },
     { path: "/compositions", name: "Compositions", Component: Compositions },
     { path: "/projects", name: "Projects", Component: Projects },
     { path: "/contact", name: "Contact", Component: Contact },
@@ -41,7 +36,9 @@ function App() {
                         <h1 className="title margin">
                             Juan Sebastián Vassallo
                         </h1>
-                        <h2 className="subtitle margin">Composer</h2>
+                        <h2 className="subtitle margin">
+                            Composer - Music Researcher
+                        </h2>
                     </div>
                     <div className="headNavBar buttons">
                         {routes.map((route) => (

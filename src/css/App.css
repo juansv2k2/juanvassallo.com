@@ -30,7 +30,7 @@ body {
     /* background: url("/public/img/vinyl_record-wallpaper-2560x1600.jpg"); */
     background: url("/public/img/fondo_1.jpg");
 
-    filter: blur(4px);
+    filter: blur(5px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,11 +50,12 @@ body {
     flex-direction: column;
     font-family: "Jura", sans-serif;
     color: #00d0ff;
+    padding-bottom: 10px;
 }
 
 a {
     color: #61dafb;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 a.active {
     color: rgb(255, 255, 255);
@@ -150,6 +151,7 @@ h3 {
 
 .leftSide {
     width: 70%;
+    padding-right: 5%;
 }
 .rightSide {
     display: flex;
@@ -164,13 +166,34 @@ h3 {
 
 .whenSubComponent {
     flex-direction: column;
+    align-items: center;
+}
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.indivProject {
+    box-sizing: border-box;
+    width: 48%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
 }
 
-.indivProject {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
+.projText {
+    width: 80%;
+    padding-right: 10px;
+}
+
+.projImg {
+    object-fit: cover;
+    max-height: 40%;
+    max-width: 40%;
+    border: 0.5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black;
 }
 
 .imgBody {
@@ -253,13 +276,13 @@ h1 {
 }
 
 .subtitle2 {
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 20px;
     color: white;
 }
 
 .margin {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -285,6 +308,13 @@ ul {
     list-style-type: disc;
     list-style-position: inside;
     padding: 5px;
+    text-align: left;
+    list-style-type: none;
+}
+
+.cv h3 {
+    color: white;
+    text-shadow: 0 0 10px black;
 }
 
 .co h3 {
@@ -343,22 +373,6 @@ ul {
     opacity: 1;
 }
 
-.projText {
-    width: 70%;
-    padding-right: 10px;
-}
-
-.projImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-    max-height: 80%;
-    max-width: 90%;
-    border: 0.5px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px black;
-}
-
 .imgBody2 {
     max-width: 90%;
     height: auto;
@@ -391,13 +405,15 @@ ul {
 .galleryWrapper {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 25px;
+    max-width: 65%;
+    max-height: 60%;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
 }
 
 @media only screen and (max-width: 600px) {
     .mainWrapper {
-        flex-direction: column;
+        flex-direction: row;
     }
     .titleName {
         width: 70%;
@@ -410,6 +426,7 @@ ul {
         flex-direction: column;
         text-align: center;
         text-align: justify;
+        width: 80%;
     }
     .galleryWrapper {
         align-self: center;
@@ -423,6 +440,7 @@ ul {
     }
     .leftSide {
         width: 100%;
+        padding-right: 0%;
     }
     .imgBody {
         margin-top: 40px;
@@ -431,7 +449,11 @@ ul {
     .bigP p,
     ul,
     .cv li {
-        font-size: 105%;
+        font-size: 115%;
+    }
+    .cv h3 {
+        color: white;
+        text-shadow: 0 0 10px black;
     }
     .co,
     .co li {
@@ -444,6 +466,9 @@ ul {
         font-size: 80%;
         flex-direction: column;
     }
+    .neonText {
+        text-align: center;
+    }
     .neonText2,
     .subtitle,
     .subtitle2,
@@ -453,5 +478,22 @@ ul {
     }
     .icons {
         width: 40%;
+    }
+    .contact {
+        padding-top: 5%;
+    }
+    .projects {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .indivProject {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .projImg {
+        object-fit: cover;
+        max-height: 80%;
+        max-width: 80%;
+        align-self: center;
     }
 }
