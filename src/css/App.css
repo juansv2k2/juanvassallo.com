@@ -406,7 +406,7 @@ ul {
 .galleryWrapper {
     display: flex;
     justify-content: center;
-    max-width: 65%;
+
     max-height: 60%;
     margin-bottom: 3vh;
     margin-top: 3vh;
@@ -493,8 +493,7 @@ ul {
     }
     .projImg {
         object-fit: cover;
-        max-height: 80%;
-        max-width: 80%;
+        max-width: 60%;
         align-self: center;
     }
 }
