@@ -9,48 +9,68 @@ function Compositions() {
                 <h3 className="subtitle2">Recent works</h3>
                 <ul className="cv">
                     <li>
-                        ARGO/AGO (2021) immersive sound and visuals -
+                        “Versificator - Render 3” for vocal ensemble (2022) -
+                        Commisioned by Vokalensembelet 'Tabula Rasa' - Upcoming
+                        premiere at 'Bergen kjøtt' Sept 27, 2022 - Concert
+                        hosted by Avgarde Bergen
+                    </li>
+                    <li>
+                        “Elevator Pitch” for trumpet and electronics (2022) -
+                        Commisioned by the Trumpet Studio at Grieg Academy
+                        Premiered in NyMusikk's Krapylkonserten, May 7, 2022 -
+                        trumpet: Kayleigh Neff
+                        {/* <a href="#">
+                            <p>audio</p>
+                        </a> */}
+                    </li>
+                    <li>
+                        “Isovell Che Segila Chentelare” for double choir (2022)
+                        - Commisioned by Edvard Grieg Kor - Premiere: Upcoming
+                    </li>
+                    <li>
+                        "ARGO/AGO" immersive sound and visuals (2021) -
                         collaborative work Premiered Sept 16, 2021 - Lithuanian
                         Academy for Music and Theater Vilnius - Lithuania
                     </li>
                     <li>
-                        Deconstructions (2018) for voice, visuals and
-                        electronics Performed April 18, 2018 - Philip T. Young
-                        Hall University of Victoria. Victoria BC - Canada.
-                        Voice: Jessica Wagner
+                        "Deconstructions" for voice, visuals and electronics
+                        (2018) - Performed April 18, 2018 - Philip T. Young Hall
+                        University of Victoria. Victoria BC - Canada. Voice:
+                        Jessica Wagner
                     </li>
                     <li>
-                        Mirrors (2018) for processed voice (2018) Based on a
+                        "Mirrors" (2018) for processed voice (2018) Based on a
                         poem of Luis Ressia. Performed April 12, 2018 - Phillip
                         T. Young Hall - University of Victoria. Victoria BC -
                         Canada.
                     </li>
 
                     <li>
-                        To make a blindfold - Measure - The size of your head
-                        (2012-2013) Original choreography: Carmen Caceres.
-                        Performed at former Triskelion Arts Center for WAX Works
-                        - October 2013 - Center for Performance Research.
-                        Brooklyn, NY - April 2014
+                        "To make a blindfold / Measure / The size of your head"
+                        electroacoustic (2012-2013) - Comissioned by Carmen
+                        Caceres (DanceAction, NY) - Performed at former
+                        Triskelion Arts Center for WAX Works - October 2013 -
+                        Center for Performance Research. Brooklyn, NY - April
+                        2014
                     </li>
                     <li>
-                        Cinco Soles Electroacoustic (2014) Choreography &
+                        "Cinco Soles" electroacoustic (2014) Choreography &
                         Performance: Carmen Caceres. Performed at Eden's
                         Expressway - New York, NY - October 2014
                     </li>
                     <li>
-                        Trivium - Jazz Cuyano for double-bass, percussion and
+                        "Trivium - Jazz Cuyano" for double-bass, percussion and
                         piano (2013) Performed June 10, 2013 - Auditorium
                         Escuela de Artes, Universidad Nacional de Córdoba.
                         Córdoba - Argentina
                     </li>
                     <li>
-                        Yzur for voice and piano (2012) Performed June 10, 2013
-                        - Auditorium Escuela de Artes, Universidad Nacional de
-                        Córdoba. Córdoba - Argentina
+                        "Yzur" for voice and piano (2012) Performed June 10,
+                        2013 - Auditorium Escuela de Artes, Universidad Nacional
+                        de Córdoba. Córdoba - Argentina
                     </li>
                     <li>
-                        RGB for string quartet (2012-2013) Performed June 10,
+                        "RGB" for string quartet (2012-2013) Performed June 10,
                         2013 - Auditorium Escuela de Artes - Universidad
                         Nacional de Córdoba. Córdoba - Argentina
                     </li>
@@ -58,19 +78,17 @@ function Compositions() {
 
                 <h3 className="neonText2">Catalog of works</h3>
                 <ul className="cv">
-                    <li>2022 – “Elevator Pitch” (solo trumpet)</li>
                     <li>
-                        2022 - “Isovell Che Segila Chentelare” (choir SSAATTBB)
+                        2021 – “Milonga del gesto” for solo guitar - Commisioned
+                        by Dániel Péter Biró
                     </li>
                     <li>
-                        2021 - ARGO/AGO (Immersive media) collaborative work{" "}
+                        2020 – “Both ways” for string quartet - Commisioned by
+                        the String Studio at Griegakademiet
                     </li>
-                    <li>2021 – “Versificator - Render 3” (vocal ensemble)</li>
-                    <li>2021 – “Milonga del gesto” (solo guitar)</li>
-                    <li>2020 – “Both ways” (string quartet)</li>
                     <li>
-                        2019 – “Deconstructions” (voice, synthetized voice and
-                        visuals)
+                        2019 – “Deconstructions” for voice, synthetized voice
+                        and visuals
                     </li>
                     <li>2018 – “Mirrors” (electroacoustic)</li>
                     <li>2018 – “Viderunt omnes” (electroacoustic)</li>

@@ -32,7 +32,7 @@ function Footer() {
                     <RiSpotifyLine />
                 </a>
             </div>
-            <p>© 2021 Juan Sebastian Vassallo</p>
+            <p className="footText">© 2022 Juan Sebastian Vassallo</p>
         </div>
     );
 }
