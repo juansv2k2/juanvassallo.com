@@ -3,24 +3,28 @@ import ImageGallery from "react-image-gallery";
 
 const images = [
     {
-        original: "img/31955481_10155222962441046_251916440548933632_o.jpg",
-        thumbnail: "img/31955481_10155222962441046_251916440548933632_o.jpg",
+        original: "img/4D341F2C-D185-42AD-B598-6D8CA85FAE58_1_105_c.jpeg",
+        thumbnail: "img/4D341F2C-D185-42AD-B598-6D8CA85FAE58_1_105_c.jpeg",
     },
     {
-        original: "img/31224930_952206774948132_5286944826858668032_n.jpg",
-        thumbnail: "img/31224930_952206774948132_5286944826858668032_n.jpg",
+        original: "img/5B1AED04-17D4-4ADE-B85F-2F0D3E650C12_1_105_c.jpeg",
+        thumbnail: "img/5B1AED04-17D4-4ADE-B85F-2F0D3E650C12_1_105_c.jpeg",
+    },
+    {
+        original: "img/DFA08A2C-9916-41B1-A111-8384CA888F3C_1_105_c.jpeg",
+        thumbnail: "img/DFA08A2C-9916-41B1-A111-8384CA888F3C_1_105_c.jpeg",
+    },
+    {
+        original: "img/50AA24F0-602A-496A-89B2-4A385E4695D3_1_105_c.jpeg",
+        thumbnail: "img/50AA24F0-602A-496A-89B2-4A385E4695D3_1_105_c.jpeg",
+    },
+    {
+        original: "img/248E0274-38B9-4727-B024-71566C2F2190_1_105_c.jpeg",
+        thumbnail: "img/248E0274-38B9-4727-B024-71566C2F2190_1_105_c.jpeg",
     },
     {
         original: "img/juan_edited_edited.jpg",
         thumbnail: "img/juan_edited_edited.jpg",
-    },
-    {
-        original: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
-        thumbnail: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
-    },
-    {
-        original: "img/DSC_0308.jpg",
-        thumbnail: "img/DSC_0308.jpg",
     },
 ];
 

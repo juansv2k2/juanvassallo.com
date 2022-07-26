@@ -1,145 +1,147 @@
 import React from "react";
-import YoutubeEmbed from "../YoutubeEmbed";
+import Composition from "../Composition";
 
 function Compositions() {
     return (
         <div className="secondaryWrapper">
-            <div className="leftSide">
-                <h1 className="neonText">Compositions</h1>
-                <h3 className="subtitle2">Recent works</h3>
-                <ul className="cv">
-                    <li>
-                        “Versificator - Render 3” for vocal ensemble (2022) -
-                        Commisioned by Vokalensembelet 'Tabula Rasa' - Upcoming
-                        premiere at 'Bergen kjøtt' Sept 27, 2022 - Concert
-                        hosted by Avgarde Bergen
-                    </li>
-                    <li>
-                        “Elevator Pitch” for trumpet and electronics (2022) -
-                        Commisioned by the Trumpet Studio at Grieg Academy
-                        Premiered in NyMusikk's Krapylkonserten, May 7, 2022 -
-                        trumpet: Kayleigh Neff
-                        {/* <a href="#">
-                            <p>audio</p>
-                        </a> */}
-                    </li>
-                    <li>
-                        “Isovell Che Segila Chentelare” for double choir (2022)
-                        - Commisioned by Edvard Grieg Kor - Premiere: Upcoming
-                    </li>
-                    <li>
-                        "ARGO/AGO" immersive sound and visuals (2021) -
-                        collaborative work Premiered Sept 16, 2021 - Lithuanian
-                        Academy for Music and Theater Vilnius - Lithuania
-                    </li>
-                    <li>
-                        "Deconstructions" for voice, visuals and electronics
-                        (2018) - Performed April 18, 2018 - Philip T. Young Hall
-                        University of Victoria. Victoria BC - Canada. Voice:
-                        Jessica Wagner
-                    </li>
-                    <li>
-                        "Mirrors" (2018) for processed voice (2018) Based on a
-                        poem of Luis Ressia. Performed April 12, 2018 - Phillip
-                        T. Young Hall - University of Victoria. Victoria BC -
-                        Canada.
-                    </li>
+            <div>
+                <div>
+                    <h1 className="neonText">Compositions</h1>
+                    <h3 className="subtitle2">Musical works</h3>
+                </div>
 
-                    <li>
-                        "To make a blindfold / Measure / The size of your head"
-                        electroacoustic (2012-2013) - Comissioned by Carmen
-                        Caceres (DanceAction, NY) - Performed at former
-                        Triskelion Arts Center for WAX Works - October 2013 -
-                        Center for Performance Research. Brooklyn, NY - April
-                        2014
-                    </li>
-                    <li>
-                        "Cinco Soles" electroacoustic (2014) Choreography &
-                        Performance: Carmen Caceres. Performed at Eden's
-                        Expressway - New York, NY - October 2014
-                    </li>
-                    <li>
-                        "Trivium - Jazz Cuyano" for double-bass, percussion and
-                        piano (2013) Performed June 10, 2013 - Auditorium
-                        Escuela de Artes, Universidad Nacional de Córdoba.
-                        Córdoba - Argentina
-                    </li>
-                    <li>
-                        "Yzur" for voice and piano (2012) Performed June 10,
-                        2013 - Auditorium Escuela de Artes, Universidad Nacional
-                        de Córdoba. Córdoba - Argentina
-                    </li>
-                    <li>
-                        "RGB" for string quartet (2012-2013) Performed June 10,
-                        2013 - Auditorium Escuela de Artes - Universidad
-                        Nacional de Córdoba. Córdoba - Argentina
-                    </li>
-                </ul>
+                <div className="projects">
+                    <Composition
+                        title="Versificator - Render 3"
+                        vid="SNDW6CFLFhk"
+                        text="For vocal ensemble  - Commisioned by
+                        Vokalensembelet 'Tabula Rasa' - Upcoming premiere at
+                        'Bergen kjøtt' Sept 27, 2022 - Concert hosted by Avgarde
+                        Bergen."
+                    />
+                    <Composition
+                        title="Elevator pitch"
+                        vid="cg8yMYOZQ64"
+                        text="For trumpet and electronics - Commisioned by the Trumpet Studio at Grieg Academy -
+                        Premiered: May 7, 2022 -
+                        trumpet: Kayleigh Neff"
+                    />
+                    <Composition
+                        title="Isovell Che Segila Chentelare"
+                        vid="MYdZZTBkRMM"
+                        text="For double choir - Commisioned by Edvard Grieg Kor - Premiered: June 12, 2022 - Gyldenpriss Kunsthall (Bergen, Norway)"
+                    />
 
-                <h3 className="neonText2">Catalog of works</h3>
+                    <Composition
+                        title="Evolutions 2A"
+                        vid="5h_lDeV5iOc"
+                        text="For string orchestra -
+                    Premiered: June 15 at NyMusikk Bergens Krapylkonserten - Ensemble: Langhaugen String Orchestra"
+                    />
+
+                    <Composition
+                        title="ARGO/AGO"
+                        vid="nj7lkkAAGIs"
+                        text="Immersive sound and visuals - Collaborative work Premiered Sept 16, 2021 - Lithuanian Academy for Music and Theater Vilnius - Lithuania"
+                    />
+
+                    <Composition
+                        title="Deconstructions"
+                        vid="KwPAwxJZcK0"
+                        text="For voice, visuals and electronics
+                    - Performed April 18, 2018 - Philip T. Young Hall University
+                    of Victoria. Victoria BC - Canada. Voice: Jessica Wagner"
+                    />
+                    <Composition
+                        title="Mirrors"
+                        vid="tWAQtFqOht0"
+                        text="For processed voice - Based on the poem 'Cazador de ángeles' by Luis Ressia - Performed on April 13, 2018 - Phillip T. Young Hall - School of Music - University of Victoria (Canada)"
+                    />
+
+                    <Composition
+                        title="Trivium Jazz Cuyano"
+                        vid="2Sl64le8r84"
+                        text="For piano, double-bass and percussion - Piano: Federico Cámara-Halac, Percussion: Javier Mazzuccelli, Double-bass: Mauricio Diez - Performed June 10, 2013 Auditorium Mexico Pavilion, National University of Cordoba (Argentina)"
+                    />
+
+                    <Composition
+                        title="RGB"
+                        vid="XVgRveZZRLc"
+                        text="For string quartet - Violin I: Mauricio Pregot, Violin II: Florencia Veronese, Viola: Flor Maria Díaz, Violoncello: Marcela Vicente - Performed June 10, 2013 Auditorium Mexico Pavilion, National University of Cordoba (Argentina)"
+                    />
+                    <Composition
+                        title="musikkstykke til julekalenderen (2020)"
+                        vid="UcvPKtGPTJ4"
+                        text="Music and visuals composed for the Christmas calendar by the composition students at the Grieg Academy of Music, University of Bergen (Norway)."
+                    />
+                </div>
+                <div>
+                    <h3 className="subtitle2">Installations</h3>
+                </div>
+                <div className="projects">
+                    <Composition
+                        title="Encroach"
+                        vid="0Gs0bcSGbH4"
+                        text="Installation by Lilianne Milgroom (2015) - Original soundscape: Juan Vassallo - Exhibited at the 'Visaural – Sight, sound and action' exposition - October 2015 - Boston, MA. USA"
+                    />
+                    <Composition
+                        title="Sonidos de lo incierto"
+                        vid="yBBQS4i0N1k"
+                        text="Artistas: Fernanda Almanza, Federico Echave, Juan Vassallo - Presented between August 12-17, 2017, at the basement of Institute for Continuous Teacher Training Villa Mercedes (Argentina)"
+                    />
+                </div>
+                <h3 className="neonText2">Complete catalog of works</h3>
                 <ul className="cv">
+                    <li>2022 – "Evoluciones 2A" for string orchestra </li>
                     <li>
-                        2021 – “Milonga del gesto” for solo guitar - Commisioned
-                        by Dániel Péter Biró
+                        2022 - "Isovell Che Segila Centelare" for eight voices
                     </li>
+                    <li>2021 – "Elevator pitch" for trumpet and electronics</li>
+                    <li>2021 - "Versificator - Render 3" for five voices</li>
+                    <li>2021 – "Milonga del gesto" for solo guitar</li>
+                    <li>2020 – "Both ways" for string quartet</li>
                     <li>
-                        2020 – “Both ways” for string quartet - Commisioned by
-                        the String Studio at Griegakademiet
-                    </li>
-                    <li>
-                        2019 – “Deconstructions” for voice, synthetized voice
+                        2019 – "Deconstructions" for voice, synthetized voice
                         and visuals
                     </li>
-                    <li>2018 – “Mirrors” (electroacoustic)</li>
-                    <li>2018 – “Viderunt omnes” (electroacoustic)</li>
-                    <li>2017 – “Romance del niño del agua” (choir)</li>
+                    <li>2018 – "Mirrors (electroacoustic)</li>
+                    <li>2018 – "Viderunt omnes" (electroacoustic)</li>
+                    <li>2017 – "Romance del niño del agua" for SATB choir</li>
                     <li>
-                        2017 – “Sonidos de lo Incierto” (multimedia
+                        2017 – "Sonidos de lo Incierto" (multimedia
                         installation)
                     </li>
                     <li>
-                        2016 – “Música para la lectura de tres poemas de Julio
-                        Cortázar” (vocal ensamble)
+                        2016 – "Música para la lectura de tres poemas de Julio
+                        Cortázar" for vocal ensamble
                     </li>
-                    <li>2015 – “Semblanza” (mixed media)</li>
+                    <li>2015 – "Semblanza" (mixed media)</li>
                     <li>2015 - "Encroach" (sound installation)</li>
-                    <li>2014 – “Retro-alimento” (sound installation)</li>
-                    <li>2014 – “Cinco Soles" (mixed media) </li>
+                    <li>2014 – "Retro-alimento" (sound installation)</li>
+                    <li>2014 – "Cinco Soles" (mixed media) </li>
                     <li>
-                        2013 – Trilogy: “To make a blindfold - Measure - The
-                        size of your head” (mixed media)
+                        2013 – Trilogy: "To make a blindfold - Measure - The
+                        size of your head" (mixed media)
                     </li>
-                    <li>2012 – “RGB” (string quartet)</li>
-                    <li>2012 – “Yzur” (voice and piano)</li>
-                    <li>2012 – “Evoluciones” (symphonic orchestra)</li>
+                    <li>2012 – "RGB" for string quartet</li>
+                    <li>2012 – "Yzur" for voice and piano</li>
+                    <li>2012 – "Evoluciones" for symphonic orchestra</li>
                     <li>
-                        2012 – “Trivium – Jazz cuyano” (piano, double bass and
-                        percussion)
+                        2012 – "Trivium – Jazz cuyano" for piano, double bass
+                        and percussion
                     </li>
-                    <li>2011 – “Non-Sancta Romana” (string orchestra) </li>
+                    <li>2011 – "Non-Sancta Romana" for string orchestra </li>
                     <li>2010 – Quintet for harpsichord and string quartet</li>
                     <li>
-                        2006 – “Una plegaria americana” (instrumental ensamble){" "}
+                        2006 – "Una plegaria americana" for flute, violin, cello
+                        and piano
                     </li>
-                    <li>2005 – “Diego de la gente” (electroacoustic) </li>
-                    <li>2005 – “Katrina” (wind quartet)</li>
-                    <li>2004 – “Música para cine clase B” (piano and cello)</li>
+                    <li>2005 – "Diego de la gente" (electroacoustic) </li>
+                    <li>2005 – "Katrina" (wind quartet)</li>
+                    <li>
+                        2004 – "Música para cine clase B" for piano and cello
+                    </li>
                 </ul>
-            </div>
-            <div className="rightSide">
-                <div className="videos">
-                    <YoutubeEmbed embedId="nj7lkkAAGIs" />
-
-                    <YoutubeEmbed embedId="KwPAwxJZcK0" />
-
-                    <YoutubeEmbed embedId="tWAQtFqOht0" />
-
-                    <YoutubeEmbed embedId="yBBQS4i0N1k" />
-
-                    <YoutubeEmbed embedId="XVgRveZZRLc" />
-
-                    <YoutubeEmbed embedId="0Gs0bcSGbH4" />
-                </div>
             </div>
         </div>
     );

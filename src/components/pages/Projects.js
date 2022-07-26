@@ -10,7 +10,7 @@ function Projects() {
                 </div>
                 <div className="projects">
                     <Project
-                        title="Computational artistic agency and extended mind"
+                        title="Compositional cognition: Computational artistic agency and extended mind"
                         img="img/fondo_1.jpg"
                         text="The current artistic project aims mainly to reflect upon a two-folded research perspective, in one hand, the philosophical problem about agency of algorithmic systems involved in the creative process for composition of contemporary music, and in the other hand, investigating the cognitive processes involved in a composer’s decision-making for creating a musical work."
                     />

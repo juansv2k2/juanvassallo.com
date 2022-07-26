@@ -177,14 +177,38 @@ h3 {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: left;
 }
 .indivProject {
-    box-sizing: border-box;
-    width: 48%;
-    height: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    min-height: 500px;
+    padding: 20px;
+    margin: 20px 30px 20px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.indivComposition {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    padding: 20px;
+    margin: 20px 30px 20px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .projText {
@@ -194,8 +218,8 @@ h3 {
 
 .projImg {
     object-fit: cover;
-    max-height: 40%;
-    max-width: 65%;
+    max-height: 50%;
+    max-width: 70%;
     border: 0.5px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px black;
 }
@@ -343,24 +367,26 @@ ul {
 }
 
 /* videos */
+
 .video-responsive {
-    overflow: hidden;
-    padding-bottom: 60.25%;
-
     position: relative;
-    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
 }
-
 .video-responsive iframe {
-    height: 95%;
-    width: 95%;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black;
 }
 
 .videos {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
     flex-direction: column;
     width: 100%;
     justify-content: space-evenly;
@@ -488,7 +514,8 @@ ul {
     }
     .projects {
         flex-direction: column;
-        flex-wrap: nowrap;
+
+        flex-wrap: wrap;
     }
     .indivProject {
         width: 100%;
