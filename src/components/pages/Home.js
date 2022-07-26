@@ -1,5 +1,5 @@
 import React from "react";
-import ImageGallery from "react-image-gallery";
+import ReactImageGallery from "react-image-gallery";
 
 const images = [
     {
@@ -32,7 +32,7 @@ function Home() {
     return (
         <div className="secondaryWrapper whenSubComponent">
             <div className="galleryWrapper">
-                <ImageGallery items={images} />
+                <ReactImageGallery items={images} />
             </div>
         </div>
     );
