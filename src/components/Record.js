@@ -4,10 +4,16 @@ function Record(props) {
     return (
         <div className="indivProject">
             <div className="bigP">
-                <h3 className="subtitle2">{props.title}</h3>
-                <p>{props.text}</p>
+                <iframe
+                    style="border-radius:12px"
+                    src={props.src}
+                    width="100%"
+                    height="380"
+                    frameBorder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
             </div>
-            <img className="projImg" src={props.img}></img>
         </div>
     );
 }
