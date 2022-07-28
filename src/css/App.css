@@ -188,11 +188,11 @@ h3 {
     text-align: center;
     width: 400px;
     max-width: 400px;
-    min-height: 500px;
+    min-height: 400px;
     padding: 20px;
     margin: 20px 30px 20px 0;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .indivComposition {
@@ -206,7 +206,7 @@ h3 {
     max-width: 400px;
     min-height: 400px;
     padding: 20px;
-    margin: 20px 20px 20px 0;
+    margin: 0 20px 20px 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -217,9 +217,13 @@ h3 {
 iframe {
     margin: 10px;
     border: 0;
-    borderradius: 12px;
+    border-radius: 12px;
     width: 298px;
     height: 400px;
+}
+
+.video-responsive iframe {
+    border-radius: 4px;
 }
 
 .projText {
@@ -233,6 +237,7 @@ iframe {
     max-width: 70%;
     border: 0.5px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px black;
+    margin-top: 5px;
 }
 
 .imgBody {
