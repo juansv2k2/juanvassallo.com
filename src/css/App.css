@@ -1,5 +1,3 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
-
 ncode {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
@@ -503,10 +501,6 @@ ul {
         margin-top: 40px;
     }
 
-    .buttons h3 {
-        font-size: 20px;
-    }
-
     a {
         text-decoration: none;
         color: #00d0ff;
@@ -534,15 +528,19 @@ ul {
         margin: 10px;
     }
 
+    .buttons h3 {
+        font-size: 20px;
+    }
+
+    .indivComposition p {
+        font-size: 15px;
+    }
+
     .indivComposition {
         width: 285px;
         padding: 0px;
         min-height: 350px;
         margin: 20px 0 0px 0;
-    }
-
-    .indivComposition p {
-        font-size: 15px;
     }
 
     .neonText {
@@ -580,6 +578,11 @@ ul {
         margin-top: 10px;
     }
 
+    .video-responsive iframe {
+        border-radius: 0px;
+        border: 0;
+    }
+
     iframe {
         margin: 10px 0 10px 0;
         border: 0px;
@@ -588,9 +591,6 @@ ul {
         height: 385px;
         text-align: center;
     }
-
-    .video-responsive iframe {
-        border-radius: 0px;
-        border: 0;
-    }
 }
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
