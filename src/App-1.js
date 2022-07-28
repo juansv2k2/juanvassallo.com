@@ -25,6 +25,7 @@ const routes = [
     { path: "/compositions", name: "Compositions", Component: Compositions },
     { path: "/projects", name: "Projects", Component: Projects },
     { path: "/contact", name: "Contact", Component: Contact },
+    { path: "/records", name: "Records1", Component: Records },
 ];
 
 function App() {
