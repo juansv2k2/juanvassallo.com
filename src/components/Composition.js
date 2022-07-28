@@ -4,7 +4,7 @@ import YoutubeEmbed from "../components/YoutubeEmbed";
 function Composition(props) {
     return (
         <div className="indivComposition">
-            <div className="bigP">
+            <div>
                 <h3 className="subtitle2">{props.title}</h3>
                 <p>{props.text}</p>
             </div>

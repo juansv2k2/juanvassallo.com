@@ -206,9 +206,20 @@ h3 {
     max-width: 400px;
     min-height: 400px;
     padding: 20px;
-    margin: 20px 30px 20px 0;
+    margin: 20px 20px 20px 0;
     align-items: center;
     justify-content: space-between;
+}
+.indivComposition p {
+    font-size: 18px;
+}
+
+iframe {
+    margin: 10px;
+    border: 0;
+    borderradius: 12px;
+    width: 298px;
+    height: 400px;
 }
 
 .projText {
@@ -253,7 +264,7 @@ h3 {
 }
 
 .buttons h3 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 a {
@@ -441,6 +452,11 @@ ul {
     margin-top: 3vh;
 }
 
+.image-gallery-slide .image-gallery-image {
+    width: 70%;
+    object-fit: contain;
+}
+
 @media only screen and (max-width: 600px) {
     .mainWrapper {
         flex-direction: row;
@@ -468,6 +484,12 @@ ul {
     .rightSide {
         width: 100%;
     }
+
+    .margin {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
     .leftSide {
         width: 100%;
         padding-right: 0%;
@@ -476,10 +498,23 @@ ul {
         margin-top: 40px;
     }
 
+    .buttons h3 {
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #00d0ff;
+        margin-bottom: 3px;
+        margin-top: 3px;
+        font-size: 16px;
+        text-shadow: 0 0 3px black;
+    }
+
     .bigP p,
     ul,
     .cv li {
-        font-size: 115%;
+        font-size: 110%;
     }
     .cv h3 {
         color: white;
@@ -491,11 +526,20 @@ ul {
     }
     h3 {
         text-align: left;
+        margin: 10px;
     }
-    .indivProject {
-        font-size: 80%;
-        flex-direction: column;
+
+    .indivComposition {
+        width: 285px;
+        padding: 0px;
+        min-height: 350px;
+        margin: 20px 0 0px 0;
     }
+
+    .indivComposition p {
+        font-size: 15px;
+    }
+
     .neonText {
         text-align: center;
     }
@@ -520,10 +564,28 @@ ul {
     .indivProject {
         width: 100%;
         padding-bottom: 20px;
+        margin: 0 0 0 0;
+        font-size: 90%;
+        flex-direction: column;
     }
     .projImg {
         object-fit: cover;
-        max-width: 60%;
+        max-width: 100%;
         align-self: center;
+        margin-top: 10px;
+    }
+
+    iframe {
+        margin: 10px 0 10px 0;
+        border: 0px;
+        border-radius: 12px;
+        width: 288px;
+        height: 385px;
+        text-align: center;
+    }
+
+    .video-responsive iframe {
+        border-radius: 0px;
+        border: 0;
     }
 }

@@ -35,11 +35,11 @@ function Records() {
                     <div className="projects">
                         <iframe
                             style={{
-                                margin: "10px",
+                                margin: "0px",
                                 border: 0,
                                 borderRadius: "12px",
-                                width: "298px",
-                                height: "600px",
+                                width: "284px",
+                                height: "580px",
                             }}
                             src="https://bandcamp.com/EmbeddedPlayer/album=1681201843/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/"
                         >
