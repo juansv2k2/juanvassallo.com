@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FaFacebookF, FaInstagram, FaBandcamp } from "react-icons/fa";
-import { RiSoundcloudFill, RiSpotifyLine } from "react-icons/ri";
+import { RiSpotifyLine } from "react-icons/ri";
 
 function Footer() {
     return (
@@ -10,6 +10,7 @@ function Footer() {
                 <a
                     href={"https://www.facebook.com/juansebastian.vassallo"}
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <FaFacebookF />{" "}
                 </a>
@@ -17,10 +18,15 @@ function Footer() {
                 <a
                     href={"https://www.instagram.com/juanvassallo.arg/"}
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <FaInstagram />
                 </a>
-                <a href={"https://juanvassallo.bandcamp.com/"} target="_blank">
+                <a
+                    href={"https://juanvassallo.bandcamp.com/"}
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <FaBandcamp />
                 </a>
                 <a
@@ -28,6 +34,7 @@ function Footer() {
                         "https://open.spotify.com/artist/5gVC35dknIoSGHUk4yRmR7"
                     }
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <RiSpotifyLine />
                 </a>

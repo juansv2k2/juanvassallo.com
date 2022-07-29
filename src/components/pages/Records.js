@@ -34,6 +34,7 @@ function Records() {
                     </div>
                     <div className="projects">
                         <iframe
+                            title="RecordBandCamp"
                             style={{
                                 margin: "0px",
                                 border: 0,

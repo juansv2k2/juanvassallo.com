@@ -5,6 +5,7 @@ function Record(props) {
         <div className="records">
             <div className="bigP">
                 <iframe
+                    title="Record"
                     src={props.src}
                     frameBorder="0"
                     allowfullscreen=""
