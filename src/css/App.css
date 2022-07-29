@@ -1,8 +1,3 @@
-ncode {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
-}
-
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -37,6 +32,21 @@ body {
     opacity: 0.7;
 }
 
+.mainWrapper {
+    position: relative;
+    opacity: 1;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    min-height: 80vh;
+}
+
+.secondaryWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
 .header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
@@ -52,16 +62,6 @@ body {
     padding-bottom: 10px;
 }
 
-a {
-    color: #61dafb;
-    transition: color 0.2s ease-in-out;
-}
-a.active {
-    color: rgb(255, 255, 255);
-}
-p.active {
-    text-decoration: double;
-}
 .footer {
     position: relative;
     background-color: rgba(0, 0, 0, 0.2);
@@ -76,10 +76,11 @@ p.active {
     font-family: "Jura", sans-serif;
 }
 
-.header h1,
-h2,
-h3 {
-    text-shadow: 0 0 10px black;
+.icons {
+    width: 15%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .headNavBar {
@@ -91,60 +92,7 @@ h3 {
     text-align: left;
 }
 
-.icons {
-    width: 15%;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-.footText {
-    margin-top: 0;
-}
-
-.mainWrapper {
-    position: relative;
-    opacity: 1;
-    justify-content: center;
-    display: flex;
-    align-self: center;
-    min-height: 80vh;
-}
-
-.page {
-    position: relative;
-}
-
-.page-enter {
-    opacity: 0;
-    /* transform: scale(1.1); */
-}
-
-.page-enter-active {
-    opacity: 1;
-    /* transform: scale(1); */
-    transition: opacity 200ms, transform 200ms;
-}
-
-.page-exit {
-    opacity: 1;
-    /* transform: scale(1); */
-}
-
-.page-exit-active {
-    opacity: 0;
-    /* transform: scale(0.9); */
-    transition: opacity 200ms, transform 200ms;
-}
-
-.mainWrapper p {
-    text-shadow: 0 0 10px black;
-}
-
-.secondaryWrapper {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-}
+/* Sections */
 
 .contact {
     text-align: center;
@@ -208,9 +156,6 @@ h3 {
     align-items: center;
     justify-content: space-between;
 }
-.indivComposition p {
-    font-size: 18px;
-}
 
 iframe {
     margin: 10px;
@@ -218,10 +163,6 @@ iframe {
     border-radius: 12px;
     width: 298px;
     height: 400px;
-}
-
-.video-responsive iframe {
-    border-radius: 4px;
 }
 
 .projText {
@@ -251,24 +192,67 @@ iframe {
     color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .buttons {
     display: flex;
     justify-content: space-between;
     transition: color 2s ease-in-out;
 }
 
-.buttons h3 {
-    font-size: 22px;
+.flexEnd {
+    align-items: flex-end;
 }
+
+.project {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    opacity: 1;
+}
+
+.imgBody2 {
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-right: 0;
+    border: 0.5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black;
+}
+
+.contact {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.contactDiv {
+    margin-top: 5%;
+    margin-bottom: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryWrapper {
+    display: flex;
+    justify-content: center;
+
+    max-height: 60%;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.image-gallery-slide .image-gallery-image {
+    width: 70%;
+    object-fit: contain;
+}
+
+/* Texts */
 
 a {
     text-decoration: none;
@@ -309,7 +293,23 @@ h1 {
     font-size: 40px;
 }
 
-/* texts */
+.buttons h3 {
+    font-size: 22px;
+}
+
+.header h1,
+h2,
+h3 {
+    text-shadow: 0 0 10px black;
+}
+
+.footText {
+    margin-top: 0;
+}
+
+.mainWrapper p {
+    text-shadow: 0 0 10px black;
+}
 
 .subtitle {
     margin-top: 0;
@@ -380,6 +380,10 @@ ul {
     font-size: 16px;
 }
 
+.indivComposition p {
+    font-size: 18px;
+}
+
 /* videos */
 
 .video-responsive {
@@ -395,6 +399,7 @@ ul {
     height: 100%;
     border: 0.5px solid rgb(255, 255, 255);
     box-shadow: 5px 5px 10px black;
+    border-radius: 4px;
 }
 
 .videos {
@@ -406,68 +411,50 @@ ul {
     justify-content: space-evenly;
 }
 
-.flexEnd {
-    align-items: flex-end;
+/* Transitions */
+
+.page {
+    position: relative;
 }
 
-.project {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+.page-enter {
+    opacity: 0;
+    /* transform: scale(1.1); */
+}
+
+.page-enter-active {
     opacity: 1;
+    /* transform: scale(1); */
+    transition: opacity 200ms, transform 200ms;
 }
 
-.imgBody2 {
-    max-width: 90%;
-    height: auto;
-    object-fit: cover;
-    margin-top: 0px;
-    margin-right: 0;
-    border: 0.5px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px black;
+.page-exit {
+    opacity: 1;
+    /* transform: scale(1); */
 }
 
-.contact {
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+.page-exit-active {
+    opacity: 0;
+    /* transform: scale(0.9); */
+    transition: opacity 200ms, transform 200ms;
 }
 
-.column {
-    flex-direction: column;
+a {
+    color: #61dafb;
+    transition: color 0.2s ease-in-out;
 }
-
-.contactDiv {
-    margin-top: 5%;
-    margin-bottom: 13%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a.active {
+    color: rgb(255, 255, 255);
 }
-
-.galleryWrapper {
-    display: flex;
-    justify-content: center;
-
-    max-height: 60%;
-    margin-bottom: 3vh;
-    margin-top: 3vh;
-}
-
-.image-gallery-slide .image-gallery-image {
-    width: 70%;
-    object-fit: contain;
+p.active {
+    text-decoration: double;
 }
 
 @media only screen and (max-width: 400px) {
     .mainWrapper {
         flex-direction: row;
     }
-    .titleName {
-        width: 70%;
-        text-align: center;
-    }
+
     .headNavBar {
         flex-direction: column;
     }
@@ -477,6 +464,12 @@ ul {
         text-align: justify;
         width: 80%;
     }
+
+    .titleName {
+        width: 70%;
+        text-align: center;
+    }
+
     .galleryWrapper {
         align-self: center;
         text-align: center;
@@ -484,6 +477,7 @@ ul {
         max-width: 95%;
         flex-flow: inherit;
     }
+
     .rightSide {
         width: 100%;
     }
@@ -497,9 +491,48 @@ ul {
         width: 100%;
         padding-right: 0%;
     }
+
     .imgBody {
         margin-top: 40px;
     }
+
+    .projects {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .projImg {
+        object-fit: cover;
+        max-width: 100%;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .icons {
+        width: 40%;
+    }
+    .contact {
+        padding-top: 5%;
+    }
+
+    /* Individual sections */
+
+    .indivComposition {
+        width: 285px;
+        padding: 0px;
+        min-height: 350px;
+        margin: 20px 0 0px 0;
+    }
+
+    .indivProject {
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 0 0 0 0;
+        font-size: 90%;
+        flex-direction: column;
+    }
+
+    /* Text */
 
     a {
         text-decoration: none;
@@ -510,22 +543,28 @@ ul {
         text-shadow: 0 0 3px black;
     }
 
+    h3 {
+        text-align: left;
+        margin: 10px;
+    }
+
+    ul {
+        font-size: 110%;
+    }
+
     .bigP p,
-    ul,
     .cv li {
         font-size: 110%;
     }
+
     .cv h3 {
         color: white;
         text-shadow: 0 0 10px black;
     }
+
     .co,
     .co li {
         font-size: 85%;
-    }
-    h3 {
-        text-align: left;
-        margin: 10px;
     }
 
     .buttons h3 {
@@ -536,16 +575,7 @@ ul {
         font-size: 15px;
     }
 
-    .indivComposition {
-        width: 285px;
-        padding: 0px;
-        min-height: 350px;
-        margin: 20px 0 0px 0;
-    }
-
-    .neonText {
-        text-align: center;
-    }
+    .neonText,
     .neonText2,
     .subtitle,
     .subtitle2,
@@ -553,30 +583,8 @@ ul {
     p {
         text-align: center;
     }
-    .icons {
-        width: 40%;
-    }
-    .contact {
-        padding-top: 5%;
-    }
-    .projects {
-        flex-direction: column;
 
-        flex-wrap: wrap;
-    }
-    .indivProject {
-        width: 100%;
-        padding-bottom: 20px;
-        margin: 0 0 0 0;
-        font-size: 90%;
-        flex-direction: column;
-    }
-    .projImg {
-        object-fit: cover;
-        max-width: 100%;
-        align-self: center;
-        margin-top: 10px;
-    }
+    /* iFrames */
 
     .video-responsive iframe {
         border-radius: 0px;
