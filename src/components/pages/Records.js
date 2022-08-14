@@ -6,7 +6,7 @@ function Records() {
         <div className="secondaryWrapper">
             <div>
                 <div>
-                    <h1 className="neonText">Edited recordings</h1>
+                    <h1 className="neonText">Edited records</h1>
                 </div>
                 <div>
                     <div>

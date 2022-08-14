@@ -3,7 +3,7 @@ import React from "react";
 function Project(props) {
     return (
         <div className="indivProject">
-            <div className="bigP">
+            <div>
                 <h3 className="subtitle2">{props.title}</h3>
                 <p>{props.text}</p>
             </div>

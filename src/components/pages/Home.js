@@ -3,18 +3,6 @@ import ReactImageGallery from "react-image-gallery";
 
 const images = [
     {
-        original: "img/4D341F2C-D185-42AD-B598-6D8CA85FAE58_1_105_c.jpeg",
-        thumbnail: "img/4D341F2C-D185-42AD-B598-6D8CA85FAE58_1_105_c.jpeg",
-    },
-    {
-        original: "img/5B1AED04-17D4-4ADE-B85F-2F0D3E650C12_1_105_c.jpeg",
-        thumbnail: "img/5B1AED04-17D4-4ADE-B85F-2F0D3E650C12_1_105_c.jpeg",
-    },
-    {
-        original: "img/DFA08A2C-9916-41B1-A111-8384CA888F3C_1_105_c.jpeg",
-        thumbnail: "img/DFA08A2C-9916-41B1-A111-8384CA888F3C_1_105_c.jpeg",
-    },
-    {
         original: "img/50AA24F0-602A-496A-89B2-4A385E4695D3_1_105_c.jpeg",
         thumbnail: "img/50AA24F0-602A-496A-89B2-4A385E4695D3_1_105_c.jpeg",
     },
@@ -25,6 +13,11 @@ const images = [
     {
         original: "img/juan_edited_edited.jpg",
         thumbnail: "img/juan_edited_edited.jpg",
+    },
+
+    {
+        original: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
+        thumbnail: "img/2EF32D7C-68D2-4EC5-9C2C-63E078C7D95E.jpg",
     },
 ];
 

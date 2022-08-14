@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="header">
             <div className="titleName">
-                <h1 className="title margin">Juan Sebastián Vassallo</h1>
+                <h1 className="title margin">Juan Sebastian Vassallo</h1>
                 <h2 className="subtitle margin">
                     Composer - Artistic Researcher
                 </h2>

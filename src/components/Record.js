@@ -2,7 +2,7 @@ import React from "react";
 
 function Record(props) {
     return (
-        <div className="records">
+        <div>
             <div className="bigP">
                 <iframe
                     title="Record"

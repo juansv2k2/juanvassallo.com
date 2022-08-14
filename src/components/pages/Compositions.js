@@ -12,39 +12,74 @@ function Compositions() {
 
                 <div className="projects">
                     <Composition
+                        title="Oscillations I - Winterreise"
+                        vid="3Lb6Cg4VtnE"
+                        text="For voice and electronics  - Commisioned by
+                        Festival K&M - NYCMF - Premiered Sept 4 at Konserthuset - Stavanger (Norway) 
+                        Voice: Julie Hasfjord 
+                        "
+                    />
+
+                    <Composition
                         title="Versificator - Render 3"
                         vid="SNDW6CFLFhk"
                         text="For vocal ensemble  - Commisioned by
-                        Vokalensembelet 'Tabula Rasa' - Upcoming premiere at
-                        'Bergen kjøtt' Sept 27, 2022 - Concert hosted by Avgarde
-                        Bergen."
+                        Vokalensembelet 'Tabula Rasa' - Upcoming premiere"
                     />
                     <Composition
                         title="Elevator pitch"
                         vid="cg8yMYOZQ64"
-                        text="For trumpet and electronics - Commisioned by the Trumpet Studio at Grieg Academy -
-                        Premiered: May 7, 2022 -
+                        text="For solo trumpet - Commisioned by the Trumpet Studio at Grieg Academy -
+                        Premiered: May 7, 2022 in the festival 'Festpillene' at Grieghallen foyee - Bergen (Norway)
                         trumpet: Kayleigh Neff"
                     />
                     <Composition
                         title="Isovell Che Segila Chentelare"
                         vid="MYdZZTBkRMM"
-                        text="For double choir - Commisioned by Edvard Grieg Kor - Premiered: June 12, 2022 - Gyldenpriss Kunsthall (Bergen, Norway)"
+                        text="For double vocal quartet SATB - Commisioned by Edvard Grieg Kor - Premiered: June 12, 2022 at Gyldenpriss Kunsthall (Bergen, Norway)"
                     />
-
                     <Composition
                         title="Evolutions 2A"
                         vid="5h_lDeV5iOc"
-                        text="For string orchestra -
-                    Premiered: June 15 at NyMusikk Bergens Krapylkonserten - Ensemble: Langhaugen String Orchestra"
+                        text="For string orchestra - Comissioned by PRISMAS Festival -
+                    Premiered: June 15 at NyMusikk Bergens Krapylkonserten 2022 at Grieghallen (Bergen)
+                    Ensemble: Langhaugen String Orchestra"
                     />
 
                     <Composition
-                        title="ARGO/AGO"
-                        vid="nj7lkkAAGIs"
-                        text="Immersive sound and visuals - Collaborative work Premiered Sept 16, 2021 - Lithuanian Academy for Music and Theater Vilnius - Lithuania"
+                        title="Both ways"
+                        vid="zbmKgACBXM0"
+                        text="For string quartet  - Composed for
+                        'Den Store Krapyl Konserten' - Premiered April 20th at Gimle Kulturhuset - Bergen (Norway)  
+                        "
                     />
 
+                    <Composition
+                        title="Mirrors"
+                        vid="tWAQtFqOht0"
+                        text="For processed voice - Based on the poem 'Cazador de ángeles' by Luis Ressia - Performed on April 13, 2018 - Phillip T. Young Hall - School of Music - University of Victoria (Canada)"
+                    />
+                    <Composition
+                        title="Trivium Jazz Cuyano"
+                        vid="2Sl64le8r84"
+                        text="For piano, double-bass and percussion - Piano: Federico Cámara-Halac, Percussion: Javier Mazzuccelli, Double-bass: Mauricio Diez - Performed June 10, 2013 Auditorium Mexico Pavilion, National University of Cordoba (Argentina)"
+                    />
+                    <Composition
+                        title="RGB"
+                        vid="XVgRveZZRLc"
+                        text="For string quartet - Violin I: Mauricio Pregot, Violin II: Florencia Veronese, Viola: Flor Maria Díaz, Violoncello: Marcela Vicente - Performed June 10, 2013 Auditorium Mexico Pavilion, National University of Cordoba (Argentina)"
+                    />
+                </div>
+                <div>
+                    <h3 className="subtitle2">Audiovisual works</h3>
+                </div>
+
+                <div className="projects">
+                    <Composition
+                        title="ARGO/AGO"
+                        vid="nj7lkkAAGIs"
+                        text="Immersive sound and visuals - Collaborative work - Premiered Sept 16, 2021 - Lithuanian Academy for Music and Theater Vilnius - Lithuania"
+                    />
                     <Composition
                         title="Deconstructions"
                         vid="KwPAwxJZcK0"
@@ -52,31 +87,16 @@ function Compositions() {
                     - Performed April 18, 2018 - Philip T. Young Hall University
                     of Victoria. Victoria BC - Canada. Voice: Jessica Wagner"
                     />
-                    <Composition
-                        title="Mirrors"
-                        vid="tWAQtFqOht0"
-                        text="For processed voice - Based on the poem 'Cazador de ángeles' by Luis Ressia - Performed on April 13, 2018 - Phillip T. Young Hall - School of Music - University of Victoria (Canada)"
-                    />
 
-                    <Composition
-                        title="Trivium Jazz Cuyano"
-                        vid="2Sl64le8r84"
-                        text="For piano, double-bass and percussion - Piano: Federico Cámara-Halac, Percussion: Javier Mazzuccelli, Double-bass: Mauricio Diez - Performed June 10, 2013 Auditorium Mexico Pavilion, National University of Cordoba (Argentina)"
-                    />
-
-                    <Composition
-                        title="RGB"
-                        vid="XVgRveZZRLc"
-                        text="For string quartet - Violin I: Mauricio Pregot, Violin II: Florencia Veronese, Viola: Flor Maria Díaz, Violoncello: Marcela Vicente - Performed June 10, 2013 Auditorium Mexico Pavilion, National University of Cordoba (Argentina)"
-                    />
                     <Composition
                         title="musikkstykke til julekalenderen (2020)"
                         vid="UcvPKtGPTJ4"
                         text="Music and visuals composed for the Christmas calendar by the composition students at the Grieg Academy of Music, University of Bergen (Norway)."
                     />
                 </div>
+
                 <div>
-                    <h3 className="subtitle2">Installations</h3>
+                    <h3 className="subtitle2">Multimedia Installations</h3>
                 </div>
                 <div className="projects">
                     <Composition
