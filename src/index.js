@@ -35,7 +35,7 @@ function App() {
                 <div className="header">
                     <div className="titleName">
                         <h1 className="title margin">
-                            Juan Sebastian Vassallo
+                            Juan Sebastián Vassallo
                         </h1>
                         <h2 className="subtitle margin">
                             Composer - Sound Artist

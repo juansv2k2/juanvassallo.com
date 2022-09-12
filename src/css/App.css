@@ -22,14 +22,14 @@ body {
     bottom: 0px;
     left: 0px;
 
-    /* background: url("/public/img/fondo_3.jpg"); */
+    background: url("/public/img/fondo_5.jpg");
 
     filter: blur(1px);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 .mainWrapper {
@@ -259,6 +259,11 @@ a {
     margin-top: 10px;
     font-size: 16px;
     text-shadow: 0 0 3px black;
+}
+
+.bio p {
+    color: white;
+    text-shadow: 5px 5px 5px black;
 }
 
 p {

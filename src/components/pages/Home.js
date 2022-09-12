@@ -24,9 +24,9 @@ const images = [
 function Home() {
     return (
         <div className="secondaryWrapper whenSubComponent">
-            <div className="galleryWrapper">
+            {/* <div className="galleryWrapper">
                 <ReactImageGallery items={images} />
-            </div>
+            </div> */}
         </div>
     );
 }

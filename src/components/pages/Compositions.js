@@ -13,7 +13,7 @@ function Compositions() {
                 <div className="projects">
                     <Composition
                         title="Oscillations I - Winterreise"
-                        vid="3Lb6Cg4VtnE"
+                        vid="uwdsbaTFEC4"
                         text="For voice and electronics  - Commisioned by
                         Festival K&M - NYCMF - Premiered Sept 4 at Konserthuset - Stavanger (Norway) 
                         Voice: Julie Hasfjord 
@@ -22,7 +22,7 @@ function Compositions() {
 
                     <Composition
                         title="Versificator - Render 3"
-                        vid="SNDW6CFLFhk"
+                        vid="fMnqfwB3TEw"
                         text="For vocal ensemble  - Commisioned by
                         Vokalensembelet 'Tabula Rasa' - Upcoming premiere"
                     />
@@ -52,6 +52,12 @@ function Compositions() {
                         text="For string quartet  - Composed for
                         'Den Store Krapyl Konserten' - Premiered April 20th at Gimle Kulturhuset - Bergen (Norway)  
                         "
+                    />
+
+                    <Composition
+                        title="Milonga del gesto"
+                        vid="cBkxHk5SSWI"
+                        text="For solo guitar  - Premiered at the Opening Concert for the Academic Year 2022-2023 at the Grieg Academy - University of Bergen (Norway) - Gunnar Sævings Hall - August 27, 2022"
                     />
 
                     <Composition
@@ -112,6 +118,10 @@ function Compositions() {
                 </div>
                 <h3 className="neonText2">Complete catalog of works</h3>
                 <ul className="cv">
+                    <li>
+                        2022 – "Oscillations (I) Winterreise" for voice and
+                        electronics{" "}
+                    </li>
                     <li>2022 – "Evoluciones 2A" for string orchestra </li>
                     <li>
                         2022 - "Isovell Che Segila Centelare" for eight voices
