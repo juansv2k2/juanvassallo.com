@@ -13,10 +13,9 @@ function Compositions() {
                 <div className="projects">
                     <Composition
                         title="Oscillations I - Winterreise"
-                        vid="uwdsbaTFEC4"
-                        text="For voice and electronics  - Commisioned by
-                        Festival K&M - NYCMF - Premiered Sept 4 at Konserthuset - Stavanger (Norway) 
-                        Voice: Julie Hasfjord 
+                        vid="OWPVtlxfByM"
+                        text="For voice, visuals and 8.1 electronics  - Commisioned by Festival K&M - NYCMF - Performed at Studio A - Grieg Academy - University of Bergen (Norway)
+                        Voice: Julie Hasfjord; Visuals: Andrea Toft
                         "
                     />
 

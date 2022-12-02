@@ -22,7 +22,7 @@ body {
     bottom: 0px;
     left: 0px;
 
-    background: url("/public/img/fondo_5.jpg");
+    background: url("/public/img/fondo_7.jpg");
 
     filter: blur(1px);
     background-position: center;
@@ -146,8 +146,8 @@ body {
     border-radius: 3%;
     box-sizing: border-box;
     text-align: center;
-    width: 400px;
-    max-width: 400px;
+    width: 370px;
+    max-width: 370px;
     min-height: 400px;
     padding: 20px;
     margin: 0 20px 20px 0;
