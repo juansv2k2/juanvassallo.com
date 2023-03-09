@@ -21,9 +21,9 @@ function Compositions() {
 
                     <Composition
                         title="Versificator - Render 3"
-                        vid="fMnqfwB3TEw"
+                        vid="MGxBEbUMMt4"
                         text="For vocal ensemble  - Commisioned by
-                        Vokalensembelet 'Tabula Rasa' - Upcoming premiere"
+                        Vokalensembelet 'Tabula Rasa' Premiered: February 25, 2023"
                     />
                     <Composition
                         title="Elevator pitch"
