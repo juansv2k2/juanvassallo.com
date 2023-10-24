@@ -5,26 +5,10 @@ import Composition_audio from "../Composition_audio";
 function Compositions() {
   return (
     <div className="secondaryWrapper">
-      <div>
+      <div className="width">
         <div>
           <h1 className="neonText">Compositions</h1>
           <h3 className="subtitle2">Musical works</h3>
-        </div>
-        <div className="projects">
-          <div>
-            <Composition_audio
-              title="Cinco Soles"
-              audio="music/cinco soles/Cinco Soles ST.mp3"
-              text="Percussion, samplers and live processing"
-            />
-          </div>
-          <div>
-            <Composition_audio
-              title="Trivium Jazz Cuyano"
-              audio="music/Trivium_audio.mp3"
-              text="For piano, double-bass and percussion - Ensemble: Zone Experimental Basel"
-            />
-          </div>
         </div>
 
         <div className="projects">
@@ -87,6 +71,16 @@ function Compositions() {
             text="For string quartet - Violin I: Mauricio Pregot, Violin II: Florencia Veronese, Viola: Flor Maria Díaz, Violoncello: Marcela Vicente"
           />
         </div>
+
+        <div className="projects">
+          <div>
+            <Composition_audio
+              title="Trivium Jazz Cuyano"
+              audio="music/Trivium_audio.mp3"
+              text="For piano, double-bass and percussion - Ensemble: Zone Experimental Basel"
+            />
+          </div>
+        </div>
         <div>
           <h3 className="subtitle2">Audiovisual works</h3>
         </div>
@@ -104,9 +98,9 @@ function Compositions() {
           />
 
           <Composition
-            title="musikkstykke til julekalenderen (2020)"
+            title="Bokeh"
             vid="UcvPKtGPTJ4"
-            text="Christmas calendar 2020 - Grieg Academy of Music, University of Bergen"
+            text="Piece included in the Christmas calendar 2020 - Grieg Academy of Music, University of Bergen"
           />
         </div>
 
@@ -117,12 +111,12 @@ function Compositions() {
           <Composition
             title="Encroach"
             vid="0Gs0bcSGbH4"
-            text="Installation by Lilianne Milgroom (2015) - Original soundscape: Juan Vassallo - Exhibited at the 'Visaural – Sight, sound and action' exposition - October 2015 - Boston, MA. USA"
+            text="Installation by Lilianne Milgroom (2015) - Original soundscape: Juan Vassallo"
           />
           <Composition
             title="Sonidos de lo incierto"
             vid="yBBQS4i0N1k"
-            text="Artistas: Fernanda Almanza, Federico Echave, Juan Vassallo - Presented between August 12-17, 2017, at the basement of Institute for Continuous Teacher Training Villa Mercedes (Argentina)"
+            text="Artistas: Fernanda Almanza, Federico Echave, Juan Vassallo"
           />
         </div>
         {/* <h3 className="neonText2">Complete catalog of works</h3>

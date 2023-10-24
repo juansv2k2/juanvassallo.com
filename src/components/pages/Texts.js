@@ -13,8 +13,12 @@ function Texts() {
               Vassallo, J. S. (2023). Symbolic Musical Resynthesis As An
               Ekphrastic Compositional Practice Using Computational Methods.
               Culture Crossroads, 22, 129–147.
-              <p>
-                <a href="https://doi.org/10.55877/cc.vol22.443" target="_blank">
+              <p className="link">
+                <a
+                  className="link"
+                  href="https://doi.org/10.55877/cc.vol22.443"
+                  target="_blank"
+                >
                   https://doi.org/10.55877/cc.vol22.443
                 </a>
               </p>
@@ -25,18 +29,25 @@ function Texts() {
               Algorithmic Poetry. Proceedings - The 7th Colloquium on Artistic
               Research in Performing Arts.
               <p>
-                <a href="https://nivel.teak.fi/carpa7/" target="_blank">
+                <a
+                  className="link"
+                  href="https://nivel.teak.fi/carpa7/"
+                  target="_blank"
+                >
                   https://nivel.teak.fi/carpa7/
                 </a>
               </p>
             </li>
-            <h3 className="subtitle2">Thesis</h3>
+            <h3 className="subtitle2">M.A. Thesis</h3>
             <li>
               Vassallo, J. S. (2019). Music expert-novice differences in speech
               perception. University of Victoria Repository Dspace.
-              http://hdl.handle.net/1828/11061
               <p>
-                <a href="http://hdl.handle.net/1828/11061" target="_blank">
+                <a
+                  className="link"
+                  href="http://hdl.handle.net/1828/11061"
+                  target="_blank"
+                >
                   http://hdl.handle.net/1828/11061
                 </a>
               </p>

@@ -7,60 +7,66 @@ function CV() {
       <div className="leftSide">
         <h1 className="neonText">CV</h1>
         <div className="cv">
-          <h3 className="subtitle2">Relevant Skills</h3>
           <ul>
+            <h2 className="underlined">Main field:</h2>
             <li>
-              Computer-assisted composition, composer of instrumental and
-              electronic music, mixed media and vast experience with
-              interdisciplinary collaborations.
+              Composer of instrumental and electronic music. Performer of live
+              electronics. Pianist of jazz and tango.
+            </li>
+            <h2 className="underlined">Academic/research interests:</h2>
+            <li>
+              Computer-assisted composition. Music perception and cognition.
+              Artificial Intelligence. Contemporary art and aesthetics. Music
+              theory and analysis.
+            </li>
+            <h2 className="underlined">Other skills:</h2>
+            <li>
+              Data sciences and Machine learning - Programming languages: Lisp,
+              Python.
             </li>
             <li>
-              Research interests: Algorithmic tools for music composition and
-              notation and music programming (main platform: Max/MSP/Jitter).
-              Music perception and cognition. Multimedia art. Music theory.
+              Web development - Programming languages: Node JS, JavaScript,
+              HTML, CSS, MySQL.
             </li>
             <li>
-              Web full-stack development. Programming languages: Node JS,
-              JavaScript, HTML, CSS, MySQL.
-            </li>
-            <li>
-              Pianist and arranger of Tango, jazz and Latin American traditional
-              music.
-            </li>
-            <li>
-              Administration, management and communication. (Coursework and work
-              experience).
+              Administration, management and communication - Coursework and work
+              experience.
             </li>
           </ul>
-          <h3 className="subtitle2">Education</h3>
+          <h2 className="underlined">Education</h2>
           <ul>
             <li>
-              Currently – PhD Candidate in Artistic Research at Grieg Academy,
-              Faculty of Fine Art, Music and Design (KMD), University of Bergen
-              (UiB).
+              Ph.D. Candidate in Artistic Research at the Grieg Academy, Faculty
+              of Fine Art, Music and Design (KMD), University of Bergen (UiB).
+            </li>
+
+            <li>
+              Master of Arts in Interdisciplinary Studies (MUS and PSYC) -
+              University of Victoria (Canada), 2019.
             </li>
             <li>
-              2021 – Full-stack web developer – Digital House Coding School.
-              Buenos Aires, Argentina.
+              Bachelor’s in Music Composition - National University of Córdoba
+              (Argentina), 2013.
             </li>
             <li>
-              2019 – Master of Arts in Interdisciplinary Studies (MUS and PSYC)
-              - University of Victoria (Canada)
+              Bachelor’s in Music Education - National University of Córdoba,
+              (Argentina), 2008.
             </li>
             <li>
-              2013 – Bachelor’s in Music Composition - National University of
-              Córdoba (Argentina).
-            </li>
-            <li>
-              2008 – Bachelor’s in Music Education - National University of
-              Córdoba, (Argentina).
-            </li>
-            <li>
-              2007 – Diploma in Piano - Provincial Conservatory of Córdoba
-              (Argentina).
+              Diploma in Piano - Provincial Conservatory of Córdoba (Argentina),
+              2007.
             </li>
           </ul>
-          <h3 className="subtitle2">Work experience</h3>
+          <h2 className="underlined">Courses</h2>
+          <li>
+            Data Sciences – Digital House Coding School. Buenos Aires
+            (Argentina), 2021.
+          </li>
+          <li>
+            Full-stack web developer – Digital House Coding School. Buenos Aires
+            (Argentina), 2021.
+          </li>
+          <h2 className="underlined">Work Experience</h2>
           <ul>
             <li>
               2020 (Nov – today) – Research fellow – Griegakademiet, Fakultet
@@ -106,7 +112,8 @@ function CV() {
               Mercedes (San Luis) Argentina.
             </li>
           </ul>
-          <h3 className="subtitle2">Scholarships / Grants</h3>
+
+          <h2 className="underlined">Scholarships / Grants</h2>
           <ul>
             <li>
               2021 - Innovation grant – Norwegian Academy of Music – CEMPE.
@@ -131,98 +138,8 @@ function CV() {
               Arts, (Virginia, USA)
             </li>
           </ul>
-          <h3 className="subtitle2">
-            Presentations in conferences and seminars
-          </h3>
-          <ul>
-            <li>
-              2022 – Sounding Philosophy. Title of the presentation:
-              “Versificator: A co-creative agency for contemporary music”
-              February 23-25 2022. University of Bergen (Norway){" "}
-            </li>
-            <li>
-              2021 – CARPA7 - Elastic Writing in Artistic Research - Performing
-              Arts Research Center (Tutke), Uniarts Helsinki Theatre Academy.
-              Title of the presentation: “Versificator: Algorithmic poetry and
-              music composition”. August 27, 2021.
-            </li>
-            <li>
-              2021 – Artistic Research Autumn Forum 2021 – Organized by the
-              Norwegian Artistic Research Programme (NARP). Title of the
-              presentation: “Seen voices: A compositional exploration of human
-              speech”. 15-15 March, 2021.
-            </li>
-            <li>
-              2020 – Grieg Research School Online Autumn course - ‘Materials,
-              Methods and Ethics in Music Research’ - Title of the presentation:
-              “A compositional exploration of audiovisual cues in human speech”.
-              24-26 Nov. 2020
-            </li>
-            <li>
-              2018 - West Coast Student Composers Symposium – Organized by the
-              University of British Columbia, Simon Fraser University, and the
-              University of Victoria. January 26, 2018. Piece presented:
-              “Deconstructions II” for female voice. Voice: Jessica Wagner.
-            </li>
-            <li>
-              2015 – Bienal 3 in Music Composition and Research. Organized by
-              the Faculty of Arts. National University of Córdoba (Argentina).
-              Title of the presentation: “Improvisation and syncretism in the
-              work TRIVIUM - Jazz cuyano”.
-            </li>
-            <li>
-              2012 and 2014 – Invited by the Institute of Continuous Teacher
-              Training to teach the Seminar: “Digital edition of Scores using
-              Sibelius 7” organized by the (IFDC VM) - Villa Mercedes, San Luis
-              (Argentina)
-            </li>
-            <li>
-              2005 – 1st. National Journals in Popular Art organized by the
-              Faculty of Arts. National University of Córdoba (Argentina). Title
-              of the presentation: “Early piano works of Alberto Ginastera”.
-            </li>
-          </ul>
-          <h3 className="subtitle2">Edited recordings</h3>
-          <ul>
-            <li>
-              2020 – “Cyan” by Azul 514. Roll: Electronics, artistic producer.
-              Available in CD, online (Spotify, iTunes, amazon music,
-              souncloud.com, etc., also on juanvassallo.com)
-            </li>
-            <li>
-              2018 – “Atrevido” by ‘La Sanluistango’ orchestra. Roll: Pianist.
-              Available on vinyl, digital platforms (Spotify, iTunes, Amazon
-              music, etc.)
-            </li>
-            <li>
-              2018 – “Azul 514” by Azul 514. Roll: Electronics, artistic
-              producer. Available in CD, online (Spotify, iTunes, amazon music,
-              souncloud.com, etc., also on juanvassallo.com)
-            </li>
-            <li>
-              2017 – “A pesar del tiempo” by ‘La Sanluistango’ orchestra. Roll:
-              Pianist. Available in CD, digital platforms.
-            </li>
-            <li>
-              2016 – “Amor adolescente” by ‘La Sanluistango’ orchestra. Roll:
-              Pianist. Available in CD, digital platforms.{" "}
-            </li>
-            <li>
-              2015 – “Semblanza” by Juan Vassallo. Roll: Composer, performer,
-              executive producer. Available online (juanvassallo.com){" "}
-            </li>
-            <li>
-              2014 – “Volvió una noche” by ‘Los Inmortales del tango’ orchestra.
-              Roll: Pianist, arranger. Available in CD, online
-              (juanvassallo.com){" "}
-            </li>
-            <li>
-              2012 – “Desde el barrio” by ‘Los Inmortales del tango’ orchestra.
-              Roll: Pianist, arranger and executive producer. Available in CD,
-              online (juanvassallo.com)
-            </li>
-          </ul>
-          <h3 className="subtitle2">Personal awards</h3>
+
+          <h2 className="underlined">Personal awards</h2>
           <ul>
             <li>
               2019 – Special Mention at the 1st. Exhibition of Art and
@@ -247,7 +164,7 @@ function CV() {
               city of Villa Mercedes, San Luis (Argentina).
             </li>
           </ul>
-          <h3 className="subtitle2">Group awards</h3>
+          <h2 className="underlined">Group awards</h2>
           <ul>
             <li>
               2016 – Fox Music Awards 2016 in the category: “Best fusion folk
@@ -269,11 +186,11 @@ function CV() {
               the Deliberative Council of Villa Mercedes (San Luis) Argentina.
             </li>
           </ul>
-          <h3 className="subtitle2">Languages</h3>
+          <h2 className="underlined">Languages</h2>
           <ul>
             <li>Spanish (mother tongue)</li>
-            <li>English (Proficient - TOEFL exam. Mark: 95/120)</li>
-            <li>Norwegian Bokmål (A1-A2 level, passed)</li>
+            <li>English (Proficient - Toefl)</li>
+            <li>Norwegian Bokmål (Intermediate - B1)</li>
           </ul>
         </div>
       </div>

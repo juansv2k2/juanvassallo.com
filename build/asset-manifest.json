@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e95d64e.css",
-    "main.js": "/static/js/main.63ce0ab9.js",
-    "static/media/fondo_8.jpg": "/static/media/fondo_8.49b2722d96a68899e0b6.jpg",
+    "main.css": "/static/css/main.8b75aaec.css",
+    "main.js": "/static/js/main.7b684620.js",
+    "static/media/fondo_9.jpg": "/static/media/fondo_9.45ea184dc7ad2314ccd8.jpg",
+    "static/media/The-Modern-Chaos.ttf.eot": "/static/media/The-Modern-Chaos.ttf.96bc0701ed7be0c49eda.eot",
+    "static/media/The-Modern-Chaos.ttf.svg": "/static/media/The-Modern-Chaos.ttf.4ab2f2bbac060b74907d.svg",
+    "static/media/The-Modern-Chaos.ttf.woff": "/static/media/The-Modern-Chaos.ttf.79913073c853d1af2a14.woff",
     "index.html": "/index.html",
-    "main.1e95d64e.css.map": "/static/css/main.1e95d64e.css.map",
-    "main.63ce0ab9.js.map": "/static/js/main.63ce0ab9.js.map"
+    "main.8b75aaec.css.map": "/static/css/main.8b75aaec.css.map",
+    "main.7b684620.js.map": "/static/js/main.7b684620.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e95d64e.css",
-    "static/js/main.63ce0ab9.js"
+    "static/css/main.8b75aaec.css",
+    "static/js/main.7b684620.js"
   ]
 }

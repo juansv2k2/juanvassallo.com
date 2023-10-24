@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "The-Modern-Chaos";
+  src: url("The-Modern-Chaos.ttf.woff") format("woff"),
+    url("The-Modern-Chaos.ttf.svg#The-Modern-Chaos") format("svg"),
+    url("The-Modern-Chaos.ttf.eot"),
+    url("The-Modern-Chaos.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://use.typekit.net/uij8rkg.css");
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,7 +24,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "ocr-a-std", monospace;
+  font-weight: 400;
+  font-style: normal;
   color: turquoise;
   background-color: rgba(0, 0, 0, 1);
   opacity: 1;
@@ -27,15 +40,15 @@ body {
   bottom: 0px;
   left: 0px;
 
-  background: url("/public/img/fondo_8.jpg");
-  background-color: aliceblue;
+  background: url("/public/img/fondo_9.jpg");
+  background-color: white;
 
   filter: blur(0px);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .mainWrapper {
@@ -109,7 +122,7 @@ body {
 }
 
 .leftSide {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 
   width: 60%;
   padding: 1%;
@@ -147,7 +160,7 @@ body {
 
 .indivProject {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 3%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -165,11 +178,10 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  border-radius: 3%;
+  border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
-  width: 370px;
-  max-width: 370px;
+  width: 380px;
   min-height: 400px;
   padding: 20px;
   margin: 0 20px 20px 0;
@@ -181,36 +193,36 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  border-radius: 3%;
+  border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
-  width: 370px;
-  max-width: 370px;
-  min-height: 200px;
+  width: 380px;
+  height: 250px;
   padding: 20px;
-  margin: 0 20px 20px 0;
+  margin: 0 20px 30px 0;
   align-items: center;
   justify-content: space-between;
 }
 
 .indivRecord {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
   width: 320px;
-  margin: 0 20px 20px 0;
+  height: 440px;
+  margin: 0 30px 20px 0;
   align-items: center;
   justify-content: space-between;
 }
 
 iframe {
+  border-radius: 10px;
+  width: 320px;
+  height: 440px;
   border: 0;
-  border-radius: 12px;
-  width: 298px;
-  height: 400px;
 }
 
 .projText {
@@ -223,7 +235,7 @@ iframe {
   max-height: 50%;
   max-width: 70%;
   border: 0.5px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 2px 2px 10px black;
   margin-top: 5px;
 }
 
@@ -233,7 +245,7 @@ iframe {
   object-fit: cover;
   margin-top: 85px;
   border: 0.5px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 2px 2px 10px black;
 }
 
 .App-link {
@@ -264,7 +276,7 @@ iframe {
   margin-top: 0px;
   margin-right: 0;
   border: 0.5px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 2px 2px 10px black;
 }
 
 .contact {
@@ -308,7 +320,7 @@ a {
   margin-bottom: 10px;
   margin-top: 10px;
   font-size: 16px;
-  text-shadow: 0 0 3px black;
+  text-shadow: 0 0 5px black;
 }
 
 .bio p {
@@ -325,43 +337,38 @@ p {
 
 .fh3 {
   color: white;
-  text-shadow: 0px 0 3px;
+  text-shadow: 2px 2px 5px black;
   font-size: 16px;
 }
 
 .nombre {
-  color: white;
   font-size: 22px;
 }
-
-/* .neonText2 {
-    color: white;
-    text-shadow: 0 0 10px black;
-} */
-
-/* .neonText {
-    color: #00d0ff;
-    text-shadow: 0 0 5px black;
-} */
 
 h1 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 40px;
-  font-family: "Cabin Sketch", cursive;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 200;
+  text-shadow: 0 0 5px black;
+}
+
+h2 {
+  text-decoration: underline;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .buttons h3 {
-  font-size: 22px;
-  font-family: "Cabin Sketch", cursive;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .header h1,
 h2,
 h3 {
-  /* text-shadow: 0 0 5px black; */
+  text-shadow: 0 0 5px black;
 }
 
 .footText {
@@ -376,14 +383,14 @@ h3 {
   margin-top: 0;
   font-size: 25px;
   color: white;
-  font-family: "Cabin Sketch", cursive;
   font-weight: 300;
 }
 
 .subtitle2 {
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 20px;
   color: white;
+  font-size: 16px;
 }
 
 .margin {
@@ -393,8 +400,8 @@ h3 {
 
 .title {
   margin-bottom: 0;
-  font-size: 60px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 ul {
@@ -407,7 +414,7 @@ ul {
 }
 .cv li {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   text-shadow: 0 0 5px black;
   line-height: 25px;
   margin-bottom: 5px;
@@ -422,7 +429,7 @@ ul {
 
 .cv h3 {
   color: white;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 0px 0px 5px black;
 }
 
 .co h3 {
@@ -442,7 +449,7 @@ ul {
 }
 
 .bigP p {
-  font-size: 18px;
+  font-size: 16px;
   text-shadow: 0 0 5px black;
 }
 
@@ -463,9 +470,9 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0.5px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 10px black;
-  border-radius: 4px;
+  border: 0.1px solid rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px black;
+  border-radius: 3px;
 }
 
 .videos {
@@ -516,9 +523,16 @@ p.active {
   text-decoration: double;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 391px) {
   .mainWrapper {
     flex-direction: row;
+  }
+
+  .width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headNavBar {
@@ -528,7 +542,7 @@ p.active {
     flex-direction: column;
     text-align: center;
     text-align: justify;
-    width: 80%;
+    width: 90%;
   }
 
   .titleName {
@@ -560,11 +574,15 @@ p.active {
 
   .imgBody {
     margin-top: 40px;
+    max-width: 95%;
   }
 
   .projects {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .projImg {
@@ -584,9 +602,10 @@ p.active {
   /* Individual sections */
 
   .indivComposition {
-    width: 320px;
+    width: 360px;
     padding: 0px;
     min-height: 350px;
+    margin: 0px 0px 20px 0;
   }
 
   .indivProject {
@@ -601,8 +620,8 @@ p.active {
 
   .title {
     margin-bottom: 0;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 200;
   }
 
   a {
@@ -610,7 +629,7 @@ p.active {
     margin-bottom: 3px;
     margin-top: 3px;
     font-size: 16px;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 5px black;
   }
 
   h3 {
@@ -625,11 +644,20 @@ p.active {
   .bigP p,
   .cv li {
     font-size: 100%;
+    text-align: left;
+  }
+
+  .link {
+    font-size: 80%;
+  }
+
+  .cv {
+    font-size: 80%;
   }
 
   .cv h3 {
     color: white;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 5px black;
   }
 
   .co,
@@ -639,12 +667,11 @@ p.active {
 
   .buttons h3 {
     font-size: 20px;
-    font-family: "Cabin Sketch", cursive;
     font-weight: 300;
   }
 
   .indivComposition p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .neonText,
@@ -660,7 +687,6 @@ p.active {
 
   .video-responsive iframe {
     border-radius: 3px;
-    border: 1;
   }
 
   .videos {
@@ -675,18 +701,17 @@ p.active {
   .iframeNormal {
     margin: 10px 0 10px 0;
     border: 0px;
-    border-radius: 12px;
+    border-radius: 10px;
     width: 288px;
     height: 385px;
     text-align: center;
   }
 
   .iframeRecord {
-    margin: 10px 0 10px 0;
+    margin: 0 0 10px 0;
     border: 0px;
     border-radius: 10px;
     width: 320px;
-    height: 385px;
     text-align: center;
   }
   .indivAudioComposition {
@@ -696,23 +721,23 @@ p.active {
     border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
-    width: 320px;
+    width: 360px;
     min-height: 200px;
     padding: 20px;
-    margin: 0 20px 20px 0;
+    margin: 0 0 20px 0;
     align-items: center;
     justify-content: space-between;
   }
 
   .indivRecord {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
-    width: 320px;
-    margin: 0 20px 20px 0;
+    width: 315px;
+    margin: 0 0 20px 0;
     align-items: center;
     justify-content: space-between;
   }
