@@ -484,6 +484,12 @@ ul {
   justify-content: space-evenly;
 }
 
+.video_home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 /* Transitions */
 
 .page {

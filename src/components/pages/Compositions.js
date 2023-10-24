@@ -30,11 +30,7 @@ function Compositions() {
             vid="6O5pmolmsvY"
             text="for saxophone quartet, harpsichord and recorder - Quasar Saxophone Quartet, Hans Knut Sveen, Jostein Gundersen"
           />
-          <Composition
-            title="Elevator pitch"
-            vid="cg8yMYOZQ64"
-            text="For solo trumpet - trumpet: Kayleigh Neff"
-          />
+
           <Composition
             title="Isovell Che Segila Chentelare"
             vid="MYdZZTBkRMM"
@@ -44,11 +40,6 @@ function Compositions() {
             title="Evolutions 2A"
             vid="5h_lDeV5iOc"
             text="For string orchestra - Ensemble: Langhaugen String Orchestra"
-          />
-          <Composition
-            title="Both ways"
-            vid="zbmKgACBXM0"
-            text="For string quartet  - Hanna Veits, violin I; Amin Mojaddamzadeh, violin II; Sara Baier Evensen, viola; Clara Dietze, cello"
           />
           <Composition
             title="Milonga del gesto"
@@ -78,6 +69,20 @@ function Compositions() {
               title="Trivium Jazz Cuyano"
               audio="music/Trivium_audio.mp3"
               text="For piano, double-bass and percussion - Ensemble: Zone Experimental Basel"
+            />
+          </div>
+          <div>
+            <Composition_audio
+              title="Elevator pitch (V1)"
+              audio="music/Elevator pitch (V1).mp3"
+              text="For solo trumpet - Trumpet: Kayleigh Neff"
+            />
+          </div>
+          <div>
+            <Composition_audio
+              title="Both ways"
+              audio="music/Both ways.mp3"
+              text="For string quartet - Hanna Veits, violin 1, Amin Mojaddamzadeh, violin 2, Sara Baier Evensen, viola, Clara Dietze, cello"
             />
           </div>
         </div>
