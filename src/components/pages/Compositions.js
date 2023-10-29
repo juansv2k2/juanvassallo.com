@@ -8,7 +8,7 @@ function Compositions() {
       <div className="width">
         <div>
           <h1 className="neonText">Compositions</h1>
-          <h3 className="subtitle2">Musical works</h3>
+          <h3 className="subtitle2">Instrumental/mixed media</h3>
         </div>
 
         <div className="projects">
@@ -86,8 +86,29 @@ function Compositions() {
             />
           </div>
         </div>
+
         <div>
-          <h3 className="subtitle2">Audiovisual works</h3>
+          <h3 className="subtitle2">Electroacoustic</h3>
+        </div>
+        <div className="projects">
+          <div>
+            <Composition_audio
+              title="Viderunt Omnes"
+              audio="music/Viderunt plunder enhanced 2.mp3"
+              text="electroacoustic"
+            />
+          </div>
+          <div>
+            <Composition_audio
+              title="Diego de la gente"
+              audio="music/Diego de la gente_2.mp3"
+              text="electroacoustic"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h3 className="subtitle2">Audiovisual</h3>
         </div>
 
         <div className="projects">
@@ -110,7 +131,7 @@ function Compositions() {
         </div>
 
         <div>
-          <h3 className="subtitle2">Multimedia Installations</h3>
+          <h3 className="subtitle2">Installations</h3>
         </div>
         <div className="projects">
           <Composition
