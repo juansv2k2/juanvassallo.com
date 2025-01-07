@@ -10,6 +10,21 @@ function Texts() {
           <ul>
             <h3 className="subtitle2">Articles</h3>
             <li>
+              Vassallo, J. S. (2024). Exploring Musical Procedural Rhetoric:
+              Computational Influence on Compositional Frameworks and Methods in
+              the piece “Elevator Pitch”. International Journal of Music
+              Science, Technology and Art. 6, 1-16.
+              <p className="link">
+                <a
+                  className="link"
+                  href="https://doi.org/10.48293/IJMSTA-114"
+                  target="_blank"
+                >
+                  https://doi.org/10.48293/IJMSTA-114
+                </a>
+              </p>
+            </li>
+            <li>
               Vassallo, J. S. (2023). Symbolic Musical Resynthesis As An
               Ekphrastic Compositional Practice Using Computational Methods.
               Culture Crossroads, 22, 129–147.

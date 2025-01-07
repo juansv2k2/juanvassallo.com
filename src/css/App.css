@@ -181,10 +181,10 @@ body {
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
-  width: 380px;
+  width: 335px;
   min-height: 400px;
   padding: 20px;
-  margin: 0 20px 20px 0;
+  margin: 0 10px 10px 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -196,7 +196,7 @@ body {
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
-  width: 380px;
+  width: 335px;
   height: 250px;
   padding: 20px;
   margin: 0 20px 30px 0;
@@ -213,7 +213,7 @@ body {
   text-align: center;
   width: 320px;
   height: 440px;
-  margin: 0 30px 20px 0;
+  margin: 0 10px 10px 0;
   align-items: center;
   justify-content: space-between;
 }

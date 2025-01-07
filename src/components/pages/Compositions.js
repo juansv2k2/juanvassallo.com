@@ -26,6 +26,12 @@ function Compositions() {
                         Voice: Julie Hasfjord; Visuals: Andrea Toft"
           />
           <Composition
+            title="Oscillations (iii)"
+            vid="GW2uNDWmZ8Y"
+            text="for piano, accordion, electronics and narrated voice; Késia Decote, piano/toy piano
+            Sergej Tchirkov, accordion; Anders Hannevold, piano/percussion; Alexander Fiske Fosse, narration; Andrea Urstad Toft, visuals "
+          />
+          <Composition
             title="I am a strange loop"
             vid="6O5pmolmsvY"
             text="for saxophone quartet, harpsichord and recorder - Quasar Saxophone Quartet, Hans Knut Sveen, Jostein Gundersen"
@@ -76,13 +82,6 @@ function Compositions() {
               title="Elevator pitch (V1)"
               audio="music/Elevator pitch (V1).mp3"
               text="For solo trumpet - Trumpet: Kayleigh Neff"
-            />
-          </div>
-          <div>
-            <Composition_audio
-              title="Both ways"
-              audio="music/Both ways.mp3"
-              text="For string quartet - Hanna Veits, violin 1, Amin Mojaddamzadeh, violin 2, Sara Baier Evensen, viola, Clara Dietze, cello"
             />
           </div>
         </div>
