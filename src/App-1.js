@@ -35,7 +35,7 @@ function App() {
         <div className="header">
           <div className="titleName">
             <h1 className="title margin">Juan Sebastián Vassallo</h1>
-            <h3 className="subtitle margin">Composer</h3>
+            <h3 className="subtitle margin">experimental music & media</h3>
           </div>
           <div className="headNavBar Buttons ">
             {routes.map((route) => (

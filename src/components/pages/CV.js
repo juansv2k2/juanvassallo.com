@@ -10,8 +10,8 @@ function CV() {
           <ul>
             <h2 className="underlined">Main field:</h2>
             <li>
-              Composer of instrumental and electronic music. Performer of live
-              electronics. Pianist of jazz and tango.
+              Instrumental and electronic music. Performer of live electronics.
+              Pianist with experience in diverse genres.
             </li>
             <h2 className="underlined">Academic/research interests:</h2>
             <li>

@@ -9,40 +9,53 @@ function Records() {
           <h1 className="neonText">Edited records</h1>
         </div>
 
-        <div className="width">
-          <div>
-            <h3 className="subtitle2">Soloist records</h3>
-          </div>
-          <div className="projects">
-            <div className="indivRecord">
-              <div className="bigP">
-                <iframe
-                  title="RecordBandCamp"
-                  className="iframeRecord"
-                  src="https://bandcamp.com/EmbeddedPlayer/album=733984164/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-                  seamless
-                >
-                  <a href="https://juanvassallo.bandcamp.com/album/semblanza">
-                    Semblanza by Juan Vassallo
-                  </a>
-                </iframe>
-              </div>
+        <div>
+          <h3 className="subtitle2">Soloist releases</h3>
+        </div>
+        <div className="projects">
+          <div className="indivRecord">
+            <div className="bigP">
+              <iframe
+                title="RecordBandCamp"
+                className="iframeRecord"
+                src="https://bandcamp.com/EmbeddedPlayer/track=1570026996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless
+              >
+                <a href="https://juanvassallo.bandcamp.com/track/i-am-a-strange-loop">
+                  Semblanza by Juan Vassallo
+                </a>
+              </iframe>
             </div>
-            <div className="indivRecord">
-              <div className="bigP">
-                <iframe
-                  className="iframeRecord"
-                  src="https://bandcamp.com/EmbeddedPlayer/album=2083284220/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/"
-                  seamless
-                >
-                  <a href="https://juanvassallo.bandcamp.com/album/cinco-soles">
-                    Cinco Soles by Juan Vassallo
-                  </a>
-                </iframe>
-              </div>
+          </div>
+          <div className="indivRecord">
+            <div className="bigP">
+              <iframe
+                title="RecordBandCamp"
+                className="iframeRecord"
+                src="https://bandcamp.com/EmbeddedPlayer/album=733984164/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless
+              >
+                <a href="https://juanvassallo.bandcamp.com/album/semblanza">
+                  Semblanza by Juan Vassallo
+                </a>
+              </iframe>
+            </div>
+          </div>
+          <div className="indivRecord">
+            <div className="bigP">
+              <iframe
+                className="iframeRecord"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2083284220/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/"
+                seamless
+              >
+                <a href="https://juanvassallo.bandcamp.com/album/cinco-soles">
+                  Cinco Soles by Juan Vassallo
+                </a>
+              </iframe>
             </div>
           </div>
         </div>
+
         <div>
           <div>
             <h3 className="subtitle2">w/Azul 514</h3>

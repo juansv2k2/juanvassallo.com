@@ -15,57 +15,49 @@ function Compositions() {
           <Composition
             title="Versificator - Render 3"
             vid="MGxBEbUMMt4"
-            text="For vocal ensemble  - Performed by
-                        Vokalensembelet 'Tabula Rasa'"
+            text="Vokalensembelet 'Tabula Rasa'"
           />
 
           <Composition
             title="Oscillations (i)"
             vid="OWPVtlxfByM"
-            text="For voice, visuals and electronics  
-                        Voice: Julie Hasfjord; Visuals: Andrea Toft"
+            text="Julie Hasfjord, Voice; Andrea Urstad Toft, visuals; Juan S. Vassallo, composition, electronics"
           />
           <Composition
             title="Oscillations (iii)"
             vid="GW2uNDWmZ8Y"
-            text="for piano, accordion, electronics and narrated voice; Késia Decote, piano/toy piano
-            Sergej Tchirkov, accordion; Anders Hannevold, piano/percussion; Alexander Fiske Fosse, narration; Andrea Urstad Toft, visuals "
+            text="Késia Decoté Rodrigues, piano/toy piano; Sergej Tchirkov, accordion; Anders Hannevold, percussion, accessories; Alexander Fiske Fosse, narration; Andrea Urstad Toft, visuals"
           />
           <Composition
             title="I am a strange loop"
-            vid="6O5pmolmsvY"
-            text="for saxophone quartet, harpsichord and recorder - Quasar Saxophone Quartet, Hans Knut Sveen, Jostein Gundersen"
+            vid="qf292OZFaaY"
+            text="JÓR Saxophone Quartet; Sergej Tchirkov, accordion; Anders Hannevold, organetto"
           />
 
           <Composition
-            title="Isovell Che Segila Chentelare"
-            vid="MYdZZTBkRMM"
-            text="For double vocal quartet SATB - Eduard Grieg Choir"
-          />
-          <Composition
             title="Evolutions 2A"
             vid="5h_lDeV5iOc"
-            text="For string orchestra - Ensemble: Langhaugen String Orchestra"
+            text="Langhaugen String Orchestra"
           />
           <Composition
             title="Milonga del gesto"
             vid="cBkxHk5SSWI"
-            text="For solo guitar  - Guitar: Benjamin Sørensen"
+            text="Benjamin Sørensen, guitar"
           />
           <Composition
             title="Mirrors"
             vid="tWAQtFqOht0"
-            text="For processed voice - Based on the poem 'Cazador de ángeles' by Luis Ressia"
+            text="Based on the poem 'Cazador de ángeles' by Luis Ressia; Juan S. Vassallo, composition, electronics"
           />
           <Composition
             title="Trivium Jazz Cuyano"
             vid="2Sl64le8r84"
-            text="For piano, double-bass and percussion - Piano: Federico Cámara-Halac, Percussion: Javier Mazzuccelli, Double-bass: Mauricio Diez"
+            text="Federico Cámara-Halac, piano; Javier Mazzuccelli, percussion; Mauricio Diez, Double-bass"
           />
           <Composition
             title="RGB"
             vid="XVgRveZZRLc"
-            text="For string quartet - Violin I: Mauricio Pregot, Violin II: Florencia Veronese, Viola: Flor Maria Díaz, Violoncello: Marcela Vicente"
+            text="Mauricio Pregot, violin 1; Florencia Veronese, Violin 2; Flor Maria Díaz, viola; Marcela Vicente, cello"
           />
         </div>
 
@@ -74,14 +66,7 @@ function Compositions() {
             <Composition_audio
               title="Trivium Jazz Cuyano"
               audio="music/Trivium_audio.mp3"
-              text="For piano, double-bass and percussion - Ensemble: Zone Experimental Basel"
-            />
-          </div>
-          <div>
-            <Composition_audio
-              title="Elevator pitch (V1)"
-              audio="music/Elevator pitch (V1).mp3"
-              text="For solo trumpet - Trumpet: Kayleigh Neff"
+              text="Zone Experimental Basel"
             />
           </div>
         </div>
@@ -114,12 +99,12 @@ function Compositions() {
           <Composition
             title="ARGO/AGO"
             vid="nj7lkkAAGIs"
-            text="Immersive sound and visuals - Collaborative work"
+            text="Immersive sound and visuals (collaborative work)"
           />
           <Composition
             title="Deconstructions"
             vid="KwPAwxJZcK0"
-            text="For voice, visuals and electronics - Voice: Jessica Wagner"
+            text="Jessica Wagner, voice; Juan S. Vassallo, composition, electronics"
           />
 
           <Composition
@@ -136,12 +121,12 @@ function Compositions() {
           <Composition
             title="Encroach"
             vid="0Gs0bcSGbH4"
-            text="Installation by Lilianne Milgroom (2015) - Original soundscape: Juan Vassallo"
+            text="Installation by Lilianne Milgroom; Juan Vassallo, electronics"
           />
           <Composition
             title="Sonidos de lo incierto"
             vid="yBBQS4i0N1k"
-            text="Artistas: Fernanda Almanza, Federico Echave, Juan Vassallo"
+            text="Fernanda Almanza, Federico Echave, Juan Vassallo"
           />
         </div>
         {/* <h3 className="neonText2">Complete catalog of works</h3>
