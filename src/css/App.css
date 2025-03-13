@@ -526,6 +526,11 @@ p.active {
 }
 
 @media only screen and (max-width: 391px) {
+  .App::before {
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+
   .mainWrapper {
     display: flex;
     flex-direction: column; /* Keep this the same to avoid weird shifts */
