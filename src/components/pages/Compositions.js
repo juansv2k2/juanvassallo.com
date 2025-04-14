@@ -17,6 +17,11 @@ function Compositions() {
             vid="MGxBEbUMMt4"
             text="Vokalensembelet 'Tabula Rasa'"
           />
+          <Composition
+            title="Elevator Pitch"
+            vid="X8W7ojWZCjg"
+            text="Elide Sulsenti, cello; Juan S. Vassallo, electronics"
+          />
 
           <Composition
             title="Oscillations (i)"
@@ -25,7 +30,7 @@ function Compositions() {
           />
           <Composition
             title="Oscillations (iii)"
-            vid="GW2uNDWmZ8Y"
+            vid="5svV1NTPC8k"
             text="Késia Decoté Rodrigues, piano/toy piano; Sergej Tchirkov, accordion; Anders Hannevold, percussion, accessories; Alexander Fiske Fosse, narration; Andrea Urstad Toft, visuals"
           />
           <Composition
@@ -39,6 +44,13 @@ function Compositions() {
             vid="5h_lDeV5iOc"
             text="Langhaugen String Orchestra"
           />
+
+          <Composition
+            title="Aphorisms (2)"
+            vid="E-B-HRO5MYs"
+            text="Obsidian Ensemble"
+          />
+
           <Composition
             title="Milonga del gesto"
             vid="cBkxHk5SSWI"

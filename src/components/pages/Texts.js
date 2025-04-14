@@ -8,6 +8,23 @@ function Texts() {
       <div className="cv bigP texts">
         <ul>
           <h3 className="subtitle2">Articles</h3>
+
+          <li>
+            Vassallo, J. S., Sandred, Ö, Vincenot, J. (2025). NeuralConstraints:
+            Integrating a Neural Generative Model with Constraint-Based
+            Composition. Embodied Perspectives on Sound and Music AI. Frontiers
+            in Computer Sciences, 7.
+            <p className="link">
+              <a
+                className="link"
+                href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1543074/abstract"
+                target="_blank"
+              >
+                https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1543074/abstract
+              </a>
+            </p>
+          </li>
+
           <li>
             Vassallo, J. S. (2024). Exploring Musical Procedural Rhetoric:
             Computational Influence on Compositional Frameworks and Methods in
