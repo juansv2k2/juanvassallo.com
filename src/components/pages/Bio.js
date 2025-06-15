@@ -33,8 +33,9 @@ function Bio() {
             (Arg), Schola Heidelberg (Ger), Quasar Saxophone Quartet (Can),
             Vocal Ensemble Tabula Rasa (Nor), Edvard Grieg Kor (Nor), JÓR
             saxophone quartet (Nor/Swe/Den), Zone Experimental Basel (Swi),
-            Lucas Fels (Ger), Sergej Tchirkov (Rus), Elide Sulsenti (Ita), among
-            many others.
+            Hinge Quartet (USA), Obsidian Ensemble (Nor), Langhaugen String
+            Orchestra (Nor), Lucas Fels (Ger), Sergej Tchirkov (Rus), Ludvig
+            Lindström (Fin), Elide Sulsenti (Ita), among many others.
           </p>
           <p>
             Some of my compositions have been awarded in national and
