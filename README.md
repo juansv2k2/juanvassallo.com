@@ -117,4 +117,12 @@ To customize the website for your own use, you can:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Copyright @ Juan S. Vassallo 2025. All rights reserved.
+
+## Preview
+
+Below are screenshots of key sections of the website:
+
+|                 Bio Section                 |                   Records Section                   | Work/Projects Section |
+| :-----------------------------------------: | :-------------------------------------------------: | :-------------------: |
+| ![Bio](public/img/juanvassallo.com_bio.png) | ![Records](public/img/juanvassallo.com_records.png) |
