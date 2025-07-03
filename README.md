@@ -123,6 +123,8 @@ Copyright @ Juan S. Vassallo 2025. All rights reserved.
 
 Below are screenshots of key sections of the website:
 
-|                 Bio Section                 |                   Records Section                   |
-| :-----------------------------------------: | :-------------------------------------------------: |
-| ![Bio](public/img/juanvassallo.com_bio.png) | ![Records](public/img/juanvassallo.com_records.png) |
+**Bio Section**  
+![Bio](public/img/juanvassallo.com_bio.png)
+
+**Records Section**  
+![Records](public/img/juanvassallo.com_records.png)
