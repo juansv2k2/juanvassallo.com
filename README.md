@@ -1,6 +1,6 @@
 # Juan Sebastián Vassallo — Personal Website
 
-This is the source code for my personal professional website as a composer, sound/media artist, and researcher interested in artificial intelligence and computational creativity. The site showcases my artistic work, research, and ongoing projects, and serves as a portfolio for my web development skills.
+This is the source code for my personal professional website as a composer, sound/media artist, and researcher interested in artificial intelligence and hybrid human-computer creative spaces. The site showcases my artistic work, research, and ongoing projects, and also serves as a portfolio for my web development skills. It is currently deployed here: https://juanvassallo.com/
 
 ## Overview
 
@@ -117,14 +117,17 @@ To customize the website for your own use, you can:
 
 ## License
 
-Copyright @ Juan S. Vassallo 2025. All rights reserved.
+Copyright 2025 Juan S. Vassallo. All rights reserved.
 
 ## Preview
 
 Below are screenshots of key sections of the website:
 
-**Bio Section**  
-![Bio](public/img/juanvassallo.com_bio.png)
+**Works Section**  
+![Records](public/img/juanvassallo.com_work.png)
 
 **Records Section**  
-![Records](public/img/juanvassallo.com_records.png)
+![Works](public/img/juanvassallo.com_records.png)
+
+**Bio Section**  
+![Bio](public/img/juanvassallo.com_bio.png)
