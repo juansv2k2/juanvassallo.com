@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "../src/css/App.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   BrowserRouter as Router,
   NavLink,
@@ -39,7 +39,7 @@ function App() {
           <div className="titleName">
             <h1 className="title margin">Juan Sebastián Vassallo</h1>
             <h3 className="subtitle margin">
-              Composer | Researcher | Developer
+              experimental music & multimedia art
             </h3>
           </div>
           <div className="headNavBar buttons">
@@ -56,7 +56,7 @@ function App() {
           </div>
         </div>
 
-        {/* Transition Group for smooth route changes */}
+        {/* Framer Motion for smooth route changes */}
         <MainContent />
 
         <div className="footer neonText">
@@ -71,17 +71,25 @@ function MainContent() {
   const location = useLocation();
 
   return (
-    <TransitionGroup className="mainWrapper">
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location.pathname}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+      >
         <Switch location={location}>
           {routes.map(({ path, Component }) => (
             <Route key={path} exact path={path} component={Component} />
           ))}
         </Switch>
-      </CSSTransition>
-    </TransitionGroup>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
+// React 18 render method
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const root = createRoot(rootElement);
+root.render(<App />);

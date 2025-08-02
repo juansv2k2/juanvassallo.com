@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.66c4a661.css",
-    "main.js": "/static/js/main.9f2b4194.js",
+    "main.css": "/static/css/main.cc75a151.css",
+    "main.js": "/static/js/main.7e12d8d2.js",
     "static/media/fondo_9.jpg": "/static/media/fondo_9.45ea184dc7ad2314ccd8.jpg",
-    "static/media/The-Modern-Chaos.ttf.eot": "/static/media/The-Modern-Chaos.ttf.96bc0701ed7be0c49eda.eot",
-    "static/media/The-Modern-Chaos.ttf.svg": "/static/media/The-Modern-Chaos.ttf.4ab2f2bbac060b74907d.svg",
-    "static/media/The-Modern-Chaos.ttf.woff": "/static/media/The-Modern-Chaos.ttf.79913073c853d1af2a14.woff",
     "index.html": "/index.html",
-    "main.66c4a661.css.map": "/static/css/main.66c4a661.css.map",
-    "main.9f2b4194.js.map": "/static/js/main.9f2b4194.js.map"
+    "main.cc75a151.css.map": "/static/css/main.cc75a151.css.map",
+    "main.7e12d8d2.js.map": "/static/js/main.7e12d8d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.66c4a661.css",
-    "static/js/main.9f2b4194.js"
+    "static/css/main.cc75a151.css",
+    "static/js/main.7e12d8d2.js"
   ]
 }
