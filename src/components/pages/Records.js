@@ -6,10 +6,8 @@ function Records() {
     <div className="mainWrapper">
       <div className="secondaryWrapper">
         <div className="width">
-          <div>
-            <h1 className="neonText">Edited records</h1>
-          </div>
-          <div>
+          <h1 className="neonText">Edited records</h1>
+          <div className="cv">
             <h3 className="subtitle2">Soloist releases</h3>
           </div>
           <div className="projects">
@@ -56,7 +54,7 @@ function Records() {
             </div>
           </div>
           <div>
-            <div>
+            <div className="cv">
               <h3 className="subtitle2">w/Azul 514</h3>
             </div>
             <div className="projects">
@@ -65,7 +63,7 @@ function Records() {
             </div>
           </div>
           <div>
-            <div>
+            <div className="cv">
               <h3 className="subtitle2">w/La Sanluistango</h3>
             </div>
             <div className="projects">

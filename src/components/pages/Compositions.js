@@ -7,8 +7,8 @@ function Compositions() {
     <div className="mainWrapper">
       <div className="secondaryWrapper">
         <div className="width">
-          <div>
-            <h1 className="neonText">Compositions</h1>
+          <h1 className="neonText">Compositions</h1>
+          <div className="cv">
             <h3 className="subtitle2">Instrumental/mixed media</h3>
           </div>
           <div className="projects">
@@ -82,7 +82,7 @@ function Compositions() {
               />
             </div>
           </div>
-          <div>
+          <div className="cv">
             <h3 className="subtitle2">Electroacoustic</h3>
           </div>
           <div className="projects">
@@ -101,7 +101,7 @@ function Compositions() {
               />
             </div>
           </div>
-          <div>
+          <div className="cv">
             <h3 className="subtitle2">Audiovisual</h3>
           </div>
           <div className="projects">
@@ -121,7 +121,7 @@ function Compositions() {
               text="Piece included in the Christmas calendar 2020 - Grieg Academy of Music, University of Bergen"
             />
           </div>
-          <div>
+          <div className="cv">
             <h3 className="subtitle2">Installations</h3>
           </div>
           <div className="projects">

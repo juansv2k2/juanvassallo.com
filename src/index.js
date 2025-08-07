@@ -25,7 +25,7 @@ const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/bio", name: "Bio", Component: Bio },
   { path: "/cv", name: "CV", Component: Cv },
-  { path: "/compositions", name: "Works", Component: Compositions },
+  { path: "/compositions", name: "Compositons", Component: Compositions },
   { path: "/records", name: "Records", Component: Records },
   { path: "/texts", name: "Texts", Component: Texts },
   { path: "/contact", name: "Contact", Component: Contact },

@@ -6,7 +6,8 @@ body {
 
 .texts {
   text-align: left;
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
 }
 
 .App {
@@ -38,7 +39,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .mainWrapper {
@@ -54,6 +55,12 @@ body {
 }
 
 .secondaryWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.tertiaryWrapper {
   display: flex;
   flex-direction: row;
   width: 70%;
@@ -137,18 +144,21 @@ body {
 .contact {
   text-align: center;
   height: 100vh;
+  width: 100%;
 }
 
 .indivContact {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1%;
+  text-align: center;
 }
 
 .leftSide {
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
   width: 60%;
-  padding-bottom: 2%;
 }
+
 .rightSide {
   display: flex;
   flex-direction: column;
@@ -342,25 +352,28 @@ a {
   margin-bottom: 10px;
   margin-top: 10px;
   font-size: 16px;
-  text-shadow: 0 0 5px black;
+  transition: color 0.2s ease-in-out;
 }
 
-.bio p {
+a.active {
+  color: rgb(255, 255, 255);
+}
+
+.bio li p {
   color: white;
-  text-shadow: 5px 5px 5px black;
-  line-height: 25px;
+  line-height: 1.6;
 }
 
 p {
   color: white;
-  text-shadow: 2px 2px 5px black;
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .fh3 {
   color: white;
-  text-shadow: 2px 2px 5px black;
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .nombre {
@@ -372,7 +385,6 @@ h1 {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 400;
-  text-shadow: 0 0 5px black;
 }
 
 h2 {
@@ -388,95 +400,72 @@ h2 {
 }
 
 .header h1,
-h2,
-h3 {
-  text-shadow: 0 0 5px black;
-}
-
-.footText {
-  margin-top: 0;
+.header h2,
+.header h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .mainWrapper p {
-  text-shadow: 0 0 10px black;
-}
-
-.subtitle {
-  margin-top: 0;
-  font-size: 25px;
-  color: white;
-  font-weight: 400;
-}
-
-.subtitle2 {
-  margin-top: 25px;
-  font-size: 20px;
-  color: white;
-  font-size: 16px;
-}
-
-.margin {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.title {
-  margin-bottom: 0;
-  font-size: 30px;
-  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 ul {
-  list-style-type: none;
-  padding-left: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-inline-start: 20px;
 }
 
-.cv {
-  font-size: 85%;
-}
 .cv li {
   color: white;
   font-size: 16px;
-  text-shadow: 0 0 5px black;
-  line-height: 25px;
+  line-height: 1.6;
   margin-bottom: 5px;
   text-decoration: none;
-  list-style-type: disc;
+  list-style-type: none;
   list-style-position: inside;
   padding: 5px;
   text-align: left;
-  list-style-type: none;
-  text-shadow: 0 0 5px black;
 }
 
 .cv h3 {
   color: white;
-  text-shadow: 0px 0px 5px black;
 }
 
-.co h3 {
-  padding-left: 0;
-}
-.co {
-  padding-inline-start: 0;
-}
 .co li {
   margin-bottom: 2px;
   font-size: 14px;
   color: white;
   list-style-type: none;
-  text-shadow: 0 0 5px black;
   padding-left: 0;
   text-decoration: none;
 }
 
 .bigP p {
   font-size: 16px;
-  text-shadow: 0 0 5px black;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+a.active {
+  color: rgb(255, 255, 255);
 }
 
 .indivComposition p {
   font-size: 15px;
+  line-height: 1.6;
+}
+
+ul {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-inline-start: 20px;
 }
 
 /* videos */
@@ -654,12 +643,14 @@ p.active {
 
   ul {
     font-size: 110%;
+    padding-inline-start: 20px;
   }
 
   .bigP p,
   .cv li {
     font-size: 100%;
     text-align: left;
+    line-height: 1.6;
   }
 
   .link {
@@ -687,15 +678,17 @@ p.active {
 
   .indivComposition p {
     font-size: 14px;
+    line-height: 1.6;
   }
 
+  /* Remove any conflicting shadow rules */
   .neonText,
   .neonText2,
   .subtitle,
   .subtitle2,
   h3,
   p {
-    text-align: center;
+    /* Shadows already applied by universal rule above */
   }
 
   /* iFrames */
@@ -777,6 +770,132 @@ p.active {
   .subtitle2 {
     text-align: center;
   }
+}
+
+/* Consistent text shadow for all text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span,
+.title,
+.subtitle,
+.subtitle2,
+.neonText,
+.neonText2,
+.buttons h3,
+.cv li,
+.cv h3,
+.co li,
+.bio li p,
+.bigP p,
+.indivComposition p,
+.fh3,
+.nombre {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Specific overrides where needed */
+.bio li p {
+  color: white;
+  line-height: 1.6;
+}
+
+.subtitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.fh3 {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h2 {
+  text-decoration: underline;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.buttons h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cv li {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 5px;
+  text-align: left;
+}
+
+.cv h3 {
+  color: white;
+  font-weight: 400;
+}
+
+.co li {
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: white;
+  list-style-type: none;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.bigP p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: bisque;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+a.active {
+  color: rgb(255, 255, 255);
+}
+
+.indivComposition p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+ul {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-inline-start: 20px;
 }
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
