@@ -148,8 +148,8 @@ body {
 
 .contact {
   text-align: center;
-  height: 100vh;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 .indivContact {
@@ -333,6 +333,108 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ContactForm {
+  width: 100%;
+}
+
+.ContactForm .container {
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+}
+
+.ContactForm .row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.ContactForm .formRow {
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ContactForm .col,
+.ContactForm .col-6,
+.ContactForm .col-12 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.ContactForm .formInput {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(64, 224, 208, 0.5);
+  color: turquoise;
+  padding: 0.75rem;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.ContactForm .formInput::placeholder {
+  color: rgba(64, 224, 208, 0.7);
+}
+
+.ContactForm .formInput:focus {
+  outline: none;
+  border-color: turquoise;
+  box-shadow: 0 0 5px rgba(64, 224, 208, 0.3);
+}
+
+.ContactForm .submit-btn {
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 1px solid turquoise;
+  color: turquoise;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.ContactForm .submit-btn:hover {
+  background-color: rgba(64, 224, 208, 0.3);
+  box-shadow: 0 0 10px rgba(64, 224, 208, 0.3);
+}
+
+.ContactForm .submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ContactForm .errorMessage {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .galleryWrapper {

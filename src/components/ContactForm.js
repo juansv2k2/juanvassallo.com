@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const {
@@ -11,16 +12,33 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
 
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Subject: ", subject);
-    console.log("Message: ", message);
-  };
+    try {
+      // EmailJS configuration
+      const serviceId = "service_dz6pmj8";
+      const templateId = "template_dtvr9ib";
+      const publicKey = "hafgNF-TVsy_c-ZDH";
 
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+        to_email: "juansv2k2@gmail.com",
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      alert("Message sent successfully!");
+      reset(); // Clear the form
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send message. Please try again or contact directly.");
+    }
+  };
   return (
     <div className="ContactForm">
       <div className="container">
-        <div className="row">
+        <div>
           <div className="col-12 text-center">
             <div className="contactForm">
               <form
@@ -29,7 +47,7 @@ const ContactForm = () => {
                 noValidate
               >
                 {/* Row 1 of form */}
-                <div className="row formRow">
+                <div className="formRow">
                   <div className="col-6">
                     <input
                       type="text"
@@ -53,6 +71,8 @@ const ContactForm = () => {
                       </span>
                     )}
                   </div>
+                </div>
+                <div className="formRow">
                   <div className="col-6">
                     <input
                       type="email"
@@ -73,7 +93,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 2 of form */}
-                <div className="row formRow">
+                <div className="formRow">
                   <div className="col">
                     <input
                       type="text"
@@ -99,7 +119,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className="row formRow">
+                <div className="formRow">
                   <div className="col">
                     <textarea
                       rows={3}
@@ -117,9 +137,11 @@ const ContactForm = () => {
                     )}
                   </div>
                 </div>
-                <button className="submit-btn" type="submit">
-                  Submit
-                </button>
+                <div className="button-submit">
+                  <button className="submit-btn" type="submit">
+                    Submit
+                  </button>
+                </div>
               </form>
             </div>
           </div>
