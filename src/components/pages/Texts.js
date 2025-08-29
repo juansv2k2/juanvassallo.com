@@ -11,8 +11,7 @@ function Texts() {
             <ul>
               <li>
                 Vassallo, J. S. (2025). Outward Threads – Intuitive Computers /
-                Rational Composers. Research Catalogue. Retrieved August 29,
-                2025, from
+                Rational Composers. Research Catalogue.{" "}
                 <a
                   href="https://www.researchcatalogue.net/view/3422970/3422971"
                   className="link"
