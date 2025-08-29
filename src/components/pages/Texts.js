@@ -7,7 +7,7 @@ function Texts() {
         <h1 className="neonText">Texts</h1>
         <div className="cv">
           <div className="texts">
-            <h2>Online Publications</h2>
+            <h2>Doctoral dissertation</h2>
             <ul>
               <li>
                 Vassallo, J. S. (2025). Outward Threads – Intuitive Computers /
@@ -22,7 +22,7 @@ function Texts() {
                 </a>
               </li>
             </ul>
-            <h2>Articles</h2>
+            <h2>Journal articles</h2>
             <ul>
               <li>
                 Vassallo, J. S., Sandred, Ö, Vincenot, J. (2025).
