@@ -7,6 +7,22 @@ function Texts() {
         <h1 className="neonText">Texts</h1>
         <div className="cv">
           <div className="texts">
+            <h2>Online Publications</h2>
+            <ul>
+              <li>
+                Vassallo, J. S. (2025). Outward Threads – Intuitive Computers /
+                Rational Composers. Research Catalogue. Retrieved August 29,
+                2025, from
+                <a
+                  href="https://www.researchcatalogue.net/view/3422970/3422971"
+                  className="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.researchcatalogue.net/view/3422970/3422971
+                </a>
+              </li>
+            </ul>
             <h2>Articles</h2>
             <ul>
               <li>
