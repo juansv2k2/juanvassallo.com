@@ -65,16 +65,30 @@ function CV() {
                   2020-2024 – Ph.D. in Artistic Research at the Grieg Academy of
                   Music, University of Bergen. Project: "Outward Threads –
                   Intuitive Computers / Rational Composers." Supervision: Dániel
-                  Péter Biró and Örjan Sandred. Defense scheduled for September
-                  11, 2025.
+                  Péter Biró and Örjan Sandred. PhD thesis accessible{" "}
+                  <a
+                    href="https://outwardthreads.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                  .
                 </li>
                 <li>
                   2017-2019 – Master's degree in interdisciplinary studies
                   (Music and Psychology) - University of Victoria (Canada).
                   Project: "Music expert-novice differences in speech
                   perception." Supervision: Andrew Schloss (MUS) and James
-                  Tanaka (PSYC). Master's thesis accessible here:
-                  http://hdl.handle.net/1828/11061.
+                  Tanaka (PSYC).{" "}
+                  <a
+                    href="https://dspace.library.uvic.ca/items/1f5d7a7a-ded3-4d88-8baa-27e3790037c2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                  .
                 </li>
                 <li>
                   2007-2013 – Bachelor's degree in music composition - National

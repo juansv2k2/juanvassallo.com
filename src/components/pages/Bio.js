@@ -11,18 +11,21 @@ function Bio() {
             <div className="bigP bio">
               <p>
                 I am an Argentinian experimental artist and researcher based in
-                Bergen, Norway. My practice lies at the intersection of
-                technologically mediated creation and instrumental sonic
-                exploration. I hold an interdisciplinary Master’s degree in
-                music and psychology, and am currently pursuing a Ph.D. in
-                Artistic Research at the University of Bergen.
+                Bergen, Norway. I hold a Ph.D. in artistic research (University
+                of Bergen, Norway), an interdisciplinary Master’s degree in
+                music and psychology (University of Victoria, Canada) and
+                bachelor's degree in music composition and piano (National
+                University of Córdoba and Provincial Conservatory of Córdoba,
+                Argentina).
               </p>
               <p>
-                My work is driven by curiosity about the relationships between
-                cognition, technology, and sound. I am fascinated by how
-                technology can extend, disrupt, and transform traditional
-                musical practices, not as a replacement for human creativity,
-                but as a collaborative partner in the search for new musical
+                My practice lies at the intersection of technologically mediated
+                creation and instrumental sonic exploration. My work is driven
+                by curiosity about the relationships between cognition,
+                technology, and sound. I am fascinated by how technology can
+                extend, disrupt, and transform traditional musical practices,
+                not as a replacement for human creativity, but as a
+                collaborative partner in the search for new musical
                 possibilities. Some of my recent projects have involved
                 exploring human-computer interaction in live and fixed media,
                 instrumental improvisation augmented by electronics, and
@@ -41,22 +44,24 @@ function Bio() {
               <p>
                 My music has been performed by leading ensembles and soloists
                 internationally, including Projecto RED Ensemble (Argentina),
-                Schola Heidelberg (Germany), Quasar Saxophone Quartet (Canada),
-                Vocal Ensemble Tabula Rasa (Norway), Edvard Grieg Kor (Norway),
-                JÓR Saxophone Quartet (Scandinavia), Zone Experimental Basel
-                (Switzerland), Hinge Quartet (USA), Obsidian Ensemble (Norway),
-                Lucas Fels (Germany), Sergej Tchirkov (Russia), Késia Decoté
-                (Brazil), Ludvig Lindström (Finland), and Elide Sulsenti
-                (Italy), among others.
-                <p>
-                  My compositions have received prizes at international
-                  competitions, such as the 2024 IEEE Big Data Conference’s
-                  AI-based composition contest (first prize,{" "}
-                  <em>Oscillations/iii)</em>, the Prix ‘Pas de Calais’
-                  (France/Argentina), the Chengdu River Sun Prize (China/ISCM),
-                  and special mentions for electroacoustic and interdisciplinary
-                  work in Argentina and abroad.
-                </p>
+                Quasar Saxophone Quartet (Canada), JÓR Saxophone Quartet
+                (Scandinavia), Zone Experimental Basel (Switzerland), Hinge
+                Quartet (USA), EcoVoices Project (USA), Obsidian Ensemble
+                (Norway), Vocal Ensemble Tabula Rasa (Norway), Edvard Grieg Kor
+                (Norway), and soloists including Lucas Fels (Germany), Sergej
+                Tchirkov (Russia), Késia Decoté (Brazil), Ludvig Lindström
+                (Finland), and Elide Sulsenti (Italy), among others.
+              </p>
+              <p>
+                My compositions have received prizes at international
+                competitions, such as the 2024 IEEE Big Data Conference’s
+                AI-based composition contest (first prize,{" "}
+                <em>Oscillations/iii)</em>, the Prix ‘Pas de Calais’
+                (France/Argentina), the Chengdu River Sun Prize (China/ISCM),
+                and special mentions for electroacoustic and interdisciplinary
+                work in Argentina and abroad.
+              </p>
+              <p>
                 Collaboration and interdisciplinarity are key to my practice.
                 Past projects include works exhibited at the Kirchner Cultural
                 Center (Buenos Aires) and the <em>Cinco Soles</em>{" "}
