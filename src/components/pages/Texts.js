@@ -11,7 +11,7 @@ function Texts() {
             <ul>
               <li>
                 Vassallo, J. S. (2025). Outward Threads – Intuitive Computers /
-                Rational Composers. Research Catalogue.{" "}
+                Rational Composers. <br></br>Research Catalogue:{" "}
                 <a
                   href="https://www.researchcatalogue.net/view/3422970/3422971"
                   className="link"
@@ -19,6 +19,16 @@ function Texts() {
                   rel="noopener noreferrer"
                 >
                   https://www.researchcatalogue.net/view/3422970/3422971
+                </a>
+                <br></br>
+                Dedicated website:{" "}
+                <a
+                  href="https://www.outwardthreads.net"
+                  className="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.outwardthreads.net
                 </a>
               </li>
             </ul>
@@ -68,6 +78,12 @@ function Texts() {
             </ul>
             <h2>Conference proceedings</h2>
             <ul>
+              <li>
+                Vincenot, J., Vassallo, J. S., Sandred, Ö. (2025). MOZ'lib and
+                PWforMax: Rewiring CAC heritage. Proceedings of the 10th
+                International Conference on Music Representation and Notation –
+                TENOR. (in press)
+              </li>
               <li>
                 Vassallo, J. S. (2022). Machinic automation in the process of
                 text and music composition: The versificator. Proceedings of the
