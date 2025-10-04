@@ -35,6 +35,12 @@ function Texts() {
             <h2>Journal articles</h2>
             <ul>
               <li>
+                Vincenot, J., Vassallo, J. S., Sandred, Ö, (2025). MOZ'lib and
+                PWforMax: Rewiring CAC heritage. Proceedings of the 10th
+                Conference on Music Representation and Notation TENOR in
+                Beijing, China. (in press)
+              </li>
+              <li>
                 Vassallo, J. S., Sandred, Ö, Vincenot, J. (2025).
                 NeuralConstraints: Integrating a Neural Generative Model with
                 Constraint-Based Composition. Embodied Perspectives on Sound and

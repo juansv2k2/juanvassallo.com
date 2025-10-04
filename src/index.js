@@ -38,7 +38,7 @@ function App() {
           <div className="titleName">
             <h1 className="title margin">Juan Sebastián Vassallo</h1>
             <h3 className="subtitle margin">
-              experimental music & multimedia art
+              Composer | Researcher | Performer
             </h3>
           </div>
           <div className="headNavBar buttons">
