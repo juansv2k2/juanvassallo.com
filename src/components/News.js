@@ -31,7 +31,7 @@ function News({ newsItems }) {
       date: "2025-10-26",
       title: "Upcoming Presentation at TENOR 2025",
       content:
-        "I will be presenting the article 'MOZ'lib and PWforMax: Rewiring CAC heritage' at the 10th International Conference on Music Representation and Notation in Beijing on October 26.",
+        "I will be presenting the article 'MOZ'lib and PWforMax: Rewiring CAC heritage' at the 10th International Conference on Notation and Music Representation (TENOR) in Beijing (China)on October 26.",
       link: "https://zhuanti.ccom.edu.cn/tenorbjen/sd/a2025.htm",
     },
     {
@@ -40,6 +40,13 @@ function News({ newsItems }) {
       content:
         "My doctoral defense will take place on September 11, 2025, at the University of Bergen. ",
       link: "https://kmd.uib.no/no/kalender/disputas-og-midtveisevaluering/juan-vassallo-disputas",
+    },
+    {
+      date: "2025-06-17",
+      title: "Concert at the ICMC 2025",
+      content:
+        "My piece 'Oscillations (iii)' will be performed at the International Computer Music Conference (ICMC) 2025 in Boston (USA).",
+      link: "https://icmc2025.sites.northeastern.edu/concerts-hall-part-1/#hall13",
     },
     {
       date: "2025-04-25",
@@ -52,7 +59,7 @@ function News({ newsItems }) {
       date: "2025-02-20",
       title: "Concert 'Outward Threads'",
       content:
-        "My final concert featuring works that explore the intersection of AI/ML and music will happen in the Auditorium Knut Knaus at the University of Bergen.",
+        "My final concert as artistic research fellow at the Grieg Academy of Music will happen in the Auditorium Knut Knaus at the University of Bergen.",
       link: "https://kmd.uib.no/en/Calendar/concerts-sound/outward-threads--intuitive-computers-rational-composers",
     },
   ];
