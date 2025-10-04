@@ -451,6 +451,29 @@ iframe {
   object-fit: contain;
 }
 
+/* CV Download Styles */
+.cv-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: turquoise !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.cv-download-link:hover {
+  color: white !important;
+}
+
+.cv-download-link svg {
+  transition: transform 0.2s ease;
+}
+
+.cv-download-link:hover svg {
+  transform: translateY(1px);
+}
+
 /* Texts */
 
 a {
