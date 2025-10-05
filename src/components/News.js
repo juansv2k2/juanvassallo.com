@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function News({ newsItems }) {
   const [websiteData, setWebsiteData] = useState({});
   const [loadingStates, setLoadingStates] = useState({});
+  const [requestedUrls, setRequestedUrls] = useState(new Set());
 
   // Default news items (no need for manual IDs)
   const defaultNews = [
@@ -84,18 +85,28 @@ function News({ newsItems }) {
     }
   };
 
-  // Function to fetch website metadata
+  // Function to fetch website metadata with timeout
   const fetchWebsiteData = async (url, itemId) => {
-    if (!url || websiteData[itemId]) return;
+    if (!url || websiteData[itemId] || requestedUrls.has(url)) return;
 
+    // Mark this URL as requested to prevent duplicates
+    setRequestedUrls((prev) => new Set([...prev, url]));
     setLoadingStates((prev) => ({ ...prev, [itemId]: true }));
 
     try {
+      // Add timeout to prevent hanging requests
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+
       // Using a CORS proxy service to fetch website metadata
       const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(
         url
       )}`;
-      const response = await fetch(proxyUrl);
+      const response = await fetch(proxyUrl, {
+        signal: controller.signal,
+      });
+
+      clearTimeout(timeoutId);
       const data = await response.json();
 
       if (data.contents) {
@@ -125,7 +136,11 @@ function News({ newsItems }) {
         const image =
           getMetaContent("og:image") ||
           getMetaContent("twitter:image") ||
-          `https://www.google.com/s2/favicons?domain=${getDomain(url)}&sz=128`;
+          (getDomain(url) === "zhuanti.ccom.edu.cn"
+            ? "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDA5MEQ5Ii8+Cjwvc3ZnPgo="
+            : `https://www.google.com/s2/favicons?domain=${getDomain(
+                url
+              )}&sz=128`);
 
         const websiteInfo = {
           title: title.trim(),
@@ -143,18 +158,25 @@ function News({ newsItems }) {
         throw new Error("Failed to fetch content");
       }
     } catch (error) {
-      console.warn(`Failed to fetch metadata for ${url}:`, error);
+      // Handle timeout and other errors gracefully
+      if (error.name === "AbortError") {
+        console.warn(`Request timeout for ${url}`);
+      } else {
+        console.warn(`Failed to fetch metadata for ${url}:`, error);
+      }
 
       // Fallback data
+      const domain = getDomain(url);
       setWebsiteData((prev) => ({
         ...prev,
         [itemId]: {
-          title: getDomain(url),
+          title: domain,
           description: "Visit website for more information",
-          thumbnail: `https://www.google.com/s2/favicons?domain=${getDomain(
-            url
-          )}&sz=128`,
-          domain: getDomain(url),
+          thumbnail:
+            domain === "zhuanti.ccom.edu.cn"
+              ? "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDA5MEQ5Ii8+Cjwvc3ZnPgo="
+              : `https://www.google.com/s2/favicons?domain=${domain}&sz=128`,
+          domain: domain,
           loaded: true,
           error: true,
         },
@@ -164,14 +186,20 @@ function News({ newsItems }) {
     }
   };
 
-  // Fetch website data for all items with links
+  // Fetch website data for all items with links - run immediately but non-blocking
   useEffect(() => {
-    items.forEach((item) => {
-      if (item.link && !websiteData[item.id]) {
-        fetchWebsiteData(item.link, item.id);
+    const processedItems = processNewsItems(newsItems || defaultNews);
+
+    // Start all requests immediately but asynchronously
+    processedItems.forEach((item, index) => {
+      if (item.link && !websiteData[item.id] && !requestedUrls.has(item.link)) {
+        // Stagger requests slightly to avoid overwhelming the proxy
+        setTimeout(() => {
+          fetchWebsiteData(item.link, item.id);
+        }, index * 100); // 100ms delay between each request
       }
     });
-  }, [items]);
+  }, []); // Empty dependency array - only run once on mount
 
   // Format date for display
   const formatDate = (dateString) => {
@@ -212,9 +240,18 @@ function News({ newsItems }) {
                         src={websiteData[item.id].thumbnail}
                         alt={websiteData[item.id].title}
                         onError={(e) => {
-                          e.target.src = `https://www.google.com/s2/favicons?domain=${
-                            websiteData[item.id].domain
-                          }&sz=128`;
+                          // Better fallback for problematic domains
+                          if (
+                            websiteData[item.id].domain ===
+                            "zhuanti.ccom.edu.cn"
+                          ) {
+                            e.target.src =
+                              "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDA5MEQ5Ii8+Cjwvc3ZnPgo=";
+                          } else {
+                            e.target.src = `https://www.google.com/s2/favicons?domain=${
+                              websiteData[item.id].domain
+                            }&sz=64`;
+                          }
                         }}
                       />
                     </div>
