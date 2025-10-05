@@ -8,14 +8,6 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
-      date: "2025-10-5",
-      title:
-        "Upcoming residency at the Bergen Center for Electronic Arts (BEK)",
-      content:
-        "I will be a resident artist at the Bergen Center for Electronic Arts (BEK) during February 2026, working on my new composition 'Frecuencia 76' for piano and electronics, commissioned by pianist Késia Decoté.",
-      link: "https://bek.no/en/residencies/",
-    },
-    {
       date: "2025-11-11",
       title: "Presentation at the AI week in Lübeck",
       content:
@@ -65,13 +57,6 @@ function News({ newsItems }) {
       link: "https://icmc2025.sites.northeastern.edu/concerts-hall-part-1/#hall13",
     },
     {
-      date: "2025-06-7",
-      title: "Concert at New Music Days in Luzern",
-      content:
-        "My piece 'Elevator Pitch' will be performed in Elide Sulsenti's Final Masters Recital at the New Music Days in Luzern.",
-      link: "https://www.hslu.ch/en/lucerne-school-of-music/agenda/events/master-abschlusskonzerte/",
-    },
-    {
       date: "2025-04-25",
       title: "Research Paper Published",
       content:
@@ -84,13 +69,6 @@ function News({ newsItems }) {
       content:
         "My final concert as artistic research fellow at the Grieg Academy of Music will happen in the Auditorium Knut Knaus at the University of Bergen.",
       link: "https://kmd.uib.no/en/Calendar/concerts-sound/outward-threads--intuitive-computers-rational-composers",
-    },
-    {
-      date: "2024-09-26",
-      title: "Concert 'How to Make a Manifesto'",
-      content:
-        "My piece 'Elevator Pitch' will be performed by Elide Sulsenti in the cycle of concerts 'Instantanea Urbana' in Bologna.",
-      link: "https://www.bolognaestate.it/calendario-bolognaestate-2024/istantanea-urbana",
     },
   ];
 
@@ -114,7 +92,7 @@ function News({ newsItems }) {
     }
   };
 
-  // Universal function to fetch website metadata with improved image extraction
+  // Function to fetch website metadata with timeout and multiple proxies
   const fetchWebsiteData = async (url, itemId) => {
     if (!url || websiteData[itemId] || requestedUrls.has(url)) return;
 
@@ -122,14 +100,47 @@ function News({ newsItems }) {
     setRequestedUrls((prev) => new Set([...prev, url]));
     setLoadingStates((prev) => ({ ...prev, [itemId]: true }));
 
+    // Check for problematic domains that usually block CORS proxies
     const domain = getDomain(url);
+    const problematicDomains = [
+      "facebook.com",
+      "www.facebook.com",
+      "instagram.com",
+      "linkedin.com",
+    ];
 
-    // Universal fallback function that works for any domain
-    const setUniversalFallback = () => {
+    if (problematicDomains.includes(domain)) {
+      // Skip proxy attempts for known problematic domains and use fallback immediately
+      const fallbackData = {
+        title:
+          domain === "facebook.com" || domain === "www.facebook.com"
+            ? "Facebook Event"
+            : domain,
+        description: "Visit link for more information",
+        thumbnail: `https://www.google.com/s2/favicons?domain=${domain}&sz=128`,
+        domain: domain,
+        loaded: true,
+        error: false, // Don't mark as error since this is expected behavior
+        skipped: true,
+      };
+
+      setWebsiteData((prev) => ({
+        ...prev,
+        [itemId]: fallbackData,
+      }));
+      setLoadingStates((prev) => ({ ...prev, [itemId]: false }));
+      return;
+    }
+
+    // Immediate fallback function to ensure loading never gets stuck
+    const setFallbackData = () => {
       const fallbackData = {
         title: domain,
         description: "Visit website for more information",
-        thumbnail: `https://www.google.com/s2/favicons?domain=${domain}&sz=128`,
+        thumbnail:
+          domain === "zhuanti.ccom.edu.cn"
+            ? "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDA5MEQ5Ci8+Cjwvc3ZnPgo="
+            : `https://www.google.com/s2/favicons?domain=${domain}&sz=128`,
         domain: domain,
         loaded: true,
         error: true,
@@ -144,8 +155,8 @@ function News({ newsItems }) {
 
     // Set a maximum timeout for the entire operation to prevent infinite loading
     const maxTimeoutId = setTimeout(() => {
-      setUniversalFallback();
-    }, 8000); // 8 seconds maximum for all attempts
+      setFallbackData();
+    }, 12000); // 12 seconds maximum for all attempts
 
     // List of CORS proxies to try in order
     const corsProxies = [
@@ -153,13 +164,14 @@ function News({ newsItems }) {
       (url) => `https://corsproxy.io/?${encodeURIComponent(url)}`,
       (url) =>
         `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+      (url) => `https://cors-anywhere.herokuapp.com/${url}`, // Last resort
     ];
 
     for (let i = 0; i < corsProxies.length; i++) {
       try {
         // Add timeout to prevent hanging requests
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout per proxy
+        const timeoutId = setTimeout(() => controller.abort(), 4000); // 4 second timeout per proxy
 
         const proxyUrl = corsProxies[i](url);
         const response = await fetch(proxyUrl, {
@@ -176,12 +188,22 @@ function News({ newsItems }) {
         }
 
         let data;
+        const contentType = response.headers.get("content-type");
+
         if (i === 0) {
           // allorigins format
           data = await response.json();
           if (!data.contents) throw new Error("No contents in response");
+        } else if (i === 1) {
+          // corsproxy format
+          const text = await response.text();
+          data = { contents: text };
+        } else if (i === 2) {
+          // codetabs format
+          const text = await response.text();
+          data = { contents: text };
         } else {
-          // other proxies return HTML directly
+          // cors-anywhere format
           const text = await response.text();
           data = { contents: text };
         }
@@ -198,7 +220,7 @@ function News({ newsItems }) {
             return element ? element.getAttribute("content") : "";
           };
 
-          // Enhanced description extraction
+          // Helper function to clean and extract readable text
           const getCleanDescription = () => {
             let description =
               getMetaContent("og:description") ||
@@ -215,13 +237,14 @@ function News({ newsItems }) {
               return description.trim();
             }
 
-            // Fallback: extract text from common content areas
+            // Fallback: extract text from common content areas, avoiding WordPress/Divi shortcodes
             const contentSelectors = [
               "main p",
               ".content p",
               ".entry-content p",
               ".post-content p",
               "article p",
+              ".page-content p",
               "h1 + p",
               "h2 + p",
             ];
@@ -232,12 +255,13 @@ function News({ newsItems }) {
                 let text = element.textContent || "";
                 text = text.trim();
 
-                // Skip if it contains shortcodes or is too short
+                // Skip if it contains WordPress/Divi shortcodes or is too short
                 if (
                   text.length > 20 &&
                   !text.includes("[et_pb_") &&
                   !text.includes("_builder_version") &&
-                  !text.includes("shortcode")
+                  !text.includes("shortcode") &&
+                  !text.includes("admin-ajax")
                 ) {
                   return text;
                 }
@@ -247,79 +271,47 @@ function News({ newsItems }) {
             return "Visit website for more information";
           };
 
-          // Enhanced image extraction with multiple sources
-          const getImageUrl = () => {
-            // Try Open Graph and Twitter meta images first
-            let image =
-              getMetaContent("og:image") || getMetaContent("twitter:image");
-
-            if (image) {
-              // Make relative URLs absolute
-              if (image.startsWith("//")) {
-                image = "https:" + image;
-              } else if (image.startsWith("/")) {
-                image = new URL(url).origin + image;
-              } else if (!image.startsWith("http")) {
-                image = new URL(url).origin + "/" + image;
-              }
-              return image;
-            }
-
-            // Try to find images in the page content
-            const imageSelectors = [
-              'meta[name="image"]',
-              'link[rel="image_src"]',
-              'img[class*="logo"]',
-              'img[id*="logo"]',
-              'img[class*="banner"]',
-              'img[class*="header"]',
-              ".header img",
-              ".logo img",
-              "article img:first-of-type",
-              "main img:first-of-type",
-            ];
-
-            for (const selector of imageSelectors) {
-              const element = doc.querySelector(selector);
-              if (element) {
-                let src =
-                  element.getAttribute("content") ||
-                  element.getAttribute("href") ||
-                  element.getAttribute("src");
-                if (src && src.length > 10) {
-                  // Make relative URLs absolute
-                  if (src.startsWith("//")) {
-                    src = "https:" + src;
-                  } else if (src.startsWith("/")) {
-                    src = new URL(url).origin + src;
-                  } else if (!src.startsWith("http")) {
-                    src = new URL(url).origin + "/" + src;
-                  }
-                  return src;
-                }
-              }
-            }
-
-            // Final fallback to favicon service
-            return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-          };
-
           const title =
             getMetaContent("og:title") ||
             getMetaContent("twitter:title") ||
             doc.querySelector("title")?.textContent ||
-            domain;
+            getDomain(url);
 
           const description = getCleanDescription();
-          const image = getImageUrl();
+
+          const image =
+            getMetaContent("og:image") ||
+            getMetaContent("twitter:image") ||
+            (getDomain(url) === "zhuanti.ccom.edu.cn"
+              ? "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDA5MEQ5Ci8+Cjwvc3ZnPgo="
+              : `https://www.google.com/s2/favicons?domain=${getDomain(
+                  url
+                )}&sz=128`);
+
+          // Special handling for known problematic domains
+          let finalTitle = title.trim();
+          let finalDescription = description.substring(0, 200);
+
+          if (getDomain(url) === "icmc2025.sites.northeastern.edu") {
+            finalTitle =
+              finalTitle ||
+              "ICMC 2025 - International Computer Music Conference";
+            if (
+              finalDescription.includes("[et_pb_") ||
+              finalDescription.includes("_builder_version")
+            ) {
+              finalDescription =
+                "International Computer Music Conference 2025 in Boston, featuring concerts and presentations.";
+            }
+          }
 
           const websiteInfo = {
-            title: title.trim(),
-            description: description.substring(0, 200),
+            title: finalTitle,
+            description: finalDescription,
             thumbnail: image,
-            domain: domain,
+            domain: getDomain(url),
             loaded: true,
-            proxy: i,
+            proxy: i, // Track which proxy worked
           };
 
           setWebsiteData((prev) => ({
@@ -327,7 +319,7 @@ function News({ newsItems }) {
             [itemId]: websiteInfo,
           }));
 
-          clearTimeout(maxTimeoutId);
+          clearTimeout(maxTimeoutId); // Clear the maximum timeout
           setLoadingStates((prev) => ({ ...prev, [itemId]: false }));
           return; // Success! Exit the proxy loop
         } else {
@@ -336,32 +328,40 @@ function News({ newsItems }) {
       } catch (error) {
         // If this wasn't the last proxy, try the next one silently
         if (i < corsProxies.length - 1) {
+          // Only log if debugging is needed
+          // console.warn(`Proxy ${i + 1} failed for ${url}, trying next proxy...`);
           continue;
         }
 
-        // All proxies failed - use fallback
+        // All proxies failed - handle gracefully with minimal logging
         if (process.env.NODE_ENV === "development") {
-          console.warn(`All proxies failed for ${url}:`, error.message);
+          if (error.name === "AbortError") {
+            console.warn(`All proxies timed out for ${url}`);
+          } else {
+            console.warn(`All proxies failed for ${url}:`, error.message);
+          }
         }
 
+        // Clear timeout and set fallback data
         clearTimeout(maxTimeoutId);
-        setUniversalFallback();
+        setFallbackData();
         return;
       }
     }
 
     // This should never be reached, but just in case
     clearTimeout(maxTimeoutId);
-    setUniversalFallback();
+    setFallbackData();
   };
 
-  // Fetch website data for all items with links
+  // Fetch website data for all items with links - run immediately but non-blocking
   useEffect(() => {
     const processedItems = processNewsItems(newsItems || defaultNews);
 
-    // Start all requests with staggered timing
+    // Start all requests immediately but asynchronously
     processedItems.forEach((item, index) => {
       if (item.link && !websiteData[item.id] && !requestedUrls.has(item.link)) {
+        // Stagger requests slightly to avoid overwhelming the proxy
         setTimeout(() => {
           fetchWebsiteData(item.link, item.id);
         }, index * 100); // 100ms delay between each request
@@ -408,10 +408,18 @@ function News({ newsItems }) {
                         src={websiteData[item.id].thumbnail}
                         alt={websiteData[item.id].title}
                         onError={(e) => {
-                          // Universal fallback on image error
-                          e.target.src = `https://www.google.com/s2/favicons?domain=${
-                            websiteData[item.id].domain
-                          }&sz=64`;
+                          // Better fallback for problematic domains
+                          if (
+                            websiteData[item.id].domain ===
+                            "zhuanti.ccom.edu.cn"
+                          ) {
+                            e.target.src =
+                              "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDA5MEQ5Ci8+Cjwvc3ZnPgo=";
+                          } else {
+                            e.target.src = `https://www.google.com/s2/favicons?domain=${
+                              websiteData[item.id].domain
+                            }&sz=64`;
+                          }
                         }}
                       />
                     </div>
