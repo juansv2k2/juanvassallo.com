@@ -85,8 +85,6 @@ function Bio() {
                 href="/documents/Juan_Vassallo_CV.pdf"
                 download="Juan_Vassallo_CV.pdf"
                 className="cv-download-link"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <svg
                   width="16"

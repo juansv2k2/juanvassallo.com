@@ -16,6 +16,22 @@ import { join } from "path";
 const port = process.env.PORT || 3000;
 const app = express();
 
+// Configure Express to serve PDF files with proper headers
+app.use(
+  "/documents",
+  express.static(join(__dirname, "build/documents"), {
+    setHeaders: (res, path) => {
+      if (path.endsWith(".pdf")) {
+        res.set({
+          "Content-Type": "application/pdf",
+          "Content-Disposition": 'attachment; filename="Juan_Vassallo_CV.pdf"',
+          "Cache-Control": "no-cache",
+        });
+      }
+    },
+  })
+);
+
 // the __dirname is the current directory from where the script is running
 app.use(serveStatic(__dirname));
 app.use(serveStatic(join(__dirname, "build")));
