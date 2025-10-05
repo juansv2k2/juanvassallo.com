@@ -22,18 +22,25 @@ function News({ newsItems }) {
       link: "https://www.metacreation.net/",
     },
     {
-      date: "2025-10-12",
-      title: "Concert: 'Cry of the Earth' with Ensemble EcoVoice Project",
-      content:
-        "Excited to announce the premiere of my piece 'Romance del Niño del Agua', based on the poem by the same name by Antonio Esteban Agüero, with the Ensemble EcoVoice Project.",
-      link: "https://ecovoiceproject.org/cry-of-the-earth",
-    },
-    {
       date: "2025-10-26",
       title: "Upcoming Presentation at TENOR 2025",
       content:
         "I will be presenting the article 'MOZ'lib and PWforMax: Rewiring CAC heritage' at the 10th International Conference on Notation and Music Representation (TENOR) in Beijing (China)on October 26.",
       link: "https://zhuanti.ccom.edu.cn/tenorbjen/sd/a2025.htm",
+    },
+    {
+      date: "2025-10-12",
+      title: "Concert 'Cry of the Earth' with Ensemble EcoVoice Project",
+      content:
+        "Excited to announce the premiere of my piece 'Romance del Niño del Agua', based on the poem by the same name by Antonio Esteban Agüero, with the Ensemble EcoVoice Project.",
+      link: "https://ecovoiceproject.org/cry-of-the-earth",
+    },
+    {
+      date: "2025-9-20",
+      title: "Performance at Den Krapyl – Biblioteksmusikk in Bergen",
+      content:
+        "I will be performing at Den Krapyl – Biblioteksmusikken in Bergen on September 20, 2025. The program will consists of an improvised set for children: a sound trip to Argentina.",
+      link: "https://www.facebook.com/events/1755005521818465",
     },
     {
       date: "2025-09-11",
