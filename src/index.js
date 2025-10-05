@@ -20,7 +20,7 @@ import Records from "./components/pages/Records";
 import Texts from "./components/pages/Texts";
 
 const routes = [
-  { path: "/", name: "Home", Component: Home },
+  { path: "/", name: "News", Component: Home },
   { path: "/bio", name: "Bio | CV", Component: Bio },
   { path: "/compositions", name: "Compositons", Component: Compositions },
   { path: "/records", name: "Records", Component: Records },
@@ -35,8 +35,11 @@ function App() {
         <div className="header">
           <div className="titleName">
             <h1 className="title margin">Juan Sebastián Vassallo</h1>
-            <h3 className="subtitle margin">
+            <h3 className="subtitle margin subtitle-desktop">
               Composer | Researcher | Performer
+            </h3>
+            <h3 className="subtitle margin subtitle-mobile">
+              Composer Researcher Performer
             </h3>
           </div>
           <div className="headNavBar buttons">
@@ -50,6 +53,14 @@ function App() {
                 <h3>{route.name}</h3>
               </NavLink>
             ))}
+          </div>
+
+          {/* Scroll Down Indicator for Mobile/Tablet */}
+          <div className="scroll-indicator">
+            <span className="scroll-indicator-text">Scroll Down</span>
+            <svg className="scroll-arrow" viewBox="0 0 24 24">
+              <path d="M12 16l-6-6h12l-6 6z" fill="currentColor" />
+            </svg>
           </div>
         </div>
 

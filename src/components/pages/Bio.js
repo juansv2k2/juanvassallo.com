@@ -83,8 +83,33 @@ function Bio() {
             <p>
               <a
                 href="/documents/Juan_Vassallo_CV.pdf"
-                download="Juan_Vassallo_CV.pdf"
                 className="cv-download-link"
+                onClick={(e) => {
+                  e.preventDefault();
+
+                  // Create a more reliable download method for mobile
+                  fetch("/documents/Juan_Vassallo_CV.pdf")
+                    .then((response) => response.blob())
+                    .then((blob) => {
+                      const url = window.URL.createObjectURL(blob);
+                      const link = document.createElement("a");
+                      link.href = url;
+                      link.download = "Juan_Vassallo_CV.pdf";
+                      link.style.display = "none";
+
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+
+                      // Clean up the blob URL
+                      window.URL.revokeObjectURL(url);
+                    })
+                    .catch((error) => {
+                      console.error("Download failed:", error);
+                      // Fallback: open in new tab
+                      window.open("/documents/Juan_Vassallo_CV.pdf", "_blank");
+                    });
+                }}
               >
                 <svg
                   width="16"

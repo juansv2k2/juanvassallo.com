@@ -9,87 +9,86 @@ function News({ newsItems }) {
   const defaultNews = [
     {
       date: "2025-10-05",
-      title:
-        "Upcoming residency at the Bergen Center for Electronic Arts (BEK)",
+      title: "Artist Residency at Bergen Center for Electronic Arts (BEK)",
       content:
-        "I will be a resident artist at the Bergen Center for Electronic Arts (BEK) during February 2026, working on my new composition 'Frecuencia 76' for piano and electronics, commissioned by pianist Késia Decoté.",
+        "Selected as resident artist at the Bergen Center for Electronic Arts (BEK) for February 2026. During the residency, I will develop 'Frecuencia 76', a new composition for piano and electronics commissioned by renowned pianist Késia Decoté.",
       link: "https://bek.no/en/residencies/",
     },
     {
       date: "2025-11-11",
-      title: "Presentation at the AI week in Lübeck",
+      title: "Research Presentation at AI Week Lübeck",
       content:
-        "I will be presenting my research work at the Artilacs Symposium during the AI week in Lübeck, Germany.",
+        "Presenting my research on AI-assisted composition at the Artilacs Symposium during AI Week in Lübeck, Germany. The presentation will explore the intersection of artificial intelligence and creative musical practice.",
       link: "https://woche-der-ki.de/index.php/artilacs-symposium-in-luebeck/",
     },
     {
       date: "2025-10-21",
-      title: "Presentation at the MetaCreation Lab at Simon Fraser University",
+      title: "Guest Research Presentation at MetaCreation Lab",
       content:
-        "I will be presenting my research work at the MetaCreation Lab at Simon Fraser University.",
+        "Invited to present my research work at the MetaCreation Lab, Simon Fraser University. The presentation will focus on compositional application of newly developed creative AI applications.",
       link: "https://www.metacreation.net/",
     },
     {
       date: "2025-10-26",
-      title: "Upcoming Presentation at TENOR 2025",
+      title: "Paper Presentation at TENOR 2025 Beijing",
       content:
-        "I will be presenting the article 'MOZ'lib and PWforMax: Rewiring CAC heritage' at the 10th International Conference on Notation and Music Representation (TENOR) in Beijing (China)on October 26.",
+        "Presenting 'MOZ'lib and PWforMax: Rewiring CAC Heritage' at the 10th International Conference on Notation and Music Representation (TENOR) in Beijing, China.",
       link: "https://zhuanti.ccom.edu.cn/tenorbjen/index.htm",
     },
     {
       date: "2025-10-12",
-      title: "Concert 'Cry of the Earth' with Ensemble EcoVoice Project",
+      title: "World Premiere with EcoVoice Project",
       content:
-        "Excited to announce the premiere of my piece 'Romance del Niño del Agua', based on the poem by the same name by Antonio Esteban Agüero, with the Ensemble EcoVoice Project.",
+        "World premiere of 'Romance del Niño del Agua' in the concert 'Cry of the Earth' with Ensemble EcoVoice Project. The piece is based on the poem by Argentine poet Antonio Esteban Agüero.",
       link: "https://ecovoiceproject.org/cry-of-the-earth",
     },
     {
       date: "2025-09-20",
-      title: "Performance at Den Krapyl – Biblioteksmusikk in Bergen",
+      title: "Interactive Performance for Children in Bergen",
       content:
-        "I will be performing at Den Krapyl – Biblioteksmusikken in Bergen on September 20, 2025. The program will consists of an improvised set for children: a sound trip to Argentina.",
+        "Special performance at Den Krapyl – Biblioteksmusikk in Bergen featuring an improvised sonic journey to Argentina, designed as an interactive concert for young audiences.",
       link: "https://www.facebook.com/events/1755005521818465",
     },
     {
       date: "2025-09-11",
-      title: "Doctoral Defense",
+      title: "Doctoral Defense at University of Bergen",
       content:
-        "My doctoral defense will take place on September 11, 2025, at the University of Bergen. ",
+        "Defending my doctoral dissertation 'Outward Threads – Intuitive Computers / Rational Composers' at the University of Bergen, culminating four years of artistic research in human-computer collaboration.",
       link: "https://kmd.uib.no/no/kalender/disputas-og-midtveisevaluering/juan-vassallo-disputas",
     },
     {
       date: "2025-06-17",
-      title: "Concert at the ICMC 2025",
+      title: "Performance at International Computer Music Conference",
       content:
-        "My piece 'Oscillations (iii)' will be performed at the International Computer Music Conference (ICMC) 2025 in Boston (USA).",
+        "Performance of 'Oscillations (iii)' by Hinge Quartet (US) at the prestigious International Computer Music Conference (ICMC) 2025 in Boston.",
       link: "https://icmc2025.sites.northeastern.edu/concerts-hall-part-1/#hall13",
     },
     {
       date: "2025-06-07",
-      title: "Concert at New Music Days in Luzern",
+      title: "New Music Days Lucerne Performance",
       content:
-        "My piece 'Elevator Pitch' will be performed in Elide Sulsenti's Final Masters Recital at the New Music Days in Luzern.",
+        "Performance of 'Elevator Pitch' by pianist Elide Sulsenti as part of her Final Master's Recital during the New Music Days festival in Lucerne, Switzerland.",
       link: "https://www.hslu.ch/en/lucerne-school-of-music/agenda/events/master-abschlusskonzerte/",
     },
     {
       date: "2025-04-25",
-      title: "Research Paper Published",
+      title: "Publication in Frontiers of Computer Science",
       content:
-        "My latest research on constraint-based composition and neural networks has been published in the Journal Frontiers of Computer Science.",
+        "Research article on constraint-based composition and neural networks published in Frontiers of Computer Science, contributing new insights to the field of AI-assisted musical creativity.",
       link: "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1543074/abstract",
     },
     {
       date: "2025-02-20",
-      title: "Concert 'Outward Threads'",
+      title: "Final Concert as Research Fellow",
       content:
-        "My final concert as artistic research fellow at the Grieg Academy of Music will happen in the Auditorium Knut Knaus at the University of Bergen.",
+        "'Outward Threads' concert at the University of Bergen's Auditorium Knut Knaus, marking the culmination of my artistic research fellowship at the Grieg Academy of Music.",
       link: "https://kmd.uib.no/en/Calendar/concerts-sound/outward-threads--intuitive-computers-rational-composers",
     },
     {
       date: "2024-09-26",
-      title: "Concert 'How to Make a Manifesto'",
+      title: "Bologna Performance in 'Instantanea Urbana'",
       content:
-        "My piece 'Elevator Pitch' will be performed by Elide Sulsenti in the cycle of concerts 'Instantanea Urbana' in Bologna.",
+        "Performance of 'Elevator Pitch' by Elide Sulsenti in the 'How to Make a Manifesto' concert, part of the 'Instantanea Urbana' series during Bologna Estate festival.",
       link: "https://www.bolognaestate.it/calendario-bolognaestate-2024/istantanea-urbana",
     },
   ];
@@ -249,6 +248,11 @@ function News({ newsItems }) {
 
           // Enhanced image extraction with multiple sources
           const getImageUrl = () => {
+            // Special case for Frontiers domain - use favicon instead of article images
+            if (domain.includes("frontiersin.org")) {
+              return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+            }
+
             // Try Open Graph and Twitter meta images first
             let image =
               getMetaContent("og:image") || getMetaContent("twitter:image");
