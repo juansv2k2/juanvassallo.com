@@ -8,7 +8,7 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
-      date: "2025-10-5",
+      date: "2025-10-05",
       title:
         "Upcoming residency at the Bergen Center for Electronic Arts (BEK)",
       content:
@@ -44,7 +44,7 @@ function News({ newsItems }) {
       link: "https://ecovoiceproject.org/cry-of-the-earth",
     },
     {
-      date: "2025-9-20",
+      date: "2025-09-20",
       title: "Performance at Den Krapyl – Biblioteksmusikk in Bergen",
       content:
         "I will be performing at Den Krapyl – Biblioteksmusikken in Bergen on September 20, 2025. The program will consists of an improvised set for children: a sound trip to Argentina.",
@@ -65,7 +65,7 @@ function News({ newsItems }) {
       link: "https://icmc2025.sites.northeastern.edu/concerts-hall-part-1/#hall13",
     },
     {
-      date: "2025-06-7",
+      date: "2025-06-07",
       title: "Concert at New Music Days in Luzern",
       content:
         "My piece 'Elevator Pitch' will be performed in Elide Sulsenti's Final Masters Recital at the New Music Days in Luzern.",
