@@ -37,10 +37,10 @@ function News({ newsItems }) {
     },
     {
       date: "2025-10-05",
-      title: "Artist Residency at the Bled Contemporary Music Week 2026",
+      title: "Artist Residency at 'precept.concept.percept' 2026",
       content:
-        "Selected as resident artist at the Bled Contemporary Music Week 2026 in Slovenia. During the residency, I will develop 'Transmutation/the birth of the poem', a new composition commissioned by abeceda new music ensemble.",
-      link: "https://abeceda.io/Bled-Contemporary-Music-Week/",
+        "Selected as resident artist at 'precept.concept.percept' 2026 to develop 'Transmutation/the birth of the poem', a new composition for abeceda new music ensemble that will be premiered at the Bled Contemporary Music Week 2026 in Slovenia.",
+      link: "https://precept-concept-percept.com/precept-concept-percept/",
     },
     {
       date: "2025-10-12",
