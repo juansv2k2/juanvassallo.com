@@ -13,33 +13,32 @@ function Bio() {
                 I am an Argentinian experimental artist and researcher based in
                 Bergen, Norway. I hold a Ph.D. in artistic research (University
                 of Bergen, Norway), an interdisciplinary Master’s degree in
-                music and psychology (University of Victoria, Canada) and
+                music and psychology (University of Victoria, Canada), and a
                 bachelor's degree in music composition and piano (National
                 University of Córdoba and Provincial Conservatory of Córdoba,
-                Argentina).
+                Argentina). My technical background includes formal training in
+                data science, machine learning, and web development, and
+                expertise in diverse programming languages.
               </p>
               <p>
                 My practice lies at the intersection of technologically mediated
-                creation and instrumental sonic exploration. My work is driven
-                by curiosity about the relationships between cognition,
-                technology, and sound. I am fascinated by how technology can
-                extend, disrupt, and transform traditional musical practices,
-                not as a replacement for human creativity, but as a
-                collaborative partner in the search for new musical
-                possibilities. Some of my recent projects have involved
-                exploring human-computer interaction in live and fixed media,
-                instrumental improvisation augmented by electronics, and
-                investigating the poetics of AI and algorithmic processes. I am
-                also interested in the tactile and embodied dimensions of
-                sound-making, from extended techniques and instrumental
-                improvisation to the hybrid space of acoustic, electronic
-                sounds, and visual media.
+                creation, encompassing both instrumental and electronic
+                composition and performance. My work is driven by curiosity
+                about the relationships between cognition, technology, and
+                (mainly) sound. I am interested in how technology can extend,
+                disrupt, and transform traditional musical practices. I am also
+                interested in the embodied dimensions of sound-making, from
+                extended techniques and instrumental improvisation to hybrid
+                spaces of acoustic and electronic sounds, and visual media.
               </p>
               <p>
-                I also develop software tools for performers and composers,
-                supporting innovative forms of improvisation and collaborative
-                creation. My technical training includes data science, machine
-                learning, and web development.
+                Some of my recent projects have involved traditional
+                instrumental and vocal composition, while others have focused on
+                exploring human-computer interaction in instrumental
+                improvisation augmented by electronics. More recently, I have
+                focused on investigating the poetics of AI and algorithmic
+                processes in music and other forms, such as poetry and
+                generative visuals.
               </p>
               <p>
                 My music has been performed by leading ensembles and soloists
@@ -49,34 +48,51 @@ function Bio() {
                 Quartet (USA), EcoVoices Project (USA), Obsidian Ensemble
                 (Norway), Vocal Ensemble Tabula Rasa (Norway), Edvard Grieg Kor
                 (Norway), and soloists including Lucas Fels (Germany), Sergej
-                Tchirkov (Russia), Késia Decoté (Brazil), Ludvig Lindström
-                (Finland), and Elide Sulsenti (Italy), among others.
+                Tchirkov (Russia), Ludvig Lindström (Finland), and Elide
+                Sulsenti (Italy), among many others. Newer commissions include
+                works for the pianists Késia Decoté (Brazil/Norway) and Tore
+                Eide Bordal (Norway), ensemble NH3 (Norway), Windsor wind
+                quintet (The Netherlands), and the Apple Pie Concert Foundation
+                (The Netherlands).
+              </p>
+              <p>
+                My music has been performed in several contemporary music
+                festivals, including Impuls 2023, New Music Montreal 2022,
+                Festpillene i Bergen (2021, drop-in concerts), and H&K Festival
+                in Stavanger. I have also participated in several artistic
+                residencies, including Festival precept.concept.percept XIII
+                (Slovenia, 2025), the H&K Festival (Stavanger, 2022), the Center
+                for Movement Research (New York, 2014), and the Virginia Center
+                for the Creative Arts (VCCA) (USA, 2012). I will be an artist in
+                residence at Bergen Senter for Elektronikk Kunst (BEK) in
+                February 2026.{" "}
               </p>
               <p>
                 My compositions have received prizes at international
                 competitions, such as the 2024 IEEE Big Data Conference’s
-                AI-based composition contest (first prize,{" "}
-                <em>Oscillations/iii)</em>, the Prix ‘Pas de Calais’
-                (France/Argentina), the Chengdu River Sun Prize (China/ISCM),
-                and special mentions for electroacoustic and interdisciplinary
-                work in Argentina and abroad.
+                AI-based composition contest (first prize, Oscillations/iii),
+                the Prix ‘Pas de Calais’ (France/Argentina), the Chengdu River
+                Sun Prize (China/ISCM), and special mentions for electroacoustic
+                and interdisciplinary work in Argentina.
               </p>
               <p>
                 Collaboration and interdisciplinarity are key to my practice.
-                Past projects include works exhibited at the Kirchner Cultural
-                Center (Buenos Aires) and the <em>Cinco Soles</em>{" "}
-                musical-choreographic project developed in New York. As a member
-                of the ensemble Azul 514 (Argentina), we explored the boundaries
-                between traditional, contemporary, and electronic sound worlds,
-                creating unpredictable spaces for sonic exploration through
-                collaborative composition and improvisation.
+                Past projects include multimedia works and art installations
+                exhibited at the VISAURAL Gallery (Boston), Paseo del Buen
+                Pastor (Córdoba, Argentina), Kirchner Cultural Center (Buenos
+                Aires), and the Center for Research in Movement (New York),
+                among others.
               </p>
               <p>
-                Alongside my contemporary practice, I have an active career as a
-                tango pianist and arranger, performing and touring
-                internationally with Sanluistango Orchestra. My popular music
-                roots to this day continue to inform my sensitivity to musical
-                narrative and contemporary composition.
+                My popular music roots continue to inform my sensitivity to
+                musical narrative and contemporary composition. As a member of
+                the ensemble Azul 514 (Argentina), we explored the boundaries
+                between folk-traditional, contemporary, and electronic sound
+                worlds, creating unpredictable spaces for sonic exploration
+                through collaborative composition and improvisation. Alongside
+                my experimental musical practice, I maintain an active career as
+                a tango pianist and arranger. In recent years, I have performed
+                and toured internationally with the Sanluistango Orchestra.
               </p>
             </div>
             {/* CV Download Link */}
