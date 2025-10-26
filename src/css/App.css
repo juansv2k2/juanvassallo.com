@@ -953,10 +953,6 @@ p.active {
     hyphens: auto;
   }
 
-  .news-item:hover {
-    transform: none; /* Disable hover transform on mobile */
-  }
-
   .news-title {
     font-size: 1rem;
     margin-bottom: 0.8rem;
@@ -1324,13 +1320,11 @@ a.active {
   border-left: 2px solid rgba(64, 224, 208, 0.6);
   padding: 1.5rem;
   border-radius: 8px;
-  transition: all 0.3s ease;
 }
 
 .news-item:hover {
   background-color: rgba(0, 0, 0, 0.6);
   border-left-color: turquoise;
-  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 

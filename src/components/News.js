@@ -8,6 +8,13 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-04-13",
+      title: "Selected for oUTHEAR New Music Week Symposium & Masterclass",
+      content:
+        "Selected as a composer to participate in the prestigious oUTHEAR New Music Week Symposium & Masterclass 5th Edition (April 13-21, 2026). The program features ensembles in residence KLANGFORUM and PPCM Graz, with distinguished faculty including Mark Andre, Annesley Black, Dimitri Papageorgiou, and Orestis Toufektsis.",
+      link: "https://www.outhearnewmusic.com/",
+    },
+    {
       date: "2025-10-05",
       title: "Artist Residency at Bergen Center for Electronic Arts (BEK)",
       content:
