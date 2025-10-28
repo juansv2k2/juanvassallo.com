@@ -8,10 +8,29 @@ body {
   text-align: left;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
+  padding-left: 35px; /* Add left padding to accommodate hanging indent */
 }
 
 .texts .subtitle2 {
   color: white;
+}
+
+/* Hanging indent for texts list items */
+.texts ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.texts li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  text-indent: -2rem;
+  line-height: 1.6;
+}
+
+/* Align H2 titles with first line of list items */
+.texts h2 {
+  margin-left: -2rem;
 }
 
 .App {

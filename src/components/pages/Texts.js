@@ -35,12 +35,6 @@ function Texts() {
             <h2>Journal articles</h2>
             <ul>
               <li>
-                Vincenot, J., Vassallo, J. S., Sandred, Ö, (2025). MOZ'lib and
-                PWforMax: Rewiring CAC heritage. Proceedings of the 10th
-                Conference on Music Representation and Notation TENOR in
-                Beijing, China. (in press)
-              </li>
-              <li>
                 Vassallo, J. S., Sandred, Ö, Vincenot, J. (2025).
                 NeuralConstraints: Integrating a Neural Generative Model with
                 Constraint-Based Composition. Embodied Perspectives on Sound and
@@ -116,6 +110,32 @@ function Texts() {
                   rel="noopener noreferrer"
                 >
                   http://hdl.handle.net/1828/11061
+                </a>
+              </li>
+            </ul>
+            <h2>Bachelor's final works</h2>
+            <ul>
+              <li>
+                Vassallo, J. S. (2013). Fase 4.{" "}
+                <a
+                  className="link"
+                  href="https://artes.biblio.unc.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=23573&query_desc=kw%2Cwrdl%3A%20vassallo%20juan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://artes.biblio.unc.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=23573
+                </a>
+              </li>
+              <li>
+                Vassallo, J. S. (2008). Sinfonia de Guerra: La relación entre el
+                arte y la política en la música de Dmitri Shostakovich.{" "}
+                <a
+                  className="link"
+                  href="https://artes.biblio.unc.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=18024&query_desc=kw%2Cwrdl%3A%20vassallo%20juan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://artes.biblio.unc.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=18024
                 </a>
               </li>
             </ul>
