@@ -507,6 +507,30 @@ iframe {
   transform: translateY(1px);
 }
 
+/* Fullscreen Button Styles */
+.fullscreen-button {
+  margin-top: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: black;
+  color: turquoise;
+  border: 1px solid rgba(64, 224, 208, 0.5);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  width: fit-content;
+}
+
+.fullscreen-button:hover {
+  background-color: rgba(64, 224, 208, 0.1);
+  border-color: turquoise;
+}
+
 /* Texts */
 
 a {

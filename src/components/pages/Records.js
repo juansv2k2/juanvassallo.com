@@ -42,6 +42,7 @@ function Records() {
             <div className="indivRecord">
               <div className="bigP">
                 <iframe
+                  title="RecordBandCamp"
                   className="iframeRecord"
                   src="https://bandcamp.com/EmbeddedPlayer/album=2083284220/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/"
                   seamless
@@ -58,8 +59,34 @@ function Records() {
               <h3 className="subtitle2">w/Azul 514</h3>
             </div>
             <div className="projects">
-              <Record src="https://open.spotify.com/embed/album/4WUwvPQtGRIQgApizScsqA?utm_source=generator" />
-              <Record src="https://open.spotify.com/embed/album/2X7KT7PfDbGe1NzxquJHQw?utm_source=generator" />
+              <div className="indivRecord">
+                <div className="bigP">
+                  <iframe
+                    title="RecordBandCamp"
+                    className="iframeRecord"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=3163652547/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                    seamless
+                  >
+                    <a href="https://juanvassallo.bandcamp.com/album/azul-514">
+                      Azul 514 by Azul 514
+                    </a>
+                  </iframe>
+                </div>
+              </div>
+              <div className="indivRecord">
+                <div className="bigP">
+                  <iframe
+                    title="RecordBandCamp"
+                    className="iframeRecord"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=3055733207/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                    seamless
+                  >
+                    <a href="https://juanvassallo.bandcamp.com/album/cyan">
+                      Cyan by Azul 514
+                    </a>
+                  </iframe>
+                </div>
+              </div>
             </div>
           </div>
           <div>
