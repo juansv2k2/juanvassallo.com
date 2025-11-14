@@ -15,15 +15,17 @@ import Footer from "./components/Footer";
 import Home from "./components/pages/Home";
 import Bio from "./components/pages/Bio";
 import Contact from "./components/pages/Contact";
-import Compositions from "./components/pages/Compositions";
-import Records from "./components/pages/Records";
+import ArtisticPortfolio from "./components/pages/ArtisticPortfolio";
 import Texts from "./components/pages/Texts";
 
 const routes = [
   { path: "/", name: "News", Component: Home },
   { path: "/bio", name: "Bio | CV", Component: Bio },
-  { path: "/compositions", name: "Compositons", Component: Compositions },
-  { path: "/records", name: "Records", Component: Records },
+  {
+    path: "/portfolio",
+    name: "Artistic Portfolio",
+    Component: ArtisticPortfolio,
+  },
   { path: "/texts", name: "Texts", Component: Texts },
   { path: "/contact", name: "Contact", Component: Contact },
 ];

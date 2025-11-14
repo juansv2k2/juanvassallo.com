@@ -507,31 +507,110 @@ iframe {
   transform: translateY(1px);
 }
 
-/* Fullscreen Button Styles */
+/* Fullscreen button styling */
 .fullscreen-button {
-  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 4px;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
-  background-color: black;
-  color: turquoise;
-  border: 1px solid rgba(64, 224, 208, 0.5);
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
   font-family: inherit;
-  width: fit-content;
+  transition: all 0.3s ease;
 }
 
 .fullscreen-button:hover {
-  background-color: rgba(64, 224, 208, 0.1);
-  border-color: turquoise;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Texts */
+/* Portfolio navigation styling */
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0 50px;
+  flex-wrap: wrap;
+}
+
+.portfolio-nav-link {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.portfolio-nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Portfolio title link styling */
+.portfolio-link {
+  color: bisque;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.portfolio-link:hover {
+  color: #00ffff;
+  text-decoration-color: #00ffff;
+}
+
+/* Portfolio section styling */
+.portfolio-section {
+  margin-bottom: 80px;
+  scroll-margin-top: 100px; /* Account for fixed header */
+}
+
+.portfolio-section-title {
+  color: bisque;
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-nav {
+    gap: 15px;
+    margin: 20px 0 40px;
+  }
+
+  .portfolio-nav-link {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .portfolio-section-title {
+    font-size: 2em;
+  }
+
+  .portfolio-section {
+    margin-bottom: 60px;
+    scroll-margin-top: 80px;
+  }
+} /* Texts */
 
 a {
   text-decoration: none;
@@ -615,6 +694,12 @@ a {
 
 a.active {
   color: rgb(255, 255, 255);
+}
+
+.text-align-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* videos */
