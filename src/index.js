@@ -19,15 +19,15 @@ import ArtisticPortfolio from "./components/pages/ArtisticPortfolio";
 import Texts from "./components/pages/Texts";
 
 const routes = [
-  { path: "/", name: "News", Component: Home },
-  { path: "/bio", name: "Bio | CV", Component: Bio },
+  { path: "/", name: "news", Component: Home },
+  { path: "/bio", name: "bio | cv", Component: Bio },
   {
     path: "/portfolio",
-    name: "Artistic Portfolio",
+    name: "works",
     Component: ArtisticPortfolio,
   },
-  { path: "/texts", name: "Texts", Component: Texts },
-  { path: "/contact", name: "Contact", Component: Contact },
+  { path: "/texts", name: "texts", Component: Texts },
+  { path: "/contact", name: "contact", Component: Contact },
 ];
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
           <div className="titleName">
             <h1 className="title margin">Juan Sebastián Vassallo</h1>
             <h3 className="subtitle margin subtitle-desktop">
-              Composer | Researcher | Performer
+              composer | music researcher
             </h3>
             <h3 className="subtitle margin subtitle-mobile">
               Composer Researcher Performer

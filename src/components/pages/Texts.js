@@ -4,10 +4,10 @@ function Texts() {
   return (
     <div className="mainWrapper">
       <div className="secondaryWrapper">
-        <h1 className="neonText">Texts</h1>
+        <h1 className="neonText">texts</h1>
         <div className="cv">
           <div className="texts">
-            <h2>Doctoral dissertation</h2>
+            <h2>doctoral dissertation</h2>
             <ul>
               <li>
                 Vassallo, J. S. (2025). Outward Threads – Intuitive Computers /
@@ -32,7 +32,7 @@ function Texts() {
                 </a>
               </li>
             </ul>
-            <h2>Journal articles</h2>
+            <h2>journal articles</h2>
             <ul>
               <li>
                 Vassallo, J. S., Sandred, Ö, Vincenot, J. (2025).
@@ -76,7 +76,7 @@ function Texts() {
                 </a>
               </li>
             </ul>
-            <h2>Conference proceedings</h2>
+            <h2>conference proceedings</h2>
             <ul>
               <li>
                 Vincenot, J., Vassallo, J. S., Sandred, Ö. (2025). MOZ'lib and
@@ -98,7 +98,7 @@ function Texts() {
                 </a>
               </li>
             </ul>
-            <h2>M.A. Thesis</h2>
+            <h2>master’s thesis</h2>
             <ul>
               <li>
                 Vassallo, J. S. (2019). Music expert-novice differences in
@@ -113,7 +113,7 @@ function Texts() {
                 </a>
               </li>
             </ul>
-            <h2>Bachelor's final works</h2>
+            <h2>bachelor's final works</h2>
             <ul>
               <li>
                 Vassallo, J. S. (2013). Fase 4.{" "}

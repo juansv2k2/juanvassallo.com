@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="mainWrapper">
       <div className="secondaryWrapper whenSubComponent">
-        <h1 className="neonText">News</h1>
+        <h1 className="neonText">news</h1>
         <News />
       </div>
     </div>

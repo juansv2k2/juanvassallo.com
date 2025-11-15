@@ -564,16 +564,52 @@ iframe {
 /* Portfolio title link styling */
 .portfolio-link {
   color: bisque;
-  font-size: 1em;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-decoration: underline;
-  text-decoration-color: transparent;
+  text-decoration: none !important;
 }
 
 .portfolio-link:hover {
-  color: #00ffff;
-  text-decoration-color: #00ffff;
+  color: white;
+  text-decoration: none !important;
+}
+
+/* Contact Information Styling */
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-item h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-email {
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  color: bisque;
+}
+
+.contact-email:hover {
+  color: white;
+  text-decoration: none !important;
 }
 
 /* Portfolio section styling */
@@ -613,16 +649,16 @@ iframe {
 } /* Texts */
 
 a {
-  text-decoration: none;
-
   margin-bottom: 10px;
   margin-top: 10px;
   font-size: 16px;
   transition: color 0.2s ease-in-out;
+  text-decoration: none !important;
 }
 
 a.active {
   color: rgb(255, 255, 255);
+  text-decoration: none !important;
 }
 
 .bio li p {
@@ -738,12 +774,14 @@ a.active {
 a {
   color: bisque;
   transition: color 0.2s ease-in-out;
+  text-decoration: none !important;
 }
 a.active {
   color: rgb(255, 255, 255);
+  text-decoration: none !important;
 }
 p.active {
-  text-decoration: double;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {

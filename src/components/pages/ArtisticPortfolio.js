@@ -31,7 +31,7 @@ function ArtisticPortfolio() {
     <div className="mainWrapper">
       <div className="secondaryWrapper">
         <div className="width">
-          <h1 className="neonText">Artistic Portfolio</h1>
+          <h1 className="neonText">works</h1>
           <div>
             (
             <span
@@ -59,11 +59,11 @@ function ArtisticPortfolio() {
           {/* Compositions Section */}
           <div ref={compositionsRef} className="portfolio-section">
             <div className="cv">
-              <h2 className="portfolio-section-title">Compositions</h2>
+              <h2 className="portfolio-section-title">compositions</h2>
             </div>
 
             <div className="cv">
-              <h3 className="subtitle2">Instrumental/mixed media</h3>
+              <h3 className="subtitle2">instrumental/mixed media</h3>
             </div>
             <div className="projects">
               <Composition
@@ -248,7 +248,7 @@ function ArtisticPortfolio() {
             </div>
 
             <div className="cv">
-              <h3 className="subtitle2">Electroacoustic</h3>
+              <h3 className="subtitle2">electroacoustic</h3>
             </div>
             <div className="projects">
               <div>
@@ -268,7 +268,7 @@ function ArtisticPortfolio() {
             </div>
 
             <div className="cv">
-              <h3 className="subtitle2">Audiovisual</h3>
+              <h3 className="subtitle2">audiovisual</h3>
             </div>
             <div className="projects">
               <Composition
@@ -289,7 +289,7 @@ function ArtisticPortfolio() {
             </div>
 
             <div className="cv">
-              <h3 className="subtitle2">Installations</h3>
+              <h3 className="subtitle2">installations</h3>
             </div>
             <div className="projects">
               <Composition
@@ -307,7 +307,7 @@ function ArtisticPortfolio() {
           {/* Experimental Practice Section */}
           <div ref={experimentalRef} className="portfolio-section">
             <div className="cv">
-              <h2 className="portfolio-section-title">Live Electronics</h2>
+              <h2 className="portfolio-section-title">live electronics</h2>
             </div>
 
             <div className="cv">
@@ -339,12 +339,12 @@ function ArtisticPortfolio() {
           {/* Recordings Section */}
           <div ref={recordingsRef} className="portfolio-section">
             <div className="cv">
-              <h2 className="portfolio-section-title">Albums & EP</h2>
+              <h2 className="portfolio-section-title">albums & EPs</h2>
             </div>
 
             <div className="width">
               <div className="cv">
-                <h3 className="subtitle2">Soloist releases</h3>
+                <h3 className="subtitle2">soloist releases</h3>
               </div>
               <div className="projects">
                 <div className="indivRecord">
