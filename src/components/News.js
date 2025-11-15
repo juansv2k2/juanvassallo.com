@@ -65,6 +65,13 @@ function News({ newsItems }) {
     },
     {
       date: "2025-09-11",
+      title: "Publication of Doctoral Reflection in Research Catalog",
+      content:
+        "My doctoral reflection 'Outward Threads – Intuitive Computers / Rational Composers' culminating four years of artistic research at the University of Bergen has been finally published. It can also be accessed in its own dedicated website.",
+      link: "https://www.outwardthreads.net",
+    },
+    {
+      date: "2025-09-11",
       title: "Doctoral Defense at University of Bergen",
       content:
         "Defending my doctoral dissertation 'Outward Threads – Intuitive Computers / Rational Composers' at the University of Bergen, culminating four years of artistic research in human-computer collaboration.",

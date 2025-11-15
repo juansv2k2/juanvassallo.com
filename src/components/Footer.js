@@ -29,13 +29,6 @@ function Footer() {
         >
           <FaBandcamp />
         </a>
-        <a
-          href={"https://open.spotify.com/artist/5gVC35dknIoSGHUk4yRmR7"}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <RiSpotifyLine />
-        </a>
       </div>
       <p className="footText">© 2025 Juan Sebastian Vassallo</p>
     </div>
