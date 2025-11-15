@@ -26,8 +26,7 @@ function Bio() {
                 ranged from traditional and folkloric instrumental improvisation
                 augmented by electronics to investigations into the poetics of
                 AI in relation to intuition, semantic connections,
-                hallucinations, glitches, and steered generative processes in
-                music, and poetry.
+                hallucinations, glitches, and steered generative processes.
               </p>
               <p>
                 I hold a Ph.D. in artistic research (University of Bergen,
