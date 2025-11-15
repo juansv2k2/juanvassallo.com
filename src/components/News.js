@@ -112,6 +112,13 @@ function News({ newsItems }) {
         "Performance of 'Elevator Pitch' by Elide Sulsenti in the 'How to Make a Manifesto' concert, part of the 'Instantanea Urbana' series during Bologna Estate festival.",
       link: "https://www.bolognaestate.it/calendario-bolognaestate-2024/istantanea-urbana",
     },
+    {
+      date: "2024-09-16",
+      title: "New release with JÓR Saxophone Quartet",
+      content:
+        "My composition 'I am Strange Loop' performed by JÓR Saxophone Quartet has been released in the platform Bandcamp. Check it out!",
+      link: "https://juanvassallo.bandcamp.com/track/i-am-a-strange-loop",
+    },
   ];
 
   // Function to automatically assign IDs to news items
