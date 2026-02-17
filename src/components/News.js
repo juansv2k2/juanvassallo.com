@@ -8,6 +8,22 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-02-15",
+      title: "Concert in Bergen with the vocal ensemble 'Tabula Rasa'",
+      content:
+        "The series of concerts 'Møtepunkt' proposes a meeting point between performers and composers to explore experimental approaches to vocal music. In this edition, I will perform live electronics together with the vocal ensemble 'Tabula Rasa', presenting the result of our recent collaboration in a series of workshops held during January-February 2026.",
+      link: "https://tabularasa.no/aktuelt-2/",
+    },
+    {
+      date: "2025-12-05",
+      title:
+        "Concert at Bergen Kjøtt with the flutist/improviser Daiyen Jone Castro",
+      content:
+        "The concert will feature some improvised music, developed through a series of meetings and rehearsals during the last months of 2025. The concert is part of the event 'Litterario – Intimidad y Palabra' a new literary project created by and for the Spanish-speaking community of Bergen, where poetry, storytelling, music, and dialogue meet in a space of closeness and Hispanic literature",
+      link: "https://www.bergenkjott.org/kalendar/litteratio5des",
+    },
+
+    {
       date: "2026-04-13",
       title: "Selected for oUTHEAR New Music Week Symposium & Masterclass",
       content:

@@ -335,6 +335,16 @@ function ArtisticPortfolio() {
                 text="Azul 514 ft. Ariel Garro (guitar) – Azul 514 ensemble – Teatro 'La Oveja Negra' (2017)"
               />
             </div>
+            <div className="cv">
+              <h3 className="subtitle2">solo or with other artists</h3>
+            </div>
+            <div className="projects">
+              <Composition
+                title="Improvisation"
+                vid="1tcqMXrmqDU"
+                text="ft. Daiyen Jone Castro (flute, voice, electronics) – Bergen Kjøtt, December 2025"
+              />
+            </div>
           </div>
           {/* Recordings Section */}
           <div ref={recordingsRef} className="portfolio-section">
