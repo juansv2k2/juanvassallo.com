@@ -89,31 +89,34 @@ function Bio() {
               <p>
                 My popular music roots also continue to inform my sensitivity to
                 musical narrative and contemporary composition. As a member of
-                the ensemble Azul 514 (Argentina), we explored boundaries
-                between folk-traditional, contemporary, and electronic sound
-                worlds, creating unpredictable spaces for sonic exploration
-                through collaborative composition and improvisation. Alongside
-                my experimental practice, I maintain an active career as a tango
-                pianist and arranger, and in recent years have performed and
-                toured internationally with the Sanluistango Orchestra.
+                the ensemble Azul 514 (Argentina), we explore boundaries between
+                folk-traditional, contemporary, and electronic sound worlds,
+                creating unpredictable spaces for sonic exploration through
+                collaborative composition and improvisation.
+              </p>
+              <p>
+                Alongside my experimental practice, I maintain an active career
+                as a tango pianist and arranger, and in recent years have
+                performed and toured internationally with the Sanluistango
+                Orchestra.
               </p>
             </div>
             {/* CV Download Link */}
             <p>
               <a
-                href="/documents/Juan_Vassallo_CV.pdf"
+                href="/documents/Vassallo–CV–website.pdf"
                 className="cv-download-link"
                 onClick={(e) => {
                   e.preventDefault();
 
                   // Create a more reliable download method for mobile
-                  fetch("/documents/Juan_Vassallo_CV.pdf")
+                  fetch("/documents/Vassallo–CV–website.pdf")
                     .then((response) => response.blob())
                     .then((blob) => {
                       const url = window.URL.createObjectURL(blob);
                       const link = document.createElement("a");
                       link.href = url;
-                      link.download = "Juan_Vassallo_CV.pdf";
+                      link.download = "Vassallo–CV–website.pdf";
                       link.style.display = "none";
 
                       document.body.appendChild(link);
@@ -126,7 +129,10 @@ function Bio() {
                     .catch((error) => {
                       console.error("Download failed:", error);
                       // Fallback: open in new tab
-                      window.open("/documents/Juan_Vassallo_CV.pdf", "_blank");
+                      window.open(
+                        "/documents/Vassallo–CV–website.pdf",
+                        "_blank",
+                      );
                     });
                 }}
               >

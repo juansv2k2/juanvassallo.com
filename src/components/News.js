@@ -8,6 +8,13 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-03-01",
+      title: "Performance at St. Petersburg Festival through Remusik Academy",
+      content:
+        "Participated in the prestigious Remusik Academy composition program, culminating in the performance of my new mixed quintet piece at the XII St. Petersburg International Festival of New Music. The academy provides intensive training with international faculty and includes lectures, concerts, workshops, and reading sessions.",
+      link: "https://www.remusik.org/",
+    },
+    {
       date: "2026-02-15",
       title: "Concert in Bergen with the vocal ensemble 'Tabula Rasa'",
       content:
