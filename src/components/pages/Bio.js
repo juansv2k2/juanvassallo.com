@@ -106,7 +106,7 @@ function Bio() {
               <a
                 href="/documents/Vassallo-CV-website.pdf"
                 className="cv-download-link"
-                download="Juan Vassallo - CV.pdf"
+                download="Juan Vassallo CV.pdf"
                 onClick={(e) => {
                   // Allow the default download behavior
                   // For browsers that support it, this will download directly

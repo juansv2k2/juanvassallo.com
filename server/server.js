@@ -11,18 +11,25 @@
 //     console.log("Server is up!");
 // });
 
-import express, { static as serveStatic } from "express";
-import { join } from "path";
+const express = require("express");
+const path = require("path");
 const port = process.env.PORT || 3000;
 const app = express();
 
-// the __dirname is the current directory from where the script is running
-app.use(serveStatic(__dirname));
-app.use(serveStatic(join(__dirname, "build")));
+// Serve static files from the build directory (including documents)
+app.use(express.static(path.join(__dirname, "..", "build")));
+
+// Health check endpoint
 app.get("/ping", function (req, res) {
   return res.send("pong");
 });
+
+// Catch-all handler: send back React's index.html file for client-side routing
+// This must come AFTER static file serving to avoid intercepting PDF requests
 app.get("/*", function (req, res) {
-  res.sendFile(join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
-app.listen(port);
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
