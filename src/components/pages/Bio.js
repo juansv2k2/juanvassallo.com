@@ -104,36 +104,13 @@ function Bio() {
             {/* CV Download Link */}
             <p>
               <a
-                href="/documents/Vassallo–CV–website.pdf"
+                href="/documents/Vassallo-CV-website.pdf"
                 className="cv-download-link"
+                download="Juan Vassallo - CV.pdf"
                 onClick={(e) => {
-                  e.preventDefault();
-
-                  // Create a more reliable download method for mobile
-                  fetch("/documents/Vassallo–CV–website.pdf")
-                    .then((response) => response.blob())
-                    .then((blob) => {
-                      const url = window.URL.createObjectURL(blob);
-                      const link = document.createElement("a");
-                      link.href = url;
-                      link.download = "Vassallo–CV–website.pdf";
-                      link.style.display = "none";
-
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-
-                      // Clean up the blob URL
-                      window.URL.revokeObjectURL(url);
-                    })
-                    .catch((error) => {
-                      console.error("Download failed:", error);
-                      // Fallback: open in new tab
-                      window.open(
-                        "/documents/Vassallo–CV–website.pdf",
-                        "_blank",
-                      );
-                    });
+                  // Allow the default download behavior
+                  // For browsers that support it, this will download directly
+                  // For others, it will open in a new tab
                 }}
               >
                 <svg
