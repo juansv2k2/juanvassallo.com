@@ -35,36 +35,36 @@ function Bio() {
                 degree in music composition and piano (National University of
                 Córdoba and Provincial Conservatory of Córdoba, Argentina). My
                 technical background includes formal training in data science,
-                machine learning, and web development, as well as expertise in
-                diverse programming languages.
+                machine learning, and web development.
               </p>
               <p>
                 My music has been performed by leading ensembles and soloists
                 internationally, including Projecto RED Ensemble (Argentina),
                 Quasar Saxophone Quartet (Canada), JÓR Saxophone Quartet
-                (Scandinavia), Zone Experimental Basel (Switzerland), Hinge
-                Quartet (USA), EcoVoices Project (USA), Obsidian Ensemble
-                (Norway), Vocal Ensemble Tabula Rasa (Norway), Edvard Grieg Kor
-                (Norway), and soloists including Lucas Fels (Germany), Sergej
-                Tchirkov (Russia), Ludvig Lindström (Finland), and Elide
-                Sulsenti (Italy), among many others. Newer commissions include
-                works for the pianists Késia Decoté (Brazil/Norway) and Tore
-                Eide Bordal (Norway), ensemble NH3 (Norway), Windsor wind
-                quintet (The Netherlands), and the Apple Pie Concert Foundation
-                (The Netherlands).
+                (Scandinavia), Zone Experimental Basel (Switzerland), .abeceda
+                ensemble (Slovenia), Hinge Quartet (USA), EcoVoices Project
+                (USA), Obsidian Ensemble (Norway), Vocal Ensemble Tabula Rasa
+                (Norway), Edvard Grieg Kor (Norway), and soloists including
+                Lucas Fels (Germany), Sergej Tchirkov (Russia), Ludvig Lindström
+                (Finland), and Elide Sulsenti (Italy), among many others. Newer
+                commissions include works for the pianists Késia Decoté
+                (Brazil/Norway), Windsor wind quintet (The Netherlands), and the
+                Apple Pie Concert Foundation (The Netherlands).
               </p>
 
               <p>
                 My music has been featured at contemporary music festivals such
-                as Impuls 2023, New Music Montreal 2022, Festspillene i Bergen
-                (2021, drop-in concerts), and the H&K Festival in Stavanger. I
-                have also participated in several artistic residencies,
-                including Festival precept.concept.percept XIII (Slovenia,
-                2025), the H&K Festival (Stavanger, 2022), the Center for
-                Movement Research (New York, 2014), and the Virginia Center for
-                the Creative Arts (VCCA) (USA, 2012). I will be an artist in
-                residence at Bergen Senter for Elektronisk Kunst (BEK) in
-                February 2026.
+                as Samtida Musik (2026), Impuls 2023, New Music Montreal 2022,
+                Festspillene i Bergen (2021, drop-in concerts), and the H&K
+                Festival in Stavanger. Upcoming presentations include St.
+                Petersburg International New Music Festival and outHEAR
+                Contemporary Music Week. I have also participated in several
+                artistic residencies, including Festival precept.concept.percept
+                XIII (Slovenia, 2025), the H&K Festival (Stavanger, 2022), the
+                Center for Movement Research (New York, 2014), and the Virginia
+                Center for the Creative Arts (VCCA) (USA, 2012). I will be an
+                artist in residence at Bergen Senter for Elektronisk Kunst (BEK)
+                in February 2026.
               </p>
 
               <p>
@@ -106,11 +106,24 @@ function Bio() {
               <a
                 href="/documents/Vassallo-CV-website.pdf"
                 className="cv-download-link"
-                download="Juan Vassallo CV.pdf"
+                download="Juan Vassallo - CV.pdf"
                 onClick={(e) => {
-                  // Allow the default download behavior
-                  // For browsers that support it, this will download directly
-                  // For others, it will open in a new tab
+                  // Force download by creating a temporary link
+                  e.preventDefault();
+
+                  const link = document.createElement("a");
+                  link.href = "/documents/Vassallo-CV-website.pdf";
+                  link.download = "Juan Vassallo - CV.pdf";
+                  link.style.display = "none";
+
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+
+                  // Fallback: if download doesn't work, open in new tab
+                  setTimeout(() => {
+                    window.open("/documents/Vassallo-CV-website.pdf", "_blank");
+                  }, 100);
                 }}
               >
                 <svg
