@@ -109,14 +109,41 @@ function Bio() {
                   e.preventDefault();
                   e.stopPropagation();
 
-                  // Use fetch to force download as blob to avoid PDF.js interference
-                  fetch("/documents/Vassallo-CV-website.pdf")
+                  // Enhanced download with better error handling
+                  console.log("Starting PDF download...");
+
+                  fetch("/documents/Vassallo-CV-website.pdf", {
+                    method: "GET",
+                    headers: {
+                      Accept: "application/pdf",
+                    },
+                  })
                     .then((response) => {
-                      if (!response.ok)
-                        throw new Error("Network response was not ok");
+                      console.log("Response status:", response.status);
+                      console.log(
+                        "Response headers:",
+                        response.headers.get("content-type"),
+                      );
+
+                      if (!response.ok) {
+                        throw new Error(
+                          `HTTP error! status: ${response.status}`,
+                        );
+                      }
+
+                      const contentType = response.headers.get("content-type");
+                      if (
+                        !contentType ||
+                        !contentType.includes("application/pdf")
+                      ) {
+                        throw new Error(`Expected PDF but got: ${contentType}`);
+                      }
+
                       return response.blob();
                     })
                     .then((blob) => {
+                      console.log("Blob size:", blob.size, "type:", blob.type);
+
                       // Create blob URL and download
                       const url = window.URL.createObjectURL(blob);
                       const link = document.createElement("a");
@@ -129,15 +156,16 @@ function Bio() {
                       document.body.removeChild(link);
 
                       // Clean up blob URL
-                      window.URL.revokeObjectURL(url);
+                      setTimeout(() => window.URL.revokeObjectURL(url), 100);
+
+                      console.log("Download triggered successfully");
                     })
                     .catch((error) => {
                       console.error("Download failed:", error);
-                      // Fallback: direct link in new tab
-                      window.open(
-                        "/documents/Vassallo-CV-website.pdf",
-                        "_blank",
+                      alert(
+                        `Download failed: ${error.message}. Please try again or contact support.`,
                       );
+                      // Remove fallback to prevent PDF.js error
                     });
                 }}
               >
