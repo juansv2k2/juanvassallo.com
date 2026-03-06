@@ -108,14 +108,14 @@ function Bio() {
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  
+
                   // Create download link programmatically
                   const link = document.createElement("a");
                   link.href = "/documents/Vassallo-CV-website.pdf";
                   link.download = "Juan Vassallo - CV.pdf";
                   link.target = "_blank";
                   link.rel = "noopener noreferrer";
-                  
+
                   // Trigger download
                   document.body.appendChild(link);
                   link.click();

@@ -43,18 +43,20 @@ app.get("/ping", function (req, res) {
 // EXCLUDE static file paths (documents, static, etc.) from React routing
 app.get("/*", function (req, res) {
   // Don't serve React app for static file requests
-  if (req.path.startsWith('/documents/') || 
-      req.path.startsWith('/static/') || 
-      req.path.startsWith('/img/') || 
-      req.path.startsWith('/fonts/') || 
-      req.path.endsWith('.pdf') ||
-      req.path.endsWith('.jpg') ||
-      req.path.endsWith('.png') ||
-      req.path.endsWith('.css') ||
-      req.path.endsWith('.js')) {
-    return res.status(404).send('File not found');
+  if (
+    req.path.startsWith("/documents/") ||
+    req.path.startsWith("/static/") ||
+    req.path.startsWith("/img/") ||
+    req.path.startsWith("/fonts/") ||
+    req.path.endsWith(".pdf") ||
+    req.path.endsWith(".jpg") ||
+    req.path.endsWith(".png") ||
+    req.path.endsWith(".css") ||
+    req.path.endsWith(".js")
+  ) {
+    return res.status(404).send("File not found");
   }
-  
+
   res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
 
