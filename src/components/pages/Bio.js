@@ -109,17 +109,36 @@ function Bio() {
                   e.preventDefault();
                   e.stopPropagation();
 
-                  // Create download link programmatically
-                  const link = document.createElement("a");
-                  link.href = "/documents/Vassallo-CV-website.pdf";
-                  link.download = "Juan Vassallo - CV.pdf";
-                  link.target = "_blank";
-                  link.rel = "noopener noreferrer";
+                  // Use fetch to force download as blob to avoid PDF.js interference
+                  fetch("/documents/Vassallo-CV-website.pdf")
+                    .then((response) => {
+                      if (!response.ok)
+                        throw new Error("Network response was not ok");
+                      return response.blob();
+                    })
+                    .then((blob) => {
+                      // Create blob URL and download
+                      const url = window.URL.createObjectURL(blob);
+                      const link = document.createElement("a");
+                      link.href = url;
+                      link.download = "Juan Vassallo - CV.pdf";
+                      link.style.display = "none";
 
-                  // Trigger download
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+
+                      // Clean up blob URL
+                      window.URL.revokeObjectURL(url);
+                    })
+                    .catch((error) => {
+                      console.error("Download failed:", error);
+                      // Fallback: direct link in new tab
+                      window.open(
+                        "/documents/Vassallo-CV-website.pdf",
+                        "_blank",
+                      );
+                    });
                 }}
               >
                 <svg

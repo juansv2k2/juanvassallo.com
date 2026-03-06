@@ -16,14 +16,11 @@ const path = require("path");
 const port = process.env.PORT || 3000;
 const app = express();
 
-// Configure proper headers for PDF downloads
+// Configure proper headers for PDF serving (but don't force download)
 app.use("/documents", (req, res, next) => {
   if (req.path.endsWith(".pdf")) {
     res.setHeader("Content-Type", "application/pdf");
-    res.setHeader(
-      "Content-Disposition",
-      'attachment; filename="' + path.basename(req.path) + '"',
-    );
+    // Remove Content-Disposition to let JavaScript handle download
     res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     res.setHeader("Pragma", "no-cache");
     res.setHeader("Expires", "0");
