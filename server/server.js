@@ -17,12 +17,43 @@ const fs = require("fs");
 const port = process.env.PORT || 3000;
 const app = express();
 
-// EXPLICIT PDF route - handles /documents/*.pdf BEFORE any other routes
-app.get("/documents/*.pdf", (req, res) => {
-  const fileName = path.basename(req.path);
+// SUPER EXPLICIT PDF route - intercepts PDF requests FIRST
+app.get("/documents/Vassallo-CV-website.pdf", (req, res) => {
+  const filePath = path.join(
+    __dirname,
+    "..",
+    "build",
+    "documents",
+    "Vassallo-CV-website.pdf",
+  );
+
+  console.log("PDF requested:", req.path);
+  console.log("File path:", filePath);
+  console.log("File exists:", fs.existsSync(filePath));
+
+  if (fs.existsSync(filePath)) {
+    const stat = fs.statSync(filePath);
+    console.log("File size:", stat.size);
+
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Length", stat.size);
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+    res.sendFile(filePath);
+  } else {
+    console.error("PDF file not found at:", filePath);
+    res.status(404).send("PDF file not found");
+  }
+});
+
+// Fallback for any other PDF in documents
+app.get("/documents/:filename.pdf", (req, res) => {
+  const fileName = req.params.filename + ".pdf";
   const filePath = path.join(__dirname, "..", "build", "documents", fileName);
 
-  // Check if file exists
+  console.log("Generic PDF requested:", fileName);
+
   if (fs.existsSync(filePath)) {
     res.setHeader("Content-Type", "application/pdf");
     res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
@@ -34,19 +65,7 @@ app.get("/documents/*.pdf", (req, res) => {
   }
 });
 
-// Configure headers for other document types
-app.use("/documents", (req, res, next) => {
-  if (req.path.endsWith(".pdf")) {
-    res.setHeader("Content-Type", "application/pdf");
-    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-    res.setHeader("Pragma", "no-cache");
-    res.setHeader("Expires", "0");
-  }
-  next();
-});
-
-// Serve static files from the build directory (including documents)
-// This MUST come BEFORE the catch-all route to serve PDFs properly
+// Serve static files from the build directory (other files)
 app.use(express.static(path.join(__dirname, "..", "build")));
 
 // Health check endpoint
