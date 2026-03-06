@@ -32,6 +32,7 @@ app.use("/documents", (req, res, next) => {
 });
 
 // Serve static files from the build directory (including documents)
+// This MUST come BEFORE the catch-all route to serve PDFs properly
 app.use(express.static(path.join(__dirname, "..", "build")));
 
 // Health check endpoint
@@ -40,23 +41,8 @@ app.get("/ping", function (req, res) {
 });
 
 // Catch-all handler: send back React's index.html file for client-side routing
-// EXCLUDE static file paths (documents, static, etc.) from React routing
+// This serves the React app for any route that isn't a static file
 app.get("/*", function (req, res) {
-  // Don't serve React app for static file requests
-  if (
-    req.path.startsWith("/documents/") ||
-    req.path.startsWith("/static/") ||
-    req.path.startsWith("/img/") ||
-    req.path.startsWith("/fonts/") ||
-    req.path.endsWith(".pdf") ||
-    req.path.endsWith(".jpg") ||
-    req.path.endsWith(".png") ||
-    req.path.endsWith(".css") ||
-    req.path.endsWith(".js")
-  ) {
-    return res.status(404).send("File not found");
-  }
-
   res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
 
