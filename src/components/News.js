@@ -9,9 +9,9 @@ function News({ newsItems }) {
   const defaultNews = [
     {
       date: "2026-03-01",
-      title: "Performance at St. Petersburg Festival through Remusik Academy",
+      title: "Performance at St. Petersburg Festival through reMusik Academy",
       content:
-        "Participated in the prestigious Remusik Academy composition program, culminating in the performance of my new mixed quintet piece at the XII St. Petersburg International Festival of New Music. The academy provides intensive training with international faculty and includes lectures, concerts, workshops, and reading sessions.",
+        "Participated in the prestigious reMusik Academy composition program, culminating in the performance of my new mixed quintet piece at the XII St. Petersburg International Festival of New Music. The academy provides intensive training with international faculty and includes lectures, concerts, workshops, and reading sessions.",
       link: "https://www.remusik.org/",
     },
     {

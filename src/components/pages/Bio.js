@@ -104,26 +104,22 @@ function Bio() {
             {/* CV Download Link */}
             <p>
               <a
-                href="/documents/Vassallo-CV-website.pdf"
                 className="cv-download-link"
-                download="Juan Vassallo - CV.pdf"
                 onClick={(e) => {
-                  // Force download by creating a temporary link
                   e.preventDefault();
-
+                  e.stopPropagation();
+                  
+                  // Create download link programmatically
                   const link = document.createElement("a");
                   link.href = "/documents/Vassallo-CV-website.pdf";
                   link.download = "Juan Vassallo - CV.pdf";
-                  link.style.display = "none";
-
+                  link.target = "_blank";
+                  link.rel = "noopener noreferrer";
+                  
+                  // Trigger download
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
-
-                  // Fallback: if download doesn't work, open in new tab
-                  setTimeout(() => {
-                    window.open("/documents/Vassallo-CV-website.pdf", "_blank");
-                  }, 100);
                 }}
               >
                 <svg
