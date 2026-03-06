@@ -13,14 +13,31 @@
 
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const port = process.env.PORT || 3000;
 const app = express();
 
-// Configure proper headers for PDF serving (but don't force download)
+// EXPLICIT PDF route - handles /documents/*.pdf BEFORE any other routes
+app.get("/documents/*.pdf", (req, res) => {
+  const fileName = path.basename(req.path);
+  const filePath = path.join(__dirname, "..", "build", "documents", fileName);
+
+  // Check if file exists
+  if (fs.existsSync(filePath)) {
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+    res.sendFile(filePath);
+  } else {
+    res.status(404).send("PDF not found");
+  }
+});
+
+// Configure headers for other document types
 app.use("/documents", (req, res, next) => {
   if (req.path.endsWith(".pdf")) {
     res.setHeader("Content-Type", "application/pdf");
-    // Remove Content-Disposition to let JavaScript handle download
     res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     res.setHeader("Pragma", "no-cache");
     res.setHeader("Expires", "0");
