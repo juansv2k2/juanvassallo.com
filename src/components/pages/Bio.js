@@ -107,8 +107,6 @@ function Bio() {
                 href="/cv-juan-vassallo.pdf"
                 download="cv-juan-vassallo.pdf"
                 className="cv-download-link"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 <svg
                   width="16"

@@ -1,7 +1,12 @@
-# AWS Amplify redirect rules
-# Serve PDFs and other assets directly  
-/documents/*  /documents/:splat  200
-/*.pdf       /:splat.pdf       200
+# AWS Amplify redirect rules - ORDER MATTERS!
+# Serve PDFs first (before SPA routing)
+/cv-juan-vassallo.pdf /cv-juan-vassallo.pdf 200
+/*.pdf             /:splat.pdf        200
+/documents/*       /documents/:splat   200
 
-# Catch-all: redirect everything else to index.html for SPA
+# Static assets
+/static/*  /static/:splat  200
+/img/*     /img/:splat     200
+
+# Catch-all: redirect everything else to index.html for SPA (MUST BE LAST)
 /*  /index.html  200
