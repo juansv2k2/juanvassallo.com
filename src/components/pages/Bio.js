@@ -109,38 +109,41 @@ function Bio() {
                 onClick={async (e) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  
+
                   try {
-                    console.log('Starting download with js-file-downloader...');
-                    
+                    console.log("Starting download with js-file-downloader...");
+
                     await downloader({
-                      url: '/documents/Vassallo-CV-website.pdf',
-                      filename: 'Juan Vassallo - CV.pdf',
+                      url: "/documents/Vassallo-CV-website.pdf",
+                      filename: "Juan Vassallo - CV.pdf",
                       timeout: 30000, // 30 second timeout
-                      headers: [
-                        { name: 'Accept', value: 'application/pdf' }
-                      ]
+                      headers: [{ name: "Accept", value: "application/pdf" }],
                     });
-                    
-                    console.log('Download completed successfully!');
+
+                    console.log("Download completed successfully!");
                   } catch (error) {
-                    console.error('Download failed:', error);
-                    
+                    console.error("Download failed:", error);
+
                     // Fallback: try the static media version
                     try {
                       await downloader({
-                        url: '/static/media/Vassallo-CV-website.pdf',
-                        filename: 'Juan Vassallo - CV.pdf',
-                        timeout: 30000
+                        url: "/static/media/Vassallo-CV-website.pdf",
+                        filename: "Juan Vassallo - CV.pdf",
+                        timeout: 30000,
                       });
-                      console.log('Fallback download completed!');
+                      console.log("Fallback download completed!");
                     } catch (fallbackError) {
-                      console.error('Fallback download also failed:', fallbackError);
-                      alert('Download failed. Please try again or contact support.');
+                      console.error(
+                        "Fallback download also failed:",
+                        fallbackError,
+                      );
+                      alert(
+                        "Download failed. Please try again or contact support.",
+                      );
                     }
                   }
                 }}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: "pointer" }}
               >
                 <svg
                   width="16"
