@@ -105,14 +105,10 @@ function Bio() {
             <p>
               <a
                 href="/cv-juan-vassallo.pdf"
-                download="Juan Vassallo - CV.pdf"
+                download="cv-juan-vassallo.pdf"
                 className="cv-download-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => {
-                  console.log("CV download initiated");
-                  // Let the browser handle the download naturally
-                }}
               >
                 <svg
                   width="16"

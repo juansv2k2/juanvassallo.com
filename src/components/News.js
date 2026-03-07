@@ -8,11 +8,19 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-05-16",
+      title:
+        "Performance at the 51st. International Computer Music Conference (ICMC) in Hamburg",
+      content:
+        "Selected as a composer to participate in the ICMC 2026 in Hamburg, Germany. My new piece 'Elevator Pitch' for cello and electronics will be performed by Antonio Lo Curto (Ensemble 404).",
+      link: "https://icmc2026.ligeti-zentrum.de/",
+    },
+    {
       date: "2026-03-01",
       title:
         "Performance at St. Petersburg Festival through reMusik.org Academy",
       content:
-        "Participated in the prestigious reMusik.org Academy composition program, culminating in the performance of my new mixed quintet piece at the XII St. Petersburg International Festival of New Music. The academy provides intensive training with international faculty and includes lectures, concerts, workshops, and reading sessions.",
+        "Selected as a composer to participate in in the prestigious reMusik.org Academy composition program, culminating in the performance of my new mixed quintet piece at the XII St. Petersburg International Festival of New Music. The academy provides intensive training with international faculty and includes lectures, concerts, workshops, and reading sessions.",
       link: "https://www.remusik.org/",
     },
     {
