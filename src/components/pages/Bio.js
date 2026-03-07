@@ -1,5 +1,6 @@
 import React from "react";
 import Photos from "../Photos";
+import downloader from "js-file-downloader";
 
 function Bio() {
   return (
@@ -104,15 +105,42 @@ function Bio() {
             {/* CV Download Link */}
             <p>
               <a
-                href="/static/media/Vassallo-CV-website.pdf"
                 className="cv-download-link"
-                download="Juan Vassallo - CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  // Allow default download behavior - no JavaScript interference
-                  console.log("PDF download triggered via direct link");
+                onClick={async (e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  
+                  try {
+                    console.log('Starting download with js-file-downloader...');
+                    
+                    await downloader({
+                      url: '/documents/Vassallo-CV-website.pdf',
+                      filename: 'Juan Vassallo - CV.pdf',
+                      timeout: 30000, // 30 second timeout
+                      headers: [
+                        { name: 'Accept', value: 'application/pdf' }
+                      ]
+                    });
+                    
+                    console.log('Download completed successfully!');
+                  } catch (error) {
+                    console.error('Download failed:', error);
+                    
+                    // Fallback: try the static media version
+                    try {
+                      await downloader({
+                        url: '/static/media/Vassallo-CV-website.pdf',
+                        filename: 'Juan Vassallo - CV.pdf',
+                        timeout: 30000
+                      });
+                      console.log('Fallback download completed!');
+                    } catch (fallbackError) {
+                      console.error('Fallback download also failed:', fallbackError);
+                      alert('Download failed. Please try again or contact support.');
+                    }
+                  }
                 }}
+                style={{ cursor: 'pointer' }}
               >
                 <svg
                   width="16"
