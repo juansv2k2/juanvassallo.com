@@ -1,6 +1,5 @@
 import React from "react";
 import Photos from "../Photos";
-import downloader from "js-file-downloader";
 
 function Bio() {
   return (
@@ -105,40 +104,15 @@ function Bio() {
             {/* CV Download Link */}
             <p>
               <a
+                href="/cv-juan-vassallo.pdf"
+                download="Juan Vassallo - CV.pdf"
                 className="cv-download-link"
-                onClick={async (e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-
-                  try {
-                    console.log("Starting download with js-file-downloader...");
-
-                    await downloader({
-                      url: "/cv-juan-vassallo.pdf",  // Root level - bypasses SPA routing
-                      filename: "Juan Vassallo - CV.pdf", 
-                      timeout: 30000,
-                      headers: [{ name: "Accept", value: "application/pdf" }],
-                    });
-
-                    console.log("Download completed successfully!");
-                  } catch (error) {
-                    console.error("Primary download failed:", error);
-
-                    // Fallback: try original documents path with redirects
-                    try {
-                      await downloader({
-                        url: "/documents/Vassallo-CV-website.pdf",
-                        filename: "Juan Vassallo - CV.pdf",
-                        timeout: 30000
-                      });
-                      console.log("Fallback download completed!");
-                    } catch (fallbackError) {
-                      console.error("All download methods failed:", fallbackError);
-                      alert("Download failed. Please contact support or try refreshing the page.");
-                    }
-                  }
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  console.log("CV download initiated");
+                  // Let the browser handle the download naturally
                 }}
-                style={{ cursor: "pointer" }}
               >
                 <svg
                   width="16"
