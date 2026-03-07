@@ -1,0 +1,7 @@
+# AWS Amplify redirect rules
+# Serve PDFs and other assets directly  
+/documents/*  /documents/:splat  200
+/*.pdf       /:splat.pdf       200
+
+# Catch-all: redirect everything else to index.html for SPA
+/*  /index.html  200

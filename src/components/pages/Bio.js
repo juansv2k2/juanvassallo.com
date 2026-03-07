@@ -114,32 +114,27 @@ function Bio() {
                     console.log("Starting download with js-file-downloader...");
 
                     await downloader({
-                      url: "/documents/Vassallo-CV-website.pdf",
-                      filename: "Juan Vassallo - CV.pdf",
-                      timeout: 30000, // 30 second timeout
+                      url: "/cv-juan-vassallo.pdf",  // Root level - bypasses SPA routing
+                      filename: "Juan Vassallo - CV.pdf", 
+                      timeout: 30000,
                       headers: [{ name: "Accept", value: "application/pdf" }],
                     });
 
                     console.log("Download completed successfully!");
                   } catch (error) {
-                    console.error("Download failed:", error);
+                    console.error("Primary download failed:", error);
 
-                    // Fallback: try the static media version
+                    // Fallback: try original documents path with redirects
                     try {
                       await downloader({
-                        url: "/static/media/Vassallo-CV-website.pdf",
+                        url: "/documents/Vassallo-CV-website.pdf",
                         filename: "Juan Vassallo - CV.pdf",
-                        timeout: 30000,
+                        timeout: 30000
                       });
                       console.log("Fallback download completed!");
                     } catch (fallbackError) {
-                      console.error(
-                        "Fallback download also failed:",
-                        fallbackError,
-                      );
-                      alert(
-                        "Download failed. Please try again or contact support.",
-                      );
+                      console.error("All download methods failed:", fallbackError);
+                      alert("Download failed. Please contact support or try refreshing the page.");
                     }
                   }
                 }}
