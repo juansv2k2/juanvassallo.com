@@ -67,9 +67,14 @@ function ArtisticPortfolio() {
             </div>
             <div className="projects">
               <Composition
+                title="Transmutations - 2. The Burial of the Sun"
+                vid="bSji6jiV1pw"
+                text="Camille Primeau, voice; Dácil Guerra, bass clarinet; Dimitrios Polisoidis, viola; Sophie Schafleitner, violin"
+              />
+              <Composition
                 title="Versificator - Render 3"
                 vid="MGxBEbUMMt4"
-                text="Vokalensembelet 'Tabula Rasa'"
+                text="Vokalensembelet 'Tabula Rasa' – Rikke Lina Sorell Matthiesen, soprano; Sigrun Jødre, mezzo-soprano; Tord Kalvenes, tenor; Arild Rohde, tenor; Jakub Niedziela, bass"
               />
               <Composition
                 title="Elevator Pitch"
@@ -169,6 +174,46 @@ function ArtisticPortfolio() {
                   </div>
                 </div>
               </div>
+
+              <div className="indivComposition">
+                <div>
+                  <h3 className="subtitle2">
+                    Transmutations – 2. The Burial of the Sun<br></br>
+                    (score follower)
+                  </h3>
+                  <p>Klangforum Wien Members, PPCM Graz</p>
+                </div>
+                <div className="videos">
+                  <div className="video-responsive">
+                    <iframe
+                      ref={iframeRef}
+                      src="https://scorefol.io/embed/klwbekj7k14elj15pqv4182y"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div className="text-align-center">
+                    <button
+                      onClick={enterFullscreen}
+                      className="fullscreen-button"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+                      </svg>
+                      View Fullscreen
+                    </button>
+                  </div>
+                </div>
+              </div>
+
               <div className="indivComposition">
                 <div>
                   <h3 className="subtitle2">

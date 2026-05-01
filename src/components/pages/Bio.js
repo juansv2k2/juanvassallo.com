@@ -41,30 +41,29 @@ function Bio() {
                 My music has been performed by leading ensembles and soloists
                 internationally, including Projecto RED Ensemble (Argentina),
                 Quasar Saxophone Quartet (Canada), JÓR Saxophone Quartet
-                (Scandinavia), Zone Experimental Basel (Switzerland), .abeceda
-                ensemble (Slovenia), Hinge Quartet (USA), EcoVoices Project
-                (USA), Obsidian Ensemble (Norway), Vocal Ensemble Tabula Rasa
-                (Norway), Edvard Grieg Kor (Norway), and soloists including
-                Lucas Fels (Germany), Sergej Tchirkov (Russia), Ludvig Lindström
-                (Finland), and Elide Sulsenti (Italy), among many others. Newer
-                commissions include works for the pianists Késia Decoté
-                (Brazil/Norway), Windsor wind quintet (The Netherlands), and the
-                Apple Pie Concert Foundation (The Netherlands).
+                (Scandinavia), Zone Experimental Basel (Switzerland), PPCM Graz
+                (Austria) .abeceda ensemble (Slovenia), Hinge Quartet (USA),
+                EcoVoices Project (USA), Obsidian Ensemble (Norway), Vocal
+                Ensemble Tabula Rasa (Norway), Edvard Grieg Kor (Norway), and
+                renowned performers including Lucas Fels (Germany), Sergej
+                Tchirkov (Russia), Dimitrios Polisoidis (Greece), Ludvig
+                Lindström (Finland), and Elide Sulsenti (Italy), among many
+                others. Newer commissions include works for the pianists Késia
+                Decoté (Brazil/Norway), Windsor wind quintet (The Netherlands),
+                and the Apple Pie Concert Foundation (The Netherlands).
               </p>
 
               <p>
                 My music has been featured at contemporary music festivals such
-                as Samtida Musik (2026), Impuls 2023, New Music Montreal 2022,
-                Festspillene i Bergen (2021, drop-in concerts), and the H&K
-                Festival in Stavanger. Upcoming presentations include St.
-                Petersburg International New Music Festival and outHEAR
-                Contemporary Music Week. I have also participated in several
-                artistic residencies, including Festival precept.concept.percept
-                XIII (Slovenia, 2025), the H&K Festival (Stavanger, 2022), the
-                Center for Movement Research (New York, 2014), and the Virginia
-                Center for the Creative Arts (VCCA) (USA, 2012). I will be an
-                artist in residence at Bergen Senter for Elektronisk Kunst (BEK)
-                in February 2026.
+                as St. Petersburg International New Music Festival, OutHEAR
+                Contemporary Music Week 2026, Impuls 2023, New Music Montreal
+                2022, Festspillene i Bergen (2021, drop-in concerts), and H&K
+                Festival (Stavanger, 2022). I have also participated in several
+                artistic residencies, including at Bergen Senter for Elektronisk
+                Kunst (BEK) in February 2026, Bled Contemporary Music Festival
+                (2026), H&K Festival in Stavanger (2022), the Center for
+                Movement Research (New York, 2014), and the Virginia Center for
+                the Creative Arts (VCCA) (USA, 2012).{" "}
               </p>
 
               <p>
@@ -89,7 +88,7 @@ function Bio() {
               <p>
                 My popular music roots also continue to inform my sensitivity to
                 musical narrative and contemporary composition. As a member of
-                the ensemble Azul 514 (Argentina), we explore boundaries between
+                the Argentinean ensemble Azul 514, we explore boundaries between
                 folk-traditional, contemporary, and electronic sound worlds,
                 creating unpredictable spaces for sonic exploration through
                 collaborative composition and improvisation.
