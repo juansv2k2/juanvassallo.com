@@ -8,6 +8,13 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-06-13",
+      title: "Norwegian Piano Perspectives – World Premiere of 'Pu Werken'",
+      content:
+        "Concert at Kulturhuset i Bergen featuring Bergen-based pianist Tore Eide Bordal performing new works by Norwegian and Norway-based composers. The program includes the world premiere of my piece 'Pu Werken (the messenger)' with texts by Javier Villalba. The concert is organized by NyMusikk Bergen and NyMusikk Komponistgruppen, and supported by Morten Eide Pedersen Minnefond, Fond for Utøvere Kunstnere, Bergen Kommune, and Norsk Komponistforening.",
+      link: "https://www.kulturhusetibergen.no/program/norwegian-piano-perspectives",
+    },
+    {
       date: "2026-05-16",
       title:
         "Performance at the 51st. International Computer Music Conference (ICMC) in Hamburg",
