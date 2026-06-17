@@ -8,6 +8,23 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-06-24",
+      title:
+        "World Premiere of 'Transmutation (i) – the birth of the poem' at Bled Contemporary Music Week",
+      content:
+        "World premiere of my piece 'Transmutation (i) – the birth of the poem' for the ensemble .abeceda., performed at the Bled Contemporary Music Week. The piece was developed in the framework of the precept.concept.percept XIII residency program.",
+      link: "https://abeceda.io/",
+    },
+    {
+      date: "2026-03-22",
+      title: "Den Store Krapylkonserten 2026",
+      content:
+        "Performed as part of Den Store Krapylband at Den Store Krapylkonserten 2026, organized by nyMusikk Bergen at Grieghallen (Peer Gynt Salen). The concert featured young musiciansand the dance class of Langhaugen videregående school.",
+      link: "https://nymusikk.no/arrangementer/den-store-krapylkonserten-2026",
+      customImage:
+        "https://imgproxy01.kloner.clh.no/59e419b062930af756d272d9d9f9b73b3c051e2d41c32a4cba5b6b46725becaf5b7ca13525b51bf242ebfb776f23d817001cc131115e91253b9a6c49d1e4936e/width:1600/plain/https://cms.nymusikk.no/wp-content/uploads/2026/03/POSTER.png",
+    },
+    {
       date: "2026-06-13",
       title: "Norwegian Piano Perspectives – World Premiere of 'Pu Werken'",
       content:
@@ -79,14 +96,7 @@ function News({ newsItems }) {
       title: "Paper Presentation at TENOR 2025 Beijing",
       content:
         "Presenting 'MOZ'lib and PWforMax: Rewiring CAC Heritage' at the 10th International Conference on Notation and Music Representation (TENOR) in Beijing, China.",
-      link: "https://zhuanti.ccom.edu.cn/tenorbjen/index.htm",
-    },
-    {
-      date: "2025-10-05",
-      title: "Artist Residency at 'precept.concept.percept' 2026",
-      content:
-        "Selected as resident artist at 'precept.concept.percept' 2026 to develop 'Transmutation/the birth of the poem', a new composition for abeceda new music ensemble that will be premiered at the Bled Contemporary Music Week 2026 in Slovenia.",
-      link: "https://precept-concept-percept.com/precept-concept-percept/",
+      link: "https://www.tenor-conference.org/",
     },
     {
       date: "2025-10-12",
@@ -128,7 +138,7 @@ function News({ newsItems }) {
       title: "New Music Days Lucerne Performance",
       content:
         "Performance of 'Elevator Pitch' by pianist Elide Sulsenti as part of her Final Master's Recital during the New Music Days festival in Lucerne, Switzerland.",
-      link: "https://www.hslu.ch/en/lucerne-school-of-music/agenda/events/master-abschlusskonzerte/",
+      link: "https://www.hslu.ch/en/lucerne-school-of-music/",
     },
     {
       date: "2025-04-25",
@@ -136,6 +146,7 @@ function News({ newsItems }) {
       content:
         "Research article on constraint-based composition and neural networks published in Frontiers of Computer Science, contributing new insights to the field of AI-assisted musical creativity.",
       link: "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1543074/abstract",
+      customImage: "https://www.frontiersin.org/favicons/apple-touch-icon.png",
     },
     {
       date: "2025-02-20",
@@ -180,18 +191,46 @@ function News({ newsItems }) {
     }
   };
 
-  // Universal function to fetch website metadata with improved image extraction
-  const fetchWebsiteData = async (url, itemId) => {
+  // Fetch website metadata using Microlink API (browser-friendly, no CORS issues)
+  const fetchWebsiteData = async (url, itemId, customImage) => {
     if (!url || websiteData[itemId] || requestedUrls.has(url)) return;
+
+    const domain = getDomain(url);
+
+    // Check localStorage cache to avoid redundant API calls across sessions
+    // (skipped when customImage is provided — always use the override)
+    const cacheKey = `news_preview_${btoa(encodeURIComponent(url)).substring(0, 60)}`;
+    if (!customImage) {
+      try {
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+          const cachedData = JSON.parse(cached);
+          setWebsiteData((prev) => ({ ...prev, [itemId]: cachedData }));
+          return;
+        }
+      } catch (e) {
+        // ignore cache read errors
+      }
+    }
+
+    // If a custom image is provided, skip the API fetch entirely
+    if (customImage) {
+      const websiteInfo = {
+        title: domain,
+        description: "Visit website for more information",
+        thumbnail: customImage,
+        domain: domain,
+        loaded: true,
+      };
+      setWebsiteData((prev) => ({ ...prev, [itemId]: websiteInfo }));
+      return;
+    }
 
     // Mark this URL as requested to prevent duplicates
     setRequestedUrls((prev) => new Set([...prev, url]));
     setLoadingStates((prev) => ({ ...prev, [itemId]: true }));
 
-    const domain = getDomain(url);
-
-    // Universal fallback function that works for any domain
-    const setUniversalFallback = () => {
+    const setFallback = () => {
       const fallbackData = {
         title: domain,
         description: "Visit website for more information",
@@ -200,230 +239,57 @@ function News({ newsItems }) {
         loaded: true,
         error: true,
       };
-
-      setWebsiteData((prev) => ({
-        ...prev,
-        [itemId]: fallbackData,
-      }));
+      setWebsiteData((prev) => ({ ...prev, [itemId]: fallbackData }));
       setLoadingStates((prev) => ({ ...prev, [itemId]: false }));
     };
 
-    // Set a maximum timeout for the entire operation to prevent infinite loading
-    const maxTimeoutId = setTimeout(() => {
-      setUniversalFallback();
-    }, 8000); // 8 seconds maximum for all attempts
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-    // List of CORS proxies to try in order
-    const corsProxies = [
-      (url) => `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
-      (url) => `https://corsproxy.io/?${encodeURIComponent(url)}`,
-      (url) =>
-        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-    ];
+      const response = await fetch(
+        `https://api.microlink.io/?url=${encodeURIComponent(url)}`,
+        { signal: controller.signal },
+      );
 
-    for (let i = 0; i < corsProxies.length; i++) {
-      try {
-        // Add timeout to prevent hanging requests
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout per proxy
+      clearTimeout(timeoutId);
 
-        const proxyUrl = corsProxies[i](url);
-        const response = await fetch(proxyUrl, {
-          signal: controller.signal,
-          headers: {
-            Accept: "application/json, text/html, */*",
-          },
-        });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-        clearTimeout(timeoutId);
+      const data = await response.json();
 
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
+      if (data.status === "success" && data.data) {
+        const { title, description, image, logo } = data.data;
+        const thumbnail =
+          image?.url ||
+          logo?.url ||
+          `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+
+        const websiteInfo = {
+          title: title || domain,
+          description: (
+            description || "Visit website for more information"
+          ).substring(0, 200),
+          thumbnail,
+          domain: domain,
+          loaded: true,
+        };
+
+        // Cache result in localStorage
+        try {
+          localStorage.setItem(cacheKey, JSON.stringify(websiteInfo));
+        } catch (e) {
+          // ignore cache write errors (e.g. storage full)
         }
 
-        let data;
-        if (i === 0) {
-          // allorigins format
-          data = await response.json();
-          if (!data.contents) throw new Error("No contents in response");
-        } else {
-          // other proxies return HTML directly
-          const text = await response.text();
-          data = { contents: text };
-        }
-
-        if (data.contents) {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(data.contents, "text/html");
-
-          // Extract Open Graph and meta data
-          const getMetaContent = (property) => {
-            const element =
-              doc.querySelector(`meta[property="${property}"]`) ||
-              doc.querySelector(`meta[name="${property}"]`);
-            return element ? element.getAttribute("content") : "";
-          };
-
-          // Enhanced description extraction
-          const getCleanDescription = () => {
-            let description =
-              getMetaContent("og:description") ||
-              getMetaContent("twitter:description") ||
-              getMetaContent("description");
-
-            // If meta description exists and looks clean, use it
-            if (
-              description &&
-              description.length > 10 &&
-              !description.includes("[et_pb_") &&
-              !description.includes("_builder_version")
-            ) {
-              return description.trim();
-            }
-
-            // Fallback: extract text from common content areas
-            const contentSelectors = [
-              "main p",
-              ".content p",
-              ".entry-content p",
-              ".post-content p",
-              "article p",
-              "h1 + p",
-              "h2 + p",
-            ];
-
-            for (const selector of contentSelectors) {
-              const elements = doc.querySelectorAll(selector);
-              for (const element of elements) {
-                let text = element.textContent || "";
-                text = text.trim();
-
-                // Skip if it contains shortcodes or is too short
-                if (
-                  text.length > 20 &&
-                  !text.includes("[et_pb_") &&
-                  !text.includes("_builder_version") &&
-                  !text.includes("shortcode")
-                ) {
-                  return text;
-                }
-              }
-            }
-
-            return "Visit website for more information";
-          };
-
-          // Enhanced image extraction with multiple sources
-          const getImageUrl = () => {
-            // Special case for Frontiers domain - use favicon instead of article images
-            if (domain.includes("frontiersin.org")) {
-              return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-            }
-
-            // Try Open Graph and Twitter meta images first
-            let image =
-              getMetaContent("og:image") || getMetaContent("twitter:image");
-
-            if (image) {
-              // Make relative URLs absolute
-              if (image.startsWith("//")) {
-                image = "https:" + image;
-              } else if (image.startsWith("/")) {
-                image = new URL(url).origin + image;
-              } else if (!image.startsWith("http")) {
-                image = new URL(url).origin + "/" + image;
-              }
-              return image;
-            }
-
-            // Try to find images in the page content
-            const imageSelectors = [
-              'meta[name="image"]',
-              'link[rel="image_src"]',
-              'img[class*="logo"]',
-              'img[id*="logo"]',
-              'img[class*="banner"]',
-              'img[class*="header"]',
-              ".header img",
-              ".logo img",
-              "article img:first-of-type",
-              "main img:first-of-type",
-            ];
-
-            for (const selector of imageSelectors) {
-              const element = doc.querySelector(selector);
-              if (element) {
-                let src =
-                  element.getAttribute("content") ||
-                  element.getAttribute("href") ||
-                  element.getAttribute("src");
-                if (src && src.length > 10) {
-                  // Make relative URLs absolute
-                  if (src.startsWith("//")) {
-                    src = "https:" + src;
-                  } else if (src.startsWith("/")) {
-                    src = new URL(url).origin + src;
-                  } else if (!src.startsWith("http")) {
-                    src = new URL(url).origin + "/" + src;
-                  }
-                  return src;
-                }
-              }
-            }
-
-            // Final fallback to favicon service
-            return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-          };
-
-          const title =
-            getMetaContent("og:title") ||
-            getMetaContent("twitter:title") ||
-            doc.querySelector("title")?.textContent ||
-            domain;
-
-          const description = getCleanDescription();
-          const image = getImageUrl();
-
-          const websiteInfo = {
-            title: title.trim(),
-            description: description.substring(0, 200),
-            thumbnail: image,
-            domain: domain,
-            loaded: true,
-            proxy: i,
-          };
-
-          setWebsiteData((prev) => ({
-            ...prev,
-            [itemId]: websiteInfo,
-          }));
-
-          clearTimeout(maxTimeoutId);
-          setLoadingStates((prev) => ({ ...prev, [itemId]: false }));
-          return; // Success! Exit the proxy loop
-        } else {
-          throw new Error("Failed to fetch content");
-        }
-      } catch (error) {
-        // If this wasn't the last proxy, try the next one silently
-        if (i < corsProxies.length - 1) {
-          continue;
-        }
-
-        // All proxies failed - use fallback
-        if (process.env.NODE_ENV === "development") {
-          console.warn(`All proxies failed for ${url}:`, error.message);
-        }
-
-        clearTimeout(maxTimeoutId);
-        setUniversalFallback();
-        return;
+        setWebsiteData((prev) => ({ ...prev, [itemId]: websiteInfo }));
+        setLoadingStates((prev) => ({ ...prev, [itemId]: false }));
+      } else {
+        setFallback();
       }
+    } catch (error) {
+      setFallback();
     }
-
-    // This should never be reached, but just in case
-    clearTimeout(maxTimeoutId);
-    setUniversalFallback();
   };
 
   // Fetch website data for all items with links
@@ -434,7 +300,7 @@ function News({ newsItems }) {
     processedItems.forEach((item, index) => {
       if (item.link && !websiteData[item.id] && !requestedUrls.has(item.link)) {
         setTimeout(() => {
-          fetchWebsiteData(item.link, item.id);
+          fetchWebsiteData(item.link, item.id, item.customImage);
         }, index * 100); // 100ms delay between each request
       }
     });
