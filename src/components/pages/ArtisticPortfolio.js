@@ -67,6 +67,11 @@ function ArtisticPortfolio() {
             </div>
             <div className="projects">
               <Composition
+                title="Pu Werken (The Messengers)"
+                vid="vEG6J0FDaV0"
+                text="Tore Eide Bordal, piano; Juan S. Vassallo, electronics; narrated texts by Javier Villalba"
+              />
+              <Composition
                 title="Transmutations - 2. The Burial of the Sun"
                 vid="bSji6jiV1pw"
                 text="Camille Primeau, voice; Dácil Guerra, bass clarinet; Dimitrios Polisoidis, viola; Sophie Schafleitner, violin"
@@ -227,44 +232,6 @@ function ArtisticPortfolio() {
                     <iframe
                       ref={iframeRef}
                       src="https://scorefol.io/embed/exijyjyynub0yzzbccvk4n7d"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div className="text-align-center">
-                    <button
-                      onClick={enterFullscreen}
-                      className="fullscreen-button"
-                    >
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      >
-                        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-                      </svg>
-                      View Fullscreen
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="indivComposition">
-                <div>
-                  <h3 className="subtitle2">
-                    Elevator Pitch<br></br>
-                    (score follower)
-                  </h3>
-                  <p>Lucas Fels</p>
-                </div>
-                <div className="videos">
-                  <div className="video-responsive">
-                    <iframe
-                      ref={iframeRef}
-                      src="https://scorefol.io/embed/cm10zgj4q000310f3r88rs6hf"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
