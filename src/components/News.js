@@ -16,15 +16,6 @@ function News({ newsItems }) {
       link: "https://abeceda.io/",
     },
     {
-      date: "2026-03-22",
-      title: "Den Store Krapylkonserten 2026",
-      content:
-        "Performed as part of Den Store Krapylband at Den Store Krapylkonserten 2026, organized by nyMusikk Bergen at Grieghallen (Peer Gynt Salen). The concert featured young musiciansand the dance class of Langhaugen videregående school.",
-      link: "https://nymusikk.no/arrangementer/den-store-krapylkonserten-2026",
-      customImage:
-        "https://imgproxy01.kloner.clh.no/59e419b062930af756d272d9d9f9b73b3c051e2d41c32a4cba5b6b46725becaf5b7ca13525b51bf242ebfb776f23d817001cc131115e91253b9a6c49d1e4936e/width:1600/plain/https://cms.nymusikk.no/wp-content/uploads/2026/03/POSTER.png",
-    },
-    {
       date: "2026-06-13",
       title: "Norwegian Piano Perspectives – World Premiere of 'Pu Werken'",
       content:
@@ -38,6 +29,15 @@ function News({ newsItems }) {
       content:
         "Selected as a composer to participate in the ICMC 2026 in Hamburg, Germany. My new piece 'Elevator Pitch' for cello and electronics will be performed by Antonio Lo Curto (Ensemble 404).",
       link: "https://icmc2026.ligeti-zentrum.de/",
+    },
+    {
+      date: "2026-03-22",
+      title: "Den Store Krapylkonserten 2026",
+      content:
+        "Performed as part of Den Store Krapylband at Den Store Krapylkonserten 2026, organized by nyMusikk Bergen at Grieghallen (Peer Gynt Salen). The concert featured young musiciansand the dance class of Langhaugen videregående school.",
+      link: "https://nymusikk.no/arrangementer/den-store-krapylkonserten-2026",
+      customImage:
+        "https://imgproxy01.kloner.clh.no/59e419b062930af756d272d9d9f9b73b3c051e2d41c32a4cba5b6b46725becaf5b7ca13525b51bf242ebfb776f23d817001cc131115e91253b9a6c49d1e4936e/width:1600/plain/https://cms.nymusikk.no/wp-content/uploads/2026/03/POSTER.png",
     },
     {
       date: "2026-03-01",
