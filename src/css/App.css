@@ -545,7 +545,7 @@ iframe {
   border-radius: 25px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -588,7 +588,7 @@ iframe {
 
 .contact-item h4 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -600,7 +600,7 @@ iframe {
 }
 
 .contact-email {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   transition: all 0.3s ease;
   text-decoration: none !important;
@@ -615,16 +615,21 @@ iframe {
 /* Portfolio section styling */
 .portfolio-section {
   margin-bottom: 80px;
+  width: 100%;
   scroll-margin-top: 100px; /* Account for fixed header */
 }
 
 .portfolio-section-title {
   color: bisque;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: left;
   letter-spacing: 2px;
+}
+
+.portfolio-links {
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -635,11 +640,11 @@ iframe {
 
   .portfolio-nav-link {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .portfolio-section-title {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   .portfolio-section {
@@ -651,7 +656,7 @@ iframe {
 a {
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   transition: color 0.2s ease-in-out;
   text-decoration: none !important;
 }
@@ -668,32 +673,34 @@ a.active {
 
 p {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .fh3 {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 h1 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .buttons h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 .header h1,
 .header h2,
 .header h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.7);
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.9),
+    0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 ul {
@@ -708,7 +715,7 @@ ul {
 
 .co li {
   margin-bottom: 2px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: white;
   list-style-type: none;
   padding-left: 0;
@@ -716,7 +723,7 @@ ul {
 }
 
 .bigP p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -724,7 +731,7 @@ a {
   text-decoration: none;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   transition: color 0.2s ease-in-out;
 }
 
@@ -845,7 +852,7 @@ p.active {
 
   .scroll-indicator-text {
     color: rgba(64, 224, 208, 0.9);
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -958,7 +965,7 @@ p.active {
     width: 100%;
     padding-bottom: 20px;
     margin: 0 0 0 0;
-    font-size: 90%;
+    font-size: 0.9rem;
     flex-direction: column;
   }
 
@@ -966,16 +973,8 @@ p.active {
 
   .title {
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 400;
-  }
-
-  a {
-    text-decoration: none;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    font-size: 16px;
-    text-shadow: 0 0 5px black;
   }
 
   ul {
@@ -985,7 +984,7 @@ p.active {
 
   .bigP p,
   .cv li {
-    font-size: 100%;
+    font-size: 1rem;
     text-align: left;
     line-height: 1.6;
   }
@@ -994,37 +993,9 @@ p.active {
     overflow-wrap: anywhere;
   }
 
-  h1 {
-    text-align: center;
-  }
-  h3 {
-    margin: 10px;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .cv {
-    font-size: 80%;
-  }
-
-  .cv h3 {
-    color: white;
-    text-shadow: 0 0 5px black;
-  }
-
-  .co,
-  .co li {
-    font-size: 85%;
-  }
-
   .buttons h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-  }
-
-  .indivComposition p {
-    font-size: 14px;
-    line-height: 1.6;
   }
 
   /* Remove any conflicting shadow rules */
@@ -1088,138 +1059,6 @@ p.active {
     align-items: center;
     justify-content: space-between;
   }
-
-  /* Mobile News Section Styles */
-  .news-section {
-    padding: 1rem;
-    margin: 1rem 0;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .news-section .section-title {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .news-container {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .news-item {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
-  .news-title {
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    text-align: left;
-    margin: 0;
-  }
-
-  .news-content {
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
-  .news-link {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .news-link:hover {
-    transform: none; /* Disable hover transform on mobile */
-  }
-
-  /* Mobile Website Preview Styles */
-  .website-preview {
-    margin-top: 0.8rem;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .website-preview:hover {
-    transform: none; /* Disable hover transform on mobile */
-  }
-
-  .website-link {
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .website-thumbnail {
-    flex: none;
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
-  }
-
-  .website-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .website-info {
-    padding: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .website-title {
-    font-size: 0.85rem;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
-  .website-description {
-    font-size: 0.75rem;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .website-domain {
-    font-size: 0.7rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
-  /* Mobile Loading States */
-  .loading-placeholder {
-    flex-direction: column;
-  }
-
-  .loading-thumbnail {
-    flex: none;
-    width: 100%;
-    height: 120px;
-  }
-
-  .loading-info {
-    padding: 0.5rem;
-  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1254,7 +1093,7 @@ p.active {
 
   .scroll-indicator-text {
     color: rgba(64, 224, 208, 0.9);
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1371,7 +1210,9 @@ span,
 .bigP p,
 .indivComposition p,
 .fh3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6);
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.8),
+    0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Specific overrides where needed */
@@ -1382,37 +1223,37 @@ span,
 
 .subtitle {
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
 p {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .fh3 {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 h2 {
   color: white;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .buttons h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 .cv li {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   text-decoration: none;
   list-style-type: none;
@@ -1428,7 +1269,7 @@ h2 {
 
 .co li {
   margin-bottom: 2px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: white;
   list-style-type: none;
   padding-left: 0;
@@ -1436,7 +1277,7 @@ h2 {
 }
 
 .bigP p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -1445,7 +1286,7 @@ a {
   text-decoration: none;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1454,8 +1295,8 @@ a.active {
 }
 
 .indivComposition p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 /* News Section Styles */
@@ -1483,7 +1324,6 @@ a.active {
 
 .news-item {
   background-color: rgba(0, 0, 0, 0.4);
-
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -1677,6 +1517,188 @@ a.active {
   }
   100% {
     background-position: 200% 0;
+  }
+}
+
+/* Final mobile overrides kept at end to win cascade against base styles above */
+@media only screen and (max-width: 768px) {
+  a {
+    text-decoration: none;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 1rem;
+    text-shadow: 0 0 5px black;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .cv {
+    font-size: 0.8rem;
+  }
+
+  .cv h3 {
+    text-shadow: 0 0 5px black;
+  }
+
+  .co,
+  .co li {
+    font-size: 0.85rem;
+  }
+
+  .indivComposition p {
+    font-size: 0.9rem;
+  }
+
+  .news-section {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .news-section .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .news-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .news-item {
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .news-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
+    margin: 0;
+  }
+
+  .news-content {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .news-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .news-link:hover {
+    transform: none;
+  }
+
+  .website-preview {
+    margin-top: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .website-preview:hover {
+    transform: none;
+  }
+
+  .website-link {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .website-thumbnail {
+    flex: none;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+  }
+
+  .website-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .website-info {
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .website-title {
+    font-size: 0.85rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .website-description {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .website-domain {
+    font-size: 0.7rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .loading-placeholder {
+    flex-direction: column;
+  }
+
+  .loading-thumbnail {
+    flex: none;
+    width: 100%;
+    height: 120px;
+  }
+
+  .loading-info {
+    padding: 0.5rem;
+  }
+
+  .portfolio-section {
+    margin-bottom: 60px;
+    scroll-margin-top: 80px;
+  }
+
+  .portfolio-section-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .portfolio-links {
+    text-align: center;
   }
 }
 

@@ -32,7 +32,7 @@ function ArtisticPortfolio() {
       <div className="secondaryWrapper">
         <div className="width">
           <h1 className="neonText">works</h1>
-          <div>
+          <div className="portfolio-links">
             (
             <span
               className="portfolio-link"
