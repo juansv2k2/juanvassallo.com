@@ -30,7 +30,7 @@ function Footer() {
           <FaBandcamp />
         </a>
       </div>
-      <p className="footText">© 2025 Juan Sebastian Vassallo</p>
+      <p className="footText">© 2026 Juan Sebastian Vassallo</p>
     </div>
   );
 }
