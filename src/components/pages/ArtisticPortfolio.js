@@ -67,14 +67,19 @@ function ArtisticPortfolio() {
             </div>
             <div className="projects">
               <Composition
-                title="Pu Werken (The Messengers)"
-                vid="vEG6J0FDaV0"
-                text="Tore Eide Bordal, piano; Juan S. Vassallo, electronics; narrated texts by Javier Villalba"
+                title="Transmutations - 1. The Birth of a Poem"
+                vid="WdCkX9l7wEE?start=5625&end=6093"
+                text="Andrei Maksimov, voice; Luisa E. Vinuesa, flute; Sam Alvarez, saxophone; Hui Han Lui, piano; Iván Zavala, percussion; Giordano De Nisi, conductor"
               />
               <Composition
                 title="Transmutations - 2. The Burial of the Sun"
                 vid="bSji6jiV1pw"
                 text="Camille Primeau, voice; Dácil Guerra, bass clarinet; Dimitrios Polisoidis, viola; Sophie Schafleitner, violin"
+              />
+              <Composition
+                title="Pu Werken (The Messengers)"
+                vid="vEG6J0FDaV0"
+                text="Tore Eide Bordal, piano; Juan S. Vassallo, electronics; narrated texts by Javier Villalba"
               />
               <Composition
                 title="Versificator - Render 3"

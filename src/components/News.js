@@ -8,11 +8,25 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-07-01",
+      title: "Selected for Nidaros Vokal x OnlyConnect Trondheim 2027",
+      content:
+        'I have been selected to take part in the Nidaros Vokal x OnlyConnect Trondheim 2027 concert. My piece, "Los que vuelven" ("The ones who return"), is a work for vocal ensemble that evokes an absent city reconstructed entirely from remembered voices. The piece explores memory, urban absence, and the fragile threshold where a voice ceases to be recollection and becomes presence again.',
+      link: "https://www.nidarosvokal.com/",
+    },
+    {
+      date: "2026-06-30",
+      title: "Yana Phuyu premiered by NeoQuartet",
+      content:
+        "Yana Phuyu (Quechua: “shadow constellation”) draws on folkloric traditions from northwestern Argentina and the Andean cosmological concept of the constelación de sombra. The work was commissioned by NeoQuartet (Poland) and Anders Hannevold, and will be performed during their European tour in 2026–2027. Performances include Gdańsk, Elbląg, and Warsaw.",
+      link: "https://neoquartet.pl/",
+    },
+    {
       date: "2026-06-24",
       title:
         "World Premiere of 'Transmutation (i) – the birth of the poem' at Bled Contemporary Music Week",
       content:
-        "World premiere of my piece 'Transmutation (i) – the birth of the poem' for the ensemble .abeceda., performed at the Bled Contemporary Music Week. The piece was developed in the framework of the precept.concept.percept XIII residency program.",
+        "World premiere of my piece 'Transmutation (i) – the birth of the poem' performed at the Bled Contemporary Music Week. The piece was developed in the framework of the precept.concept.percept XIII residency program.",
       link: "https://abeceda.io/",
     },
     {
