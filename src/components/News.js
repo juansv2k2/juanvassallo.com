@@ -9,9 +9,9 @@ function News({ newsItems }) {
   const defaultNews = [
     {
       date: "2026-07-01",
-      title: "Selected for Nidaros Vokal x OnlyConnect Trondheim 2027",
+      title: "Concert with Nidaros Vokal in OnlyConnect Trondheim 2027",
       content:
-        'I have been selected to take part in the Nidaros Vokal x OnlyConnect Trondheim 2027 concert. My piece, "Los que vuelven" ("The ones who return"), is a work for vocal ensemble that evokes an absent city reconstructed entirely from remembered voices. The piece explores memory, urban absence, and the fragile threshold where a voice ceases to be recollection and becomes presence again.',
+        'I have been invited to take part in the Nidaros Vokal x OnlyConnect Trondheim 2027 concert. My piece, "Los que vuelven" ("The ones who return"), is a work for vocal ensemble that evokes an absent city reconstructed entirely from remembered voices. The piece explores memory, urban absence, and the fragile threshold where a voice ceases to be recollection and becomes presence again.',
       link: "https://www.nidarosvokal.com/",
     },
     {
