@@ -8,6 +8,14 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-08-01",
+      title:
+        "Selected as a composer to participate in the International Composition Institute of Thailand (ICIT) 2026 ",
+      content:
+        "I have been selected as a composer to participate in the International Composition Institute of Thailand (ICIT) 2026. The program includes workshops, lectures, and performances of new works by international composers. My new piece 'Mimnio Athesa Eioioio' will be premiered during the festival IntAct 2026 in Bangkok, Thailand, on December 19, 2026.",
+      link: "https://www.instagram.com/p/Da-iVMRyAFE/",
+    },
+    {
       date: "2026-07-01",
       title: "Concert with Nidaros Vokal in OnlyConnect Trondheim 2027",
       content:
