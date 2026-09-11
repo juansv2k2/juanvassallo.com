@@ -12,21 +12,20 @@ function Bio() {
               <p>
                 I am an Argentinian experimental artist and researcher based in
                 Bergen, Norway. My practice encompasses both instrumental and
-                electronic composition, live-electronics performance, and the
-                creation of hybrid spaces where acoustic and electronic sound,
-                text, and visual media interact. My artistic research is driven
-                by curiosity about the relationships between cognition,
-                technology, and sound.
+                electronic composition and live-electronics performance. My
+                artistic research is driven by curiosity about the relationships
+                between cognition, technology, and sound.
               </p>
               <p>
-                I am most interested in exploring how technology —particularly
-                artificial intelligence— can extend, disrupt, and transform
-                traditional musical practices, and how it can function as a
-                creative partner in artistic exploration. Recent projects have
-                ranged from traditional and folkloric instrumental improvisation
-                augmented by electronics to investigations into the poetics of
-                AI in relation to intuition, semantic connections,
-                hallucinations, glitches, and steered generative processes.
+                I am most interested in creating hybrid spaces where acoustic
+                and electronic sound, text, and visual media interact, and
+                exploring how technology —particularly artificial intelligence—
+                can extend, disrupt, and transform traditional musical
+                practices. Recent projects have ranged from traditional and
+                folkloric instrumental improvisation augmented by electronics to
+                investigations into the poetics of AI in relation to intuition,
+                semantic connections, hallucinations, glitches, and steered
+                generative processes.
               </p>
               <p>
                 I hold a Ph.D. in artistic research (University of Bergen,
@@ -39,41 +38,40 @@ function Bio() {
               </p>
               <p>
                 My music has been performed by leading ensembles and soloists
-                internationally, including Projecto RED Ensemble (Argentina),
-                Quasar Saxophone Quartet (Canada), JÓR Saxophone Quartet
-                (Scandinavia), Zone Experimental Basel (Switzerland), PPCM Graz
-                (Austria) .abeceda ensemble (Slovenia), Hinge Quartet (USA),
-                EcoVoices Project (USA), Obsidian Ensemble (Norway), Vocal
+                internationally, including Quasar Saxophone Quartet (Canada),
+                JÓR Saxophone Quartet (Scandinavia), Zone Experimental Basel
+                (Switzerland), PPCM Graz (Austria), Hinge Quartet (USA), New
+                Earth Vocal Ensemble (USA), Obsidian Ensemble (Norway), Vocal
                 Ensemble Tabula Rasa (Norway), Edvard Grieg Kor (Norway), and
                 renowned performers including Lucas Fels (Germany), Sergej
                 Tchirkov (Russia), Dimitrios Polisoidis (Greece), Ludvig
                 Lindström (Finland), and Elide Sulsenti (Italy), among many
                 others. Newer commissions include works for the pianists Késia
-                Decoté (Brazil/Norway), Windsor wind quintet (The Netherlands),
-                and the Apple Pie Concert Foundation (The Netherlands).
+                Decoté (Brazil/Norway), Ensemble 404 (Germany), Neo Quartet
+                (Poland), Nidaros Vokal (Norway) and TACETi ensemble (Thailand).
               </p>
 
               <p>
                 My music has been featured at contemporary music festivals such
-                as St. Petersburg International New Music Festival, OutHEAR
-                Contemporary Music Week 2026, Impuls 2023, New Music Montreal
-                2022, Festspillene i Bergen (2021, drop-in concerts), and H&K
-                Festival (Stavanger, 2022). I have also participated in several
-                artistic residencies, including at Bergen Senter for Elektronisk
-                Kunst (BEK) in February 2026, Bled Contemporary Music Festival
-                (2026), H&K Festival in Stavanger (2022), the Center for
-                Movement Research (New York, 2014), and the Virginia Center for
-                the Creative Arts (VCCA) (USA, 2012).{" "}
+                as Bled Contemporary Music Festival,St. Petersburg International
+                New Music Festival, OutHEAR Contemporary Music Week, Impuls, New
+                Music Montreal, Festspillene i Bergen (drop-in concerts), and
+                H&K Festival (Stavanger). I have also participated in several
+                artistic residencies, including at the Ligeti Zentrum, Bergen
+                Senter for Elektronisk Kunst (BEK) in February 2026, H&K
+                Festival in Stavanger (2022), the Center for Movement Research
+                (New York, 2014), and the Virginia Center for the Creative Arts
+                (VCCA) (USA, 2012).{" "}
               </p>
 
               <p>
                 My compositions have received prizes at international
-                competitions, including the 2024 IEEE Big Data Conference’s
-                AI-based composition contest (first prize,{" "}
-                <em>Oscillations/iii</em>), the Prix ‘Pas de Calais’
-                (France/Argentina), the Chengdu River Sun Prize (China/ISCM),
-                and special mentions for electroacoustic and interdisciplinary
-                work in Argentina.
+                competitions, including the first prize in the Arthaus
+                composition contest 2026 (Argentina), the 2024 IEEE Big Data
+                Conference’s AI-based composition contest, the Prix ‘Pas de
+                Calais’ (France/Argentina, 2012), the Chengdu River Sun Prize
+                (China/ISCM, 2013), and special mentions for electroacoustic and
+                interdisciplinary work in Argentina.
               </p>
 
               <p>

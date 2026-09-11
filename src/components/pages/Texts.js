@@ -82,7 +82,15 @@ function Texts() {
                 Vincenot, J., Vassallo, J. S., Sandred, Ö. (2025). MOZ'lib and
                 PWforMax: Rewiring CAC heritage. Proceedings of the 10th
                 International Conference on Music Representation and Notation –
-                TENOR. (in press)
+                TENOR.{" "}
+                <a
+                  className="link"
+                  href="https://www.tenor-conference.org/proceedings/2025/11_TENOR2025_Julien_Vincenot.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.tenor-conference.org/proceedings/2025/11_TENOR2025_Julien_Vincenot.pdf
+                </a>
               </li>
               <li>
                 Vassallo, J. S. (2022). Machinic automation in the process of

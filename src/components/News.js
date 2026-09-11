@@ -8,6 +8,15 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-09-01",
+      title: "First Prize in the Arthaus National Composition Contest 2026",
+      content:
+        "My work 'Transmutation (iii) Remnants' was awarded first prize in the Arthaus National Composition Contest 2026 by an international jury composed of Chaya Czernowin, Lucas Fagin, and Daniel Montes. The prize includes the production and premiere of the work during the Ensamble ArtHaus concert season, and publication by BabelScores.",
+      link: "https://arthaus.ar/convocatoria-musica/",
+      customImage:
+        "https://arthaus.ar/wp-content/uploads/2026/08/premio-ensamble-2026.jpg",
+    },
+    {
       date: "2026-08-01",
       title:
         "Selected as a composer to participate in the International Composition Institute of Thailand (ICIT) 2026 ",
