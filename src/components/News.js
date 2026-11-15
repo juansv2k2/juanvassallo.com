@@ -8,6 +8,13 @@ function News({ newsItems }) {
   // Default news items (no need for manual IDs)
   const defaultNews = [
     {
+      date: "2026-10-31",
+      title: "London Premiere of 'Frecuencia 76' by Késia Decoté",
+      content:
+        "Pianist Késia Decoté premiered my piece 'Frecuencia 76' for piano and electronics in London, in a concert presented by Daylight Music. The work commemorates the 50th anniversary of the start of the last military dictatorship in Argentina. It was developed during my residency at the Bergen Center for Electronic Arts (BEK) and supported by the Morten Eide Pedersen Memorial Fund.",
+      link: "https://jointhecircle.net/events/405",
+    },
+    {
       date: "2026-09-01",
       title: "First Prize in the Arthaus National Composition Contest 2026",
       content:

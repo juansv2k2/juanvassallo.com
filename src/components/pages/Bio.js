@@ -53,15 +53,15 @@ function Bio() {
 
               <p>
                 My music has been featured at contemporary music festivals such
-                as Bled Contemporary Music Festival,St. Petersburg International
-                New Music Festival, OutHEAR Contemporary Music Week, Impuls, New
-                Music Montreal, Festspillene i Bergen (drop-in concerts), and
-                H&K Festival (Stavanger). I have also participated in several
-                artistic residencies, including at the Ligeti Zentrum, Bergen
-                Senter for Elektronisk Kunst (BEK) in February 2026, H&K
-                Festival in Stavanger (2022), the Center for Movement Research
-                (New York, 2014), and the Virginia Center for the Creative Arts
-                (VCCA) (USA, 2012).{" "}
+                as Bled Contemporary Music Festival, St. Petersburg
+                International New Music Festival, OutHEAR Contemporary Music
+                Week, Impuls, New Music Montreal, Festspillene i Bergen (drop-in
+                concerts), and H&K Festival (Stavanger). I have also
+                participated in several artistic residencies, including at the
+                Ligeti Zentrum, Bergen Senter for Elektronisk Kunst (BEK) in
+                February 2026, H&K Festival in Stavanger (2022), the Center for
+                Movement Research (New York, 2014), and the Virginia Center for
+                the Creative Arts (VCCA) (USA, 2012).{" "}
               </p>
 
               <p>

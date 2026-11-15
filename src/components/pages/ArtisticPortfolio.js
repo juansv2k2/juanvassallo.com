@@ -73,7 +73,7 @@ function ArtisticPortfolio() {
               />
               <Composition
                 title="Transmutations - 2. The Burial of the Sun"
-                vid="bSji6jiV1pw"
+                vid="ELdtD-UUX2U"
                 text="Camille Primeau, voice; Dácil Guerra, bass clarinet; Dimitrios Polisoidis, viola; Sophie Schafleitner, violin"
               />
               <Composition
