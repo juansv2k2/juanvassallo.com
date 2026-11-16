@@ -359,7 +359,12 @@ function ArtisticPortfolio() {
               <Composition
                 title="Improvisation"
                 vid="1tcqMXrmqDU"
-                text="ft. Daiyen Jone Castro (flute, voice, electronics) – Bergen Kjøtt, December 2025"
+                text="ft. Daiyen Jone Castro (flute, voice, electronics), Juan S. Vassallo (electronics) – Bergen Kjøtt, December 2025"
+              />
+              <Composition
+                title="Krapylbandet"
+                vid="-KSXmuxjBYI"
+                text="ft. Daiyen Jone Castro (flute, voice, electronics), Eva Pfitzenmaier (voice, electronics), Juan S. Vassallo (electronics), Langhaugen vgs Dance Studio (dance, choreography) – Peer Gynt Hall, March 2026"
               />
             </div>
           </div>
